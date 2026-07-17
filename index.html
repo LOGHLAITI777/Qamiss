@@ -1,0 +1,1528 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="favicon.png">
+<title>طلبية | أثر للألبسة الراقية</title>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '3559372404231169');
+fbq('track', 'PageView');
+</script>
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=3559372404231169&ev=PageView&noscript=1"
+/>
+</noscript>
+<!-- End Meta Pixel Code -->
+
+<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet" />
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Almarai', 'Cairo', sans-serif;
+  background: #f8f8f8;
+  color: #1a1a1a;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 1rem 2rem;
+}
+.app-wrapper {
+  max-width: 820px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 28px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+  padding: 2rem 2.2rem 2.5rem;
+}
+@media (max-width: 520px) {
+  .app-wrapper { padding: 1.2rem 1rem 1.8rem; }
+}
+
+.brand-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.2rem;
+  border-bottom: 1px solid #ececec;
+  padding-bottom: 1.2rem;
+}
+.brand-logo {
+  max-height: 80px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.2s;
+}
+.brand-logo:hover { transform: scale(1.02); }
+.brand-text-image {
+  max-height: 30px;
+  width: auto;
+  margin-top: 12px;
+  object-fit: contain;
+}
+
+.product-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0.8rem;
+  background: #fafafa;
+  border-radius: 20px;
+  padding: 1.2rem 1.5rem 1.5rem;
+}
+.product-name {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 0.8rem;
+  text-align: center;
+  letter-spacing: 0.5px;
+  font-family: 'Almarai', 'Cairo', sans-serif;
+}
+/* ===== صورة المنتج (مكبرة أكثر) ===== */
+.product-image-frame {
+  position: relative;
+  width: 100%;
+  max-width: 820px;
+  aspect-ratio: 1/1.1;
+  background: #f0f0f0;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.6rem;
+}
+.product-image-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.product-price-image {
+  max-width: 100%;
+  height: auto;
+  margin: 0.2rem 0 0.8rem;
+}
+.product-price-image img {
+  max-height: 60px;
+  width: auto;
+  display: block;
+}
+.color-prompt {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 0.4rem;
+  font-family: 'Almarai', 'Cairo', sans-serif;
+}
+.color-prompt .required-star {
+  color: #c0392b;
+  font-weight: 700;
+}
+
+/* ===== أيقونات الألوان (أكبر + حواف ناعمة + خط أكبر) ===== */
+.color-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  justify-content: center;
+  margin: 0.3rem 0 0.3rem;
+  width: 100%;
+}
+.color-gallery-btn {
+  padding: 0.55rem 1.3rem;
+  border: 2px solid rgba(0,0,0,0.12);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: 'Almarai', 'Cairo', sans-serif;
+  font-size: 0.98rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 80px;
+  min-height: 44px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  letter-spacing: 0.3px;
+}
+.color-gallery-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+.color-gallery-btn.active-gallery {
+  border-color: #111;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #111;
+  transform: scale(1.06);
+}
+.color-gallery-btn .gallery-text {
+  white-space: nowrap;
+}
+
+.size-quantity-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0.8rem 0 0.2rem;
+  width: 100%;
+}
+.size-group, .quantity-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+.size-group label, .quantity-group label {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #333;
+  letter-spacing: 0.5px;
+  font-family: 'Almarai', 'Cairo', sans-serif;
+}
+.size-circles {
+  display: flex;
+  gap: 0.6rem;
+}
+.size-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  background: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Almarai', 'Cairo', sans-serif;
+}
+.size-circle:hover {
+  border-color: #999;
+  transform: scale(1.05);
+}
+.size-circle.active-size {
+  border-color: #111;
+  background: #111;
+  color: #fff;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #111;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.quantity-control .qty-btn {
+  width: 44px;
+  height: 44px;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 12px;
+  background: #f5f5f5;
+  font-size: 1.3rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s;
+  color: #222;
+  flex-shrink: 0;
+  font-family: 'Almarai', 'Cairo', sans-serif;
+}
+.quantity-control .qty-btn:hover {
+  background: #e8e8e8;
+  border-color: #bbb;
+}
+.quantity-control .qty-btn:active {
+  transform: scale(0.92);
+}
+.quantity-control .qty-input {
+  width: 80px;
+  text-align: center;
+  padding: 0.5rem 0.2rem;
+  font-size: 1.1rem;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 12px;
+  font-family: 'Almarai', 'Cairo', sans-serif;
+  background: #fcfcfc;
+  direction: ltr;
+  font-weight: 600;
+}
+.quantity-control .qty-input:focus {
+  outline: none;
+  border-color: #111;
+  box-shadow: 0 0 0 3px rgba(0,0,0,0.04);
+}
+.quantity-control input[type="number"]::-webkit-outer-spin-button,
+.quantity-control input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.quantity-control input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.size-error-msg {
+  font-size: 0.75rem;
+  color: #c0392b;
+  min-height: 1.1rem;
+  text-align: center;
+  width: 100%;
+  font-family: 'Almarai', 'Cairo', sans-serif;
+}
+
+.form-notice {
+  text-align: right;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 0.3rem;
+  margin-top: 0.2rem;
+  background: transparent;
+  border: none;
+  padding: 0;
+  font-family: 'Almarai', 'Cairo', sans-serif;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 1.8rem;
+  margin-top: 0.4rem;
+}
+@media (max-width: 600px) {
+  .form-grid { grid-template-columns: 1fr; gap: 0.8rem; }
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.form-group.full-width {
+  grid-column: 1 / -1;
+}
+.form-group label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #222;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-family: 'Almarai', 'Cairo', sans-serif;
+}
+.form-group label .required {
+  color: #c0392b;
+  font-weight: 700;
+  font-size: 1rem;
+}
+.form-group label .hint {
+  font-weight: 400;
+  color: #999;
+  font-size: 0.7rem;
+}
+.form-control {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-family: 'Almarai', 'Cairo', sans-serif;
+  background: #fcfcfc;
+  transition: border 0.2s, box-shadow 0.2s;
+  color: #1a1a1a;
+  direction: rtl;
+}
+.form-control:focus {
+  outline: none;
+  border-color: #111;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.04);
+  background: #fff;
+}
+.form-control::placeholder {
+  color: #bbb;
+  font-size: 0.85rem;
+}
+select.form-control {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23333' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: left 0.9rem center;
+  padding-left: 2.4rem;
+  cursor: pointer;
+}
+.form-control:disabled {
+  background: #f0f0f0;
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+.form-control.error {
+  border-color: #c0392b;
+  background: #fff6f5;
+}
+.error-msg {
+  font-size: 0.75rem;
+  color: #c0392b;
+  min-height: 1.1rem;
+  font-family: 'Almarai', 'Cairo', sans-serif;
+}
+
+.note-box {
+  font-size: 0.85rem;
+  color: #fff;
+  background: #000;
+  padding: 0.4rem 0.9rem;
+  border-radius: 8px;
+  display: inline-block;
+  width: fit-content;
+  line-height: 1.6;
+  margin-top: -6px;
+  font-weight: 400;
+  border: none;
+  font-family: 'Almarai', 'Cairo', sans-serif;
+}
+
+.delivery-toggle {
+  display: flex;
+  gap: 0.8rem;
+  background: #f0f0f0;
+  border-radius: 14px;
+  padding: 0.3rem;
+  width: 100%;
+  max-width: 340px;
+}
+.delivery-toggle .toggle-btn {
+  flex: 1;
+  padding: 0.55rem 0.8rem;
+  border: none;
+  border-radius: 11px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  font-family: 'Almarai', 'Cairo', sans-serif;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  background: transparent;
+  color: #666;
+  text-align: center;
+}
+.delivery-toggle .toggle-btn.active {
+  background: #fff;
+  color: #111;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.price-summary {
+  margin-top: 1.6rem;
+  background: #f7f7f7;
+  border-radius: 16px;
+  padding: 1.2rem 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  border: 1px solid #ececec;
+}
+.price-summary .price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.95rem;
+  font-weight: 400;
+  font-family: 'Almarai', 'Cairo', sans-serif;
+}
+.price-summary .price-row.total {
+  font-size: 1.4rem;
+  font-weight: 800;
+  border-top: 1px dashed #ccc;
+  padding-top: 0.6rem;
+  margin-top: 0.2rem;
+}
+.price-summary .price-row .label {
+  color: #444;
+}
+.price-summary .price-row .value {
+  font-weight: 700;
+  direction: ltr;
+  unicode-bidi: embed;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.price-summary .price-row .value .currency-symbol {
+  font-weight: 700;
+  color: #111;
+}
+.price-summary .price-row .value .amount-number {
+  font-weight: 700;
+  color: #111;
+}
+#totalPriceDisplay {
+  background: #111;
+  color: #fff;
+  padding: 4px 18px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  direction: ltr;
+}
+#totalPriceDisplay .currency-symbol {
+  color: #fff;
+  font-weight: 800;
+}
+#totalPriceDisplay .amount-number {
+  color: #fff;
+  font-weight: 800;
+}
+
+.price-summary .price-row.discount {
+  color: #c0392b;
+  font-weight: 700;
+  font-size: 1rem;
+  background: #fff0ee;
+  padding: 0.3rem 0.8rem;
+  border-radius: 30px;
+  margin-top: 0.2rem;
+  border: 1px solid #ffcdcd;
+}
+.price-summary .price-row.discount .value {
+  color: #c0392b;
+  font-weight: 700;
+  direction: ltr;
+}
+
+.submit-row {
+  margin-top: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+.btn-submit {
+  width: 100%;
+  max-width: 380px;
+  padding: 0.9rem 1.8rem;
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: 60px;
+  font-size: 1.1rem;
+  font-weight: 800;
+  font-family: 'Almarai', 'Cairo', sans-serif;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+}
+.btn-submit:hover {
+  background: #2a2a2a;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
+}
+.btn-submit:active {
+  transform: scale(0.98);
+}
+.btn-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none !important;
+  box-shadow: none !important;
+}
+.btn-submit .spinner {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+.submit-status {
+  font-size: 0.85rem;
+  color: #666;
+  min-height: 1.4rem;
+  font-family: 'Almarai', 'Cairo', sans-serif;
+}
+.submit-status.success { color: #1e7e34; }
+.submit-status.error { color: #c0392b; }
+
+.contact-phones {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.2rem;
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #333;
+  font-family: 'Almarai', 'Cairo', sans-serif;
+}
+.contact-phones .phone-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: #f0f0f0;
+  padding: 0.3rem 0.9rem;
+  border-radius: 30px;
+  border: 1px solid #e0e0e0;
+}
+.contact-phones .phone-item svg {
+  width: 18px;
+  height: 18px;
+  fill: #25D366;
+}
+.contact-phones .phone-item a {
+  color: #111;
+  text-decoration: none;
+  direction: ltr;
+  font-weight: 700;
+  font-size: 0.9rem;
+  font-family: 'Almarai', 'Cairo', sans-serif;
+}
+.contact-phones .phone-item a:hover {
+  color: #25D366;
+}
+.contact-phones .phone-label {
+  font-weight: 400;
+  color: #888;
+  font-size: 0.75rem;
+}
+
+.footer-delivery {
+  margin-top: 2.8rem;
+  padding-top: 1.6rem;
+  border-top: 1px solid #ececec;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+.footer-delivery .partner-label {
+  font-size: 0.8rem;
+  color: #999;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  font-family: 'Almarai', 'Cairo', sans-serif;
+}
+.footer-delivery .partner-logo {
+  max-height: 48px;
+  width: auto;
+  object-fit: contain;
+  opacity: 0.9;
+  transition: opacity 0.2s;
+}
+.footer-delivery .partner-logo:hover {
+  opacity: 1;
+}
+.hidden {
+  display: none !important;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 1000;
+}
+.whatsapp-float a {
+  display: block;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #25D366;
+  color: #fff;
+  text-align: center;
+  line-height: 42px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+}
+.whatsapp-float a:hover {
+  transform: scale(1.08);
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.35);
+}
+.whatsapp-float a svg {
+  display: inline-block;
+  vertical-align: middle;
+  width: 22px;
+  height: 22px;
+  margin-top: -2px;
+}
+@media (max-width: 520px) {
+  .whatsapp-float a {
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+  }
+  .whatsapp-float a svg {
+    width: 20px;
+    height: 20px;
+  }
+  .contact-phones {
+    gap: 0.8rem;
+    font-size: 0.8rem;
+  }
+  .contact-phones .phone-item {
+    padding: 0.2rem 0.6rem;
+  }
+  .contact-phones .phone-item a {
+    font-size: 0.75rem;
+  }
+  .size-quantity-row {
+    gap: 1rem;
+  }
+  .size-circle {
+    width: 42px;
+    height: 42px;
+    font-size: 0.85rem;
+  }
+  .product-image-frame {
+    max-width: 100%;
+  }
+  .product-name {
+    font-size: 1.3rem;
+  }
+  .color-gallery-btn {
+    padding: 0.45rem 0.9rem;
+    font-size: 0.85rem;
+    min-width: 65px;
+    min-height: 40px;
+  }
+}
+
+.toast {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%) translateY(80px);
+  background: #1a1a1a;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border-radius: 60px;
+  font-size: 0.95rem;
+  font-weight: 400;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+  opacity: 0;
+  transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  pointer-events: none;
+  z-index: 999;
+  max-width: 90%;
+  text-align: center;
+  font-family: 'Almarai', 'Cairo', sans-serif;
+}
+.toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+.toast.success { background: #1e7e34; }
+.toast.error { background: #b03a2e; }
+
+@media (max-width: 440px) {
+  .product-image-frame { max-width: 100%; }
+  .price-summary .price-row.total { font-size: 1.1rem; }
+  .brand-text-image { max-height: 25px; }
+  .product-price-image img { max-height: 40px; }
+  .color-gallery-btn { padding: 0.4rem 0.7rem; font-size: 0.78rem; min-width: 60px; min-height: 38px; }
+  .quantity-control .qty-btn { width: 38px; height: 38px; font-size: 1.1rem; }
+  .quantity-control .qty-input { width: 65px; font-size: 1rem; }
+  #totalPriceDisplay { font-size: 1.1rem; padding: 2px 12px; }
+  .size-circle { width: 38px; height: 38px; font-size: 0.75rem; }
+}
+</style>
+</head>
+<body>
+<div class="app-wrapper">
+<header class="brand-header">
+  <a href="#" class="logo-link">
+    <img src="https://ik.imagekit.io/ATHAR/ATHAR/public/logo.png?updatedAt=1783932474943" alt="شعار أثر" class="brand-logo" />
+  </a>
+  <img src="https://ik.imagekit.io/ATHAR/ATHAR/public/Textt.png" alt="أثر للألبسة الأنيقة" class="brand-text-image" />
+</header>
+
+<section class="product-section">
+  <div class="product-name">قميص رجالي أنيق</div>
+  <div class="product-image-frame">
+    <img id="mainProductImage" src="https://ik.imagekit.io/ATHAR/ATHAR/Qamis Color/1.JPEG" alt="قميص رجالي" loading="lazy" />
+  </div>
+  <div class="product-price-image">
+    <img src="https://ik.imagekit.io/ATHAR/ATHAR/Sum.png" alt="سعر القميص" loading="lazy" />
+  </div>
+  <div class="color-prompt">اختر لوناً من ألواننا الراقية<span class="required-star">*</span></div>
+  <div class="color-gallery" id="colorGallery"></div>
+
+  <div class="size-quantity-row">
+    <div class="size-group">
+      <label>المقاس</label>
+      <div class="size-circles" id="sizeCircles">
+        <button type="button" class="size-circle" data-size="52">52</button>
+        <button type="button" class="size-circle" data-size="54">54</button>
+        <button type="button" class="size-circle" data-size="56">56</button>
+        <button type="button" class="size-circle" data-size="58">58</button>
+      </div>
+    </div>
+    <div class="quantity-group">
+      <label>الكمية</label>
+      <div class="quantity-control">
+        <button type="button" class="qty-btn" id="qty-minus">−</button>
+        <input type="number" id="quantity" class="qty-input" min="1" max="30" value="1" />
+        <button type="button" class="qty-btn" id="qty-plus">+</button>
+      </div>
+    </div>
+  </div>
+  <div class="size-error-msg" id="sizeError"></div>
+</section>
+
+<div class="form-notice">لتأكيد الطلب يرجى منكم ملء المعلومات.</div>
+
+<form id="orderForm" novalidate>
+  <div class="form-grid">
+    <div class="form-group full-width">
+      <label for="fullName">الاسم الكامل <span class="required">*</span></label>
+      <input type="text" id="fullName" class="form-control" placeholder="مثال: رياض بن السعيد" required />
+      <div class="error-msg" id="fullNameError"></div>
+    </div>
+
+    <div class="form-group">
+      <label for="phone1">رقم الهاتف 1 <span class="required">*</span></label>
+      <input type="tel" id="phone1" class="form-control" placeholder="00 00 00 00 00" required />
+      <div class="error-msg" id="phone1Error"></div>
+    </div>
+
+    <div class="form-group">
+      <label for="phone2">رقم الهاتف 2 <span class="hint">(اختياري)</span></label>
+      <input type="tel" id="phone2" class="form-control" placeholder="00 00 00 00 00" />
+    </div>
+
+    <div class="form-group full-width" style="margin-top: -6px;">
+      <div class="note-box">
+        📌 ملاحظة: لطلب أكثر من: نوع | لون | مقاس، راسلنا وسنتصل بكم.
+      </div>
+    </div>
+
+    <div class="form-group full-width">
+      <label>نوع التوصيل <span class="required">*</span></label>
+      <div class="delivery-toggle" id="deliveryToggle">
+        <button type="button" class="toggle-btn active" data-value="home">إلى المنزل</button>
+        <button type="button" class="toggle-btn" data-value="stopdesk">إلى المكتب (Stop Desk)</button>
+      </div>
+      <div class="error-msg" id="deliveryError"></div>
+    </div>
+
+    <div class="form-group">
+      <label for="wilayaSelect">الولاية <span class="required">*</span></label>
+      <select id="wilayaSelect" class="form-control" required>
+        <option value="">اختر الولاية</option>
+      </select>
+      <div class="error-msg" id="wilayaError"></div>
+    </div>
+
+    <div class="form-group" id="communeGroup">
+      <label for="communeSelect">البلدية <span class="required">*</span></label>
+      <select id="communeSelect" class="form-control" disabled>
+        <option value="">اختر البلدية</option>
+      </select>
+      <div class="error-msg" id="communeError"></div>
+    </div>
+
+    <div class="form-group hidden" id="officeGroup">
+      <label for="officeSelect">اسم المكتب <span class="required">*</span></label>
+      <select id="officeSelect" class="form-control" disabled>
+        <option value="">اختر المكتب</option>
+      </select>
+      <div class="error-msg" id="officeError"></div>
+    </div>
+
+    <div class="form-group full-width address-field" id="addressGroup">
+      <label for="address">العنوان الكامل</label>
+      <input type="text" id="address" class="form-control" placeholder="الشارع، رقم العمارة، الطابق، ... (اختياري)" />
+      <div class="error-msg" id="addressError"></div>
+    </div>
+
+    <input type="hidden" id="deliveryType" value="home" />
+    <input type="hidden" id="selectedColor" value="" />
+    <input type="hidden" id="selectedSize" value="" />
+  </div>
+
+  <div class="price-summary" id="priceSummary">
+    <div class="price-row">
+      <span class="label">المنتج</span>
+      <span class="value" id="productSubtotal">
+        <span class="currency-symbol">دج</span>
+        <span class="amount-number">2,900</span>
+      </span>
+    </div>
+    <div class="price-row">
+      <span class="label">التوصيل</span>
+      <span class="value" id="deliverySubtotal">
+        <span class="currency-symbol">دج</span>
+        <span class="amount-number">0</span>
+      </span>
+    </div>
+    <div class="price-row discount hidden" id="discountRow">
+      <span class="label">🎯 تخفيض</span>
+      <span class="value" id="discountText">التوصيل مجاني</span>
+    </div>
+    <div class="price-row total">
+      <span class="label">المجموع الكلي</span>
+      <span class="value" id="totalPriceDisplay">
+        <span class="currency-symbol">دج</span>
+        <span class="amount-number">2,900</span>
+      </span>
+    </div>
+  </div>
+
+  <div class="submit-row">
+    <button type="submit" class="btn-submit" id="submitBtn">
+      <span>تأكيد الطلبية</span>
+    </button>
+    <div class="submit-status" id="submitStatus"></div>
+    <div class="contact-phones">
+      <div class="phone-item">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <span class="phone-label">📞</span>
+        <a href="tel:+213659199296" dir="ltr">+213 659 19 92 96</a>
+      </div>
+      <div class="phone-item">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <span class="phone-label">📞</span>
+        <a href="tel:+213661218727" dir="ltr">+213 661 21 87 27</a>
+      </div>
+    </div>
+  </div>
+</form>
+
+  <footer class="footer-delivery">
+            <div class="partner-label">شركة التوصيل المعتمدة لمنتجاتنا</div>
+            <img src="https://ik.imagekit.io/ATHAR/ATHAR/public/Chriki.png" alt="شريك التوصيل" class="partner-logo" loading="lazy" 
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+            <span style="display:none; font-size:0.8rem; color:#999;">ZR Express</span>
+        </footer>
+    </div>
+
+<div class="whatsapp-float">
+  <a href="https://wa.me/213659199296" target="_blank" title="اتصل بنا عبر واتساب (الرقم الأول)">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+  <a href="https://wa.me/213661218727" target="_blank" title="اتصل بنا عبر واتساب (الرقم الثاني)">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const DELIVERY_FEES = {
+'أدرار': { home: 1450, stopdesk: 1070 },
+'الشلف': { home: 850, stopdesk: 570 },
+'الأغواط': { home: 950, stopdesk: 670 },
+'أم البواقي': { home: 800, stopdesk: 570 },
+'باتنة': { home: 900, stopdesk: 570 },
+'بجاية': { home: 900, stopdesk: 570 },
+'بسكرة': { home: 950, stopdesk: 670 },
+'بشار': { home: 1200, stopdesk: 770 },
+'البليدة': { home: 700, stopdesk: 520 },
+'البويرة': { home: 750, stopdesk: 570 },
+'تمنراست': { home: 1650, stopdesk: 1270 },
+'تبسة': { home: 950, stopdesk: 570 },
+'تلمسان': { home: 900, stopdesk: 570 },
+'تيارت': { home: 850, stopdesk: 520 },
+'تيزي وزو': { home: 750, stopdesk: 570 },
+'الجزائر': { home: 600, stopdesk: 520 },
+'الجلفة': { home: 950, stopdesk: 670 },
+'جيجل': { home: 900, stopdesk: 570 },
+'سطيف': { home: 850, stopdesk: 570 },
+'سعيدة': { home: 900, stopdesk: 620 },
+'سكيكدة': { home: 900, stopdesk: 570 },
+'سيدي بلعباس': { home: 900, stopdesk: 570 },
+'عنابة': { home: 900, stopdesk: 570 },
+'قالمة': { home: 850, stopdesk: 570 },
+'قسنطينة': { home: 850, stopdesk: 570 },
+'المدية': { home: 850, stopdesk: 570 },
+'مستغانم': { home: 900, stopdesk: 570 },
+'المسيلة': { home: 900, stopdesk: 570 },
+'معسكر': { home: 900, stopdesk: 570 },
+'ورقلة': { home: 1000, stopdesk: 670 },
+'وهران': { home: 850, stopdesk: 570 },
+'البيض': { home: 1100, stopdesk: 670 },
+'إيليزي': { home: 0, stopdesk: 0 },
+'برج بوعريريج': { home: 850, stopdesk: 570 },
+'بومرداس': { home: 500, stopdesk: 420 },
+'الطارف': { home: 900, stopdesk: 570 },
+'تندوف': { home: 0, stopdesk: 0 },
+'تيسمسيلت': { home: 900, stopdesk: 520 },
+'الوادي': { home: 1000, stopdesk: 670 },
+'خنشلة': { home: 900, stopdesk: 500 },
+'سوق أهراس': { home: 900, stopdesk: 570 },
+'تيبازة': { home: 800, stopdesk: 570 },
+'ميلة': { home: 900, stopdesk: 570 },
+'عين الدفلى': { home: 900, stopdesk: 570 },
+'النعامة': { home: 1200, stopdesk: 670 },
+'عين تموشنت': { home: 900, stopdesk: 570 },
+'غرداية': { home: 950, stopdesk: 670 },
+'غليزان': { home: 900, stopdesk: 570 },
+'تيميمون': { home: 1450, stopdesk: 1070 },
+'برج باجي مختار': { home: 0, stopdesk: 0 },
+'أولاد جلال': { home: 950, stopdesk: 670 },
+'بني عباس': { home: 1450, stopdesk: 1070 },
+'عين صالح': { home: 1650, stopdesk: 1270 },
+'عين قزام': { home: 1650, stopdesk: 0 },
+'تقرت': { home: 950, stopdesk: 670 },
+'جانت': { home: 0, stopdesk: 0 },
+'المغير': { home: 950, stopdesk: 0 },
+'المنيعة': { home: 1100, stopdesk: 670 }
+};
+
+const WILAYA_LIST = [
+'أدرار','الشلف','الأغواط','أم البواقي','باتنة','بجاية','بسكرة','بشار',
+'البليدة','البويرة','تمنراست','تبسة','تلمسان','تيارت','تيزي وزو',
+'الجزائر','الجلفة','جيجل','سطيف','سعيدة','سكيكدة','سيدي بلعباس',
+'عنابة','قالمة','قسنطينة','المدية','مستغانم','المسيلة','معسكر',
+'ورقلة','وهران','البيض','إيليزي','برج بوعريريج','بومرداس','الطارف',
+'تندوف','تيسمسيلت','الوادي','خنشلة','سوق أهراس','تيبازة','ميلة',
+'عين الدفلى','النعامة','عين تموشنت','غرداية','غليزان','تيميمون',
+'برج باجي مختار','أولاد جلال','بني عباس','عين صالح','عين قزام',
+'تقرت','جانت','المغير','المنيعة'
+];
+
+const COMMUNES_MAP = {
+'أدرار':['أدرار','أقبلي','أولف','بودة','فنوغيل','إن زغمير','تامنطيت','تامست','تيمكتن','تيت','تسابيط','زاویت كونتة'],
+'الشلف':['الشلف','أبو الحسن','عين مران','بنايرية','بني بوعتاب','بني حواء','بني راشد','بوقادیر','بوزغاية','شطية','دھرة','الحجاج','الكریمیة','وادي فدة','وادي قوسين','وادي سلي','أولاد عباس','أولاد بن عبد القادر','أولاد فارس','أم ذراع','سندجاس','سيدي عبد الرحمان','سيدي عقاش','صوبحة','تاجنة','تلاسة','تاوقريت','تنس','زبودجة'],
+'الأغواط':['الأغواط','أفلو','عين ماضي','عين سيدي علي','البيضاء','بريدة','الغيشة','حاج مشري','حاسي الدلاع','حاسي الرمل','خنق','قصر الحيران','وادي مرة','وادي مزي','سبقاق','سيدي بوزيد','سيدي مخلوف','تاجموت','تاجرونة','تاويالة'],
+'أم البواقي':['أم البواقي','عين بابوش','عين البيضاء','عين ديس','عين فكرون','عين كرشة','عين مليلة','عين الزيتون','العميرية','بشير شروحة','بحير شوقي','بريش','ذلا','العامرية','الفضل','الحرمیلية','فكيرينة','حنشیر تومغاني','قصر صباحي','مسكيانة','وادي نيني','أولاد قاسم','أولاد حملة','أولاد زواي','راهية','سيقوس','سوق نعمان','زرق'],
+'باتنة':['باتنة','عين جاسر','عين توتة','عين ياقوت','آريس','عزيل عبد القادر','باریکة','بني فضالة الحكانیة','بیتام','بولحیلات','بومغور','بومیا','بوزینة','شمرة','جزار','الجرف','جرمة','الهاسي','فاسدس','غسيرة','غويغة','قسباط','إشمول','إنوغيسن','كيمل','قصر بلزمة','لاربعة','لازرو','لمسين','م دوكل','معافة','مناة','مروانة','نجاوة','واد الشعبة','واد الماء','واد التاغة','أولاد عمار','أولاد عوف','أولاد فاضل','أولاد سلام','أولاد سي سليمان','عيون العساف','رحبات','رأس العيون','سفيان','سقانة','سريانة','ت كوت','تالخمت','تاكسلنت','تازولت','تينيت العابد','تيغانمين','تيغارغار','تيلاتو','تيمقاد','زنت البيضاء'],
+'بجاية':['بجاية','أدكار','أيت رزين','أيت سماعیل','أقبو','أمازور','أوقاس','برباشة','بني جليل','بني كسيلة','بني معوش','بودجليل','بوحمزة','بوكحيلة','شلاطة','شمني','دارقينة','القصر','فرعون','إغیل علي','إغرم','تازمالت','تيفرا','تيمريت','تيزي نبربر'],
+'بسكرة':['بسكرة','عين ناقة','برج بن عزوز','بوشكرون','شتمة','طولقة','الغروس','الحاجب','الكانتارا','ليشانة','مشونش','مليلي','أوماش','أورلال','سيدي عقبة','زريبة الوادي'],
+'بشار':['بشار','عبادلة','بني ونيف','بوكايس','المرسى','كنادسة','لحمر','مشرع','مغيل','تغيت','تابلبالة'],
+'البليدة':['البليدة','عين رمانة','بني تامو','بني مراد','بوفر يك','موزاية','بوقرة','شبلي','شريعة','جبابرة','العفرون','حمام ملوان','لاربعاء','مفتاح','مزغران','واد جر','أولاد السلامة','سوحان','سومعة'],
+'البويرة':['البويرة','أغبالو','عين الحجر','أيت لعزيز','بشلول','بئر غبالو','بوردة','بوكرم','الشرفة','ديرة','الحاكمية','هانيف','خبوزية','لخضرية','معالة','مشدالة','الموقران','أولاد راشد','الروينة','سحرج','سور الغزلان','تاغزوت','زبربر'],
+'تمنراست':['تمنراست','عين أمقل','إيدلس','تازروك','تين زاواتين'],
+'تبسة':['تبسة','عين الزرقاء','بئر الذهب','بكارية','بوقدرة','شريعة','الخوين','الكويف','المالح','مرسوت','نقرين','أم علي','صفصاف','ستيت','تيلجين'],
+'تلمسان':['تلمسان','عين فزة','عين الكبيرة','عين النهالة','عين تالوت','أمير','باب العسة','بني بحل','بني بوسعيد','بني قرة','بني سميل','بني سنوس','بني ورتيلان','شتوانة','د يغمراسن','الفلاوسن','غزوات','هنين','منصورة','مرسى بن مهيدي','نيدروما','وادي لخضر','أولاد ميمون','أولاد رياح','رمشي','سبدو','سوق الطلعة','تيرني بني هديل','زيناتة'],
+'تيارت':['تيارت','عين بوشقيف','عين الذهب','عين الحديد','عين قرمس','عين كرمس','بوقرة','شحيمة','دحموني','جبيلة الرصفا','فرندة','قرطوفة','حمادية','قصر الشلالة','مادنة','مدروس','مغيلة','الناظور','رحوية','سبعينة','سرغين','سيدي عبد الرحمان','سيدي بختي','سيدي حسني','سوقر','تاكمارت','تيارت','توسنينة','الزمالة'],
+'تيزي وزو':['تيزي وزو','أبو يوسف','أقني قغران','أيت عيسى ميمون','أيت بومهدي','أيت خليلي','أيت محمود','أيت يحيى','أيت يوسف','أزازقة','أزفون','بني دوالة','بني يني','بني زيكي','بني عيسى','بوجيما','بوزغن','دراع بن خدة','فريكات','إفرحونن','إيلولة أمالو','إيفيغاء','إمصوحل','إيرجن','ماكودة','مقران','مشطراس','مزرانة','واقنون','أواذياس','أواسيف','وقاص','تيغرزين','تيرميتين','تيزي غنيف','تيزي راشد','تيزي نتلاطا','ياقوران','يكورين'],
+'الجزائر':['الجزائر الوسطى','سيدي أمحمد','المدنية','محمد بلوزداد','باب الوادي','بولوغين بن زيري','القصبة','واد قريش','الرايس حميدو','بئر مراد رايس','حيدرة','سحاولة','بئر خادم','باب الزوار','بني مسوس','بوزريعة','الحراش','براقي','الرويبة','عين بنيان','الرحمانية','سويدانية','جسر قسنطينة','الخروبة','أولاد فايت','المرادية','بئر توتة','دالي إبراهيم','الشريعة','حمامات','سيدي موسى','الدار البيضاء','المحمدية','القبة','عين طاية','المرسى'],
+'الجلفة':['الجلفة','عين الشهداء','عين وسارة','آيت واعر','بني يقوب','بوسعادة','بويرة الأحداب','الشارف','دار الشيوخ','الدويس','العطف','الخميس','حاسي بحبح','حاسي العش','حاسي الفد','الهامل','الإدريسية','مسعد','مليليحة','مطارفة','مولود','أم العظام','القديد','سيدي بايزيد','سيدي يوسف','تعضميت','زكار'],
+'جيجل':['جيجل','العنصر','البني','برج الطاهر','بوسيف','جيملة','الشحنة','الخيرية','الراقصة','الوساسية','قاوس','القلعة','الميلية','أولاد عاشة','أولاد يحيى','الشقفة','سيدي عبد العزيز','سيدي معرف','التالة','الطاهير','زيامة منصورية'],
+'سطيف':['سطيف','عين عزة','عين الروى','عين السبت','عين ولاية','أولاد أعباس','أولاد تبان','أولاد صابر','أولاد سي أحمد','بن عزة','بن علي','بن واردة','بيضاء برج','بوسلام','بوعنداس','بوقاعة','شعبة','شلالة','الدهامشة','جيملة','قنزات','قراع','قلال','العمورية','المعاصر','ماوكلان','مزلوق','واد أبلد','واد الخروب','أولاد عدوان','أولاد مسعود','الرصفة','صالح باي','سرج الغول','تاشودة','تاية','تالا إيفاسن','تيزي نبشار','العلمة','الاوريسية'],
+'سعيدة':['سعيدة','عين الحجر','عين سكينة','الدوي ثابت','العويزات','الحساسنة','مولاي العربي','أولاد براهيم','أولاد خالد','سيدي بوبكر','سيدي عيسى','تيرسين'],
+'سكيكدة':['سكيكدة','عين بوزيان','أم الطوب','بني بشير','بني زيد','بني ولبان','بوشطاطة','السرايدي','الكوار','الحروش','الجندل','الغدير','الحمادي كروما','كانوا','المصالحة','أولاد عطية','أولاد حبابة','أولاد معروف','رمضان جمال','الروية','سلام بوغرارة','تمالوس','زردازة','زيغود يوسف'],
+'سيدي بلعباس':['سيدي بلعباس','عين أدان','عين البرد','عين تندامين','أمرناس','بني خطاب','بني مسعود','بن عشيبة','بوقلع','بوسعادة','شريعة','الغروس','الحساسنة','حاسي دحول','حاسي زهانة','لمطار','مقارة','مرين','مصطفى بن إبراهيم','مولاي سليسن','وادي السبع','أولاد بن عابد','أولاد براهم','أولاد خير','رأس الماء','سيدي علي بن يوب','سيدي حمادوش','سيدي خالد','سيدي لحسن','سيدي شيب','سيدي يوسف','تافسور','تليغ','تلموني','تيرني','تيسة','تيزي'],
+'عنابة':['عنابة','عين الباردة','البرحال','شطايبي','الحجار','سيراي','واد العنب'],
+'قالمة':['قالمة','عين بن بيضاء','عين العربي','عين السطارة','عين صندل','بني مزلين','بوشقوف','بوعاتي محمود','الجزارية','الحدادة','حمام دباغ','حمام النبايل','الخزارة','النخلة','ولد خير الله','واد الشحم','واد فراغة','واد زناتي','الروبية','سلاوة عنونة','تاملوكة','الطويل'],
+'قسنطينة':['قسنطينة','عين اسمارة','الخروب','ابن باديس','زيغود يوسف','حمام بوزيان','عين الباي','الكبانية','دیدوش مراد','مسعود بوجريو','أولاد رحمون','الرگايسة'],
+'المدية':['المدية','عين بوسيف','عين قصر','عين سيدي علي','بعطشة','بن شكاو','بني سليمان','برواقية','بوزقزة','شهبونية','شلالة العذاورة','شنيق','العزيزية','الدراق','العمارية','العوينات','الغزلان','حمرية','الحوض','خميس الجبل','مجبر','مفتاح','مزغران','ميهوب','وادي حربيل','وادي المقرن','عمر','أولاد بوعشيرة','أولاد إبراهيم','أولاد دايد','أولاد هلال','أولاد معافة','الربعية','سانق','سغوان','سيدي زهار','الطافر','تامسا','تيزي محدي','ثلاثة دوائر','زيزان'],
+'مستغانم':['مستغانم','أشعاشة','عين بوصيف','عين تادلس','بنقردان','بوقيرات','الخير','الحسيان','حدجاج','حرشون','ماسرة','نكمارية','القدم','صيادة','سيدي علي','سيدي بلعطار','سيدي لخضر','سيدي معمر','سليمان','تاوقريت','تازة'],
+'المسيلة':['المسيلة','عين الحجل','عين الريش','عين فارس','عين خضرة','بني إلّمان','بوعيسى','بوثان','الشعيرة','القصور','العمارة','الهامل','حمام الدالعة','حمام الضلعة','خبوبة','مطارفة','مسيف','محمد بوضياف','المعيد','ماوة','تارمونت','تامسة','زرزور'],
+'معسكر':['معسكر','عين فراح','عين فكان','عين الزيتون','الغريس','الحاسي','العمايرية','الصفصاف','البرج','بوهاني','بوقادر','شرف','الشهيدية','دقاقة','الغزال','قريدة','ماسرة','مطمور','مفراتة','محي الدين','النقاوسية','واد تاغية','أولاد أعمر','أولاد خلوف','أولاد منصور','رسن عين عامر','سجرارة','سيدي عبد المؤمن','سيدي بوسعيد','سيدي خضير','تاحامات','تيزي','زلمطة'],
+'ورقلة':['ورقلة','عين البيدة','حاسي بن عبد الله','حاسي مسعود','نجوسة','الرويسات','سيدي خويلد','تقرت'],
+'وهران':['وهران','عين البيضاء','عين الترك','أرزيو','بني بوصابر','بني وريان','بئر الجير','بوتليليس','البرية','الكركرية','السنية','العنصر','الفنتار','حاسي بونيف','حاسي مفسوخ','مرسى الحجاج','مسرغين','سيدي بن يبقى','سيدي الشحمي','تفراواي','وادي تليلات'],
+'البيض':['البيض','الأبيض سيدي الشيخ','بوعلام','بريكة','الشفاء','المرارة','الناظور','سيدي عمار','سيدي طيفور','توسمولين'],
+'إيليزي':['إيليزي','برج عمر إدريس','دبداب','إن أميناس'],
+'برج بوعريريج':['برج بوعريريج','عين تسرة','اليشير','بني سليمان','بني يعقوب','برج الغدير','برج زمورة','الجابرية','الخناق','الميناء','المنصورة','أولاد براهيم','أولاد دحمان','أولاد سيدي براهيم','الربطة','سيدي امبارك','تافرغة','تاغليت','تيكستار'],
+'بومرداس':['بومرداس','أفير','بغلية','بن شود','بني عمران','برج منايل','بودواو','بودواو البحري','الشبابطة','الحرش','الدلس','العامرية','حمادي','الخروبة','لارباطاش','القليعة','الناصرية','أولاد عيسى','أولاد موسى','سي مصطفى','سوق الحد','تيدجلابين','ثنية','زموري'],
+'الطارف':['الطارف','عين العسل','عين الكرمة','بوسلام','بوشقوف','شبيطة مختار','الشباني','الذرعان','الحمام','القالة','رميل السوق','سوقة','زريزر','الزيطونة'],
+'تندوف':['تندوف','أم العسل'],
+'تيسمسيلت':['تيسمسيلت','برج بونعامة','بوسعادة','الخميس','العيون','القرنة','لرجام','الأربعاء','المعاصم','سيدي عبد الرحمان','سيدي بوتاش','ثنية الحد','تملاحت','يوسفية'],
+'الوادي':['الوادي','البياضة','الدبيلة','الرويسات','الطريقة','القمار','المغير','النخلة','أم الطيور','رڤبة','سيدي عون','تڨرت','ترفاوي'],
+'خنشلة':['خنشلة','عين الطويلة','بابار','بغاي','الشليعة','جلال','الحامة','الخيران','المحمل','المرسى','أولاد رشاش','رميلة','تامزة','يابوس'],
+'سوق أهراس':['سوق أهراس','عين الحجر','عين سلامة','عين الزانة','بئر بوحوش','درعة','حناشة','خضارة','مشروحة','أولاد دراج','أولاد معة','الرقوبة','صفال','سيدي فرج','تارة','تيفاش','زعرورية'],
+'تيبازة':['تيبازة','أغبال','أحمر العين','بني ميلك','بوع إسماعيل','بورقيقة','شبلي','شرشال','دواودة','فوكة','قوراية','حجارة النص','خميستي','لارهات','مناصر','مسلمون','ناظور','سيدي غيلاس','سيدي راشد','سيدي سميان','تاقسرت'],
+'ميلة':['ميلة','أحمد رشدي','عين البيضاء حريش','عين التين','عمارة','بني قشة','بني يحى','بوشقرون','الشلغوم العيد','جمالة','فرجيوة','قرحم','حمالا','مينار زارزة','وادي الكبير','وادي سقان','أولاد خالف','أولاد محمد','الربوة','رواشد','سيدي خليفة','سيدي مروان','تاجنانت','تزده','ترعي باينان','تيسة','زغاية'],
+'عين الدفلى':['عين الدفلى','أبو رياح','أين بنيان','أين بو يحيى','أين السلطان','العطارف','بطحية','بني داود','بومدفع','برج الأمير خالد','برشيش','جدلية','جندل','العامرة','الحسنية','حمام ريغة','الحمادية','خرايسية','المخاطرية','المعاينية','مليانة','واد الشرفة','واد الجمعة','رومينه','سيدي الأخضر','سيدي بوطاش','تابلكت','تاشتة زيغاغة','العارف'],
+'النعامة':['النعامة','عين بن خليل','عين صفرا','البيض','القصدير','المغيرة','مكمن بن عمار','مشريا','تيوط'],
+'عين تموشنت':['عين تموشنت','أغلال','العامرية','بني صاف','بوعبد الله','بوزجار','الشبات','الحمادة','حاسي الغلة','مسعود','واد بركة','أولاد الكيحل','أولاد صابر','سيدي بن عدا','سيدي بومدين','تامزورة','ترقة'],
+'غرداية':['غرداية','العطف','بريان','بونورة','الضاية بن ضحوة','المنصورة','مزاب','سبسب','زلفانة'],
+'غليزان':['غليزان','أم علي','بن دراجن','بن يحيى','بوزغار','الحمادنة','الجليلة','الغسول','حد الشكالة','الحاج','السلايمية','المطمر','مزونة','واد جمعة','واد الرحمون','واد السلام','أولاد سيدي مخليفة','القليعة','رمكة','سيدي سعادة','يليل','زيدية'],
+'تيميمون':['تيميمون','أوقروت','شاروين','دلدول','قصر قدور','مطارفة','أولاد عيسى','تالمين','تيرنكوك'],
+'برج باجي مختار':['برج باجي مختار','تيمياوين'],
+'أولاد جلال':['أولاد جلال','بسباس','دوسن','الغروس','حاسي فدول','سيدي خالد','تارين'],
+'بني عباس':['بني عباس','بني إخلاف','إرغ فراج','إيغلي','كرزاز','الوطاية','تامترت','تيمودي'],
+'عين صالح':['عين صالح','فوغاريت الزاوية','إنغار','تين تارتار'],
+'عين قزام':['عين قزام','تيت','تيمياوين'],
+'تقرت':['تقرت','البلغيط','العامرية','بن ناصر','بلدة عمر','المغير','المنقر','النزلة','سيدي سليمان','تماسين'],
+'جانت':['جانت','البرج','الحواس','أولاد عيسى','أولاد زيد'],
+'المغير':['المغير','جماعة','مرارة','أم الطيور','سيدي خليل','ستيل','تمية'],
+'المنيعة':['المنيعة','حاسي قارة','حاسي البراك','قارا','تاقزيرت']
+};
+
+const OFFICES_MAP = {
+'أدرار':['Hub Adrar 01 مكتب أدرار'],
+'الشلف':['Hub Chlef 02 مكتب الشلف','hub Ténès 02 مكتب تـنـس'],
+'الأغواط':['Hub Laghouat 03 مكتب الأغواط'],
+'أم البواقي':['Hub Ain El Beida04مكتب عين البيضاء','Oum El Bouaghi04مكتب أم بواقي'],
+'باتنة':['Hub Batna 05 مكتب باتنة'],
+'بجاية':['Hub Bejaia 06 مكتب بجاية','Hub Akbou 06 مكتب أقبو'],
+'بسكرة':['Hub Biskra 07 مكتب بسكرة'],
+'بشار':['Hub Béchar 08 مكتب بشار'],
+'البليدة':['Hub Blida 09 مكتب البليدة','Hub Bougara 09 مكتب بوقرة','Hub Mouzaia 09 مكتب موزاية'],
+'البويرة':['Hub Bouira 10 مكتب البويرة'],
+'تمنراست':['Hub Tamanrasset 11 مكتب تامنراست'],
+'تبسة':['Hub Tebessa 12 مكتب تبسة'],
+'تلمسان':['Hub Tlemcen 13 مكتب تلمسان'],
+'تيارت':['Hub Tiaret 14 مكتب تيارت'],
+'تيزي وزو':['Hub Tizi Ouzou 15 مكتب تيزي وزو'],
+'الجزائر':['Hub El Jomhoria 16 مكتب الجمهورية','Hub Reghaia 16  مكتب رغاية','Hub Birtouta 16 مكتب بئرتوتة','Hub Ouled Fayet 16 مكتب أولاد فايت','Hub Birkhadem 16 مكتب بئرخادم','Hub Baraki 16 مكتب براقي','Hub Lidou 16  مكتب برج الكيفان'],
+'الجلفة':['Hub Djelfa 17 مكتب الجلفة'],
+'جيجل':['Hub Jijel 18 مكتب جيجل','Hub Taher 18 مكتب الطاهير'],
+'سطيف':['Hub Setif 19 مكتب سطيف','Hub El Eulma 19 مكتب العلمة'],
+'سعيدة':['Hub Saida 20 مكتب سعيدة'],
+'سكيكدة':['Hub Skikda 21 مكتب سكيكدة'],
+'سيدي بلعباس':['Hub Sidi Belabes 22 مكتب سيدي بلعباس'],
+'عنابة':['Hub Annaba 23 مكتب عنابة','Hub El Bouni 23 مكتب البوني'],
+'قالمة':['Hub Guelma 24 مكتب قالمة'],
+'قسنطينة':['Hub Belle vue 25 مكتب المنظر الجميل','Hub Constantine 25 مكتب قسنطينة','Hub Zouaghi 25 مكتب زواغي'],
+'المدية':['Hub Médéa 26 مكتب المدية'],
+'مستغانم':['Hub Mostaganem 27 مكتب مستغانم'],
+'المسيلة':["Hub M'sila 28 مكتب مسيلة",'Hub Bou Saada 28 مكتب بوسعادة'],
+'معسكر':['Hub Mascara 29 مكتب معسكر'],
+'ورقلة':['Hub Hassi Messaoud 30 مكتب حاسي مسعود','Hub Ouargla 30 مكتب ورقلة'],
+'وهران':['Hub Canastel 31 مكتب كاناستال','Hub El Morchid 31 مكتب المرشد','Hub Maraval 31 مكتب مارافال'],
+'البيض':['Hub El Bayadh 32 مكتب البيض'],
+'إيليزي':[],
+'برج بوعريريج':['Hub Bordj bouareridj 34 مكتب برج بوعريريج'],
+'بومرداس':['Hub Boumerdes 35 مكتب بومرداس','Hub Bordj menaiel 35 مكتب برج منايل'],
+'الطارف':['Hub El Tarf 36 مكتب الطارف'],
+'تندوف':[],
+'تيسمسيلت':['Hub Tissemsilt 38 مكتب تيسمسيلت'],
+'الوادي':['Hub El Oued 39 مكتب الوادي'],
+'خنشلة':['Hub Khenchela 40 مكتب خنشلة'],
+'سوق أهراس':['Hub Souk Ahras 41 مكتب سوق أهراس'],
+'تيبازة':['Hub Tipaza 42 مكتب تيبازة','Hub Kolea 42 مكتب القليعة'],
+'ميلة':['Hub Mila 43 مكتب ميلة'],
+'عين الدفلى':['Hub Ain Defla 44 مكتب عين الدفلة'],
+'النعامة':['Hub Naama 45 مكتب النعامة'],
+'عين تموشنت':['Hub Ain Temouchent 46 مكتب عبن تموشنت'],
+'غرداية':['Hub Ghardaia 47 مكتب غرداية'],
+'غليزان':['Hub Relizane 48 مكتب غيليزان'],
+'تيميمون':['Hub Timimoune 49 مكتب تيميمون'],
+'برج باجي مختار':[],
+'أولاد جلال':['Hub Ouled Djellal 51 مكتب أولاد جلال'],
+'بني عباس':['Hub Beni Abbes 52 مكتب بني عباس'],
+'عين صالح':['Hub In Salah 53 مكتب عين صالح'],
+'عين قزام':[],
+'تقرت':['Hub Touggourt 55 مكتب تقرت'],
+'جانت':[],
+'المغير':['Hub El Meghaier 57 مكتب المغير'],
+'المنيعة':[]
+};
+
+const SOUTHERN_WILAYAS = [
+'أدرار','بشار','تمنراست','ورقلة','البيض','إيليزي','تندوف',
+'تيميمون','برج باجي مختار','أولاد جلال','بني عباس','عين صالح',
+'عين قزام','تقرت','جانت','المغير','المنيعة'
+];
+
+const COLORS = [
+{ id: 'azraq', label: 'أزرق', hex: '#2d405a', textColor: '#fff', image: 'https://ik.imagekit.io/ATHAR/ATHAR/Qamis Color/1.JPEG' },
+{ id: 'ramadi_dark', label: 'رمادي داكن', hex: '#3e3f43', textColor: '#fff', image: 'https://ik.imagekit.io/ATHAR/ATHAR/Qamis Color/2.JPEG' },
+{ id: 'apple_green', label: 'أخضر تفاحي', hex: '#9fd4ce', textColor: '#333', image: 'https://ik.imagekit.io/ATHAR/ATHAR/Qamis Color/3.JPEG' },
+{ id: 'light_green', label: 'أخضر فاتح', hex: '#e4ede4', textColor: '#333', image: 'https://ik.imagekit.io/ATHAR/ATHAR/Qamis Color/4.JPEG' },
+{ id: 'blue_gray', label: 'أزرق رمادي', hex: '#97b5c7', textColor: '#333', image: 'https://ik.imagekit.io/ATHAR/ATHAR/Qamis Color/5.JPEG' },
+{ id: 'blue_jean', label: 'بلوجين', hex: '#7486ab', textColor: '#fff', image: 'https://ik.imagekit.io/ATHAR/ATHAR/Qamis Color/6.JPEG' },
+{ id: 'lead', label: 'رصاصي', hex: '#525253', textColor: '#fff', image: 'https://ik.imagekit.io/ATHAR/ATHAR/Qamis Color/7.JPEG' },
+{ id: 'bag_yellow', label: 'باج أصفر', hex: '#faf1d4', textColor: '#333', image: 'https://ik.imagekit.io/ATHAR/ATHAR/Qamis Color/8.JPEG' }
+];
+
+const PRODUCT_PRICE = 2900;
+
+const $ = s => document.querySelector(s);
+const $$ = s => document.querySelectorAll(s);
+
+let selectedColor = null;
+let selectedSize = null;
+
+const gallery = $('#colorGallery');
+const mainImage = $('#mainProductImage');
+const fullName = $('#fullName');
+const phone1 = $('#phone1');
+const phone2 = $('#phone2');
+const sizeCircles = document.querySelectorAll('.size-circle');
+const quantityInput = $('#quantity');
+const deliveryToggle = $('#deliveryToggle');
+const wilayaSelect = $('#wilayaSelect');
+const communeSelect = $('#communeSelect');
+const officeSelect = $('#officeSelect');
+const addressInput = $('#address');
+const communeGroup = $('#communeGroup');
+const officeGroup = $('#officeGroup');
+const addressGroup = $('#addressGroup');
+const totalPriceDisplay = $('#totalPriceDisplay');
+const productSubtotal = $('#productSubtotal');
+const deliverySubtotal = $('#deliverySubtotal');
+const discountRow = $('#discountRow');
+const discountText = $('#discountText');
+const submitBtn = $('#submitBtn');
+const submitStatus = $('#submitStatus');
+const toast = $('#toast');
+const form = $('#orderForm');
+const qtyMinus = $('#qty-minus');
+const qtyPlus = $('#qty-plus');
+const selectedColorInput = $('#selectedColor');
+const selectedSizeInput = $('#selectedSize');
+const sizeError = $('#sizeError');
+
+const state = { deliveryType: 'home' };
+
+function formatPriceHTML(amount) {
+  const formatted = amount.toLocaleString('en-US');
+  return `<span class="currency-symbol">دج</span> <span class="amount-number">${formatted}</span>`;
+}
+
+function showToast(msg, type = '') {
+  toast.textContent = msg;
+  toast.className = 'toast ' + type;
+  void toast.offsetWidth;
+  toast.classList.add('show');
+  clearTimeout(toast._hide);
+  toast._hide = setTimeout(() => toast.classList.remove('show'), 5000);
+}
+
+function setError(el, msg) {
+  const err = document.getElementById(el.id + 'Error');
+  if (err) err.textContent = msg;
+  el.classList.toggle('error', !!msg);
+}
+
+function clearErrors() {
+  $$('.form-control').forEach(el => {
+    el.classList.remove('error');
+    const err = document.getElementById(el.id + 'Error');
+    if (err) err.textContent = '';
+  });
+  sizeError.textContent = '';
+  submitStatus.textContent = '';
+  submitStatus.className = 'submit-status';
+}
+
+function getDeliveryFee(wilaya, type) {
+  const data = DELIVERY_FEES[wilaya];
+  if (!data) return 0;
+  return type === 'home' ? data.home : data.stopdesk;
+}
+function isSouthern(wilaya) { return SOUTHERN_WILAYAS.includes(wilaya); }
+function calcDeliveryFee(wilaya, type, qty) {
+  const base = getDeliveryFee(wilaya, type);
+  if (!wilaya || !base) return 0;
+  if (type === 'stopdesk' && qty >= 2) {
+    if (!isSouthern(wilaya)) return 0;
+    else return Math.max(0, base - 500);
+  }
+  return base;
+}
+function getTotalQuantity() {
+  const val = parseInt(quantityInput.value) || 1;
+  return Math.max(1, Math.min(30, val));
+}
+function calcTotal() {
+  const qty = getTotalQuantity();
+  const wilaya = wilayaSelect.value;
+  const type = state.deliveryType;
+  const productTotal = PRODUCT_PRICE * qty;
+  let deliveryTotal = 0, freeDelivery = false;
+  if (wilaya) {
+    deliveryTotal = calcDeliveryFee(wilaya, type, qty);
+    if (type === 'stopdesk' && qty >= 2 && wilaya && !isSouthern(wilaya)) freeDelivery = true;
+  }
+  return { productTotal, deliveryTotal, total: productTotal + deliveryTotal, freeDelivery };
+}
+function updateUI() {
+  const calc = calcTotal();
+  productSubtotal.innerHTML = formatPriceHTML(calc.productTotal);
+  deliverySubtotal.innerHTML = formatPriceHTML(calc.deliveryTotal);
+  totalPriceDisplay.innerHTML = formatPriceHTML(calc.total);
+  if (calc.freeDelivery) {
+    discountRow.classList.remove('hidden');
+    discountText.textContent = '🎯 التوصيل مجاني';
+  } else {
+    discountRow.classList.add('hidden');
+  }
+}
+
+function renderGallery() {
+  gallery.innerHTML = '';
+  COLORS.forEach(c => {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'color-gallery-btn';
+    btn.dataset.colorId = c.id;
+    btn.style.background = c.hex;
+    btn.style.borderColor = 'rgba(0,0,0,0.15)';
+    btn.style.color = c.textColor;
+    if (selectedColor === c.id) btn.classList.add('active-gallery');
+    const text = document.createElement('span');
+    text.className = 'gallery-text';
+    text.textContent = c.label;
+    btn.appendChild(text);
+    btn.addEventListener('click', () => {
+      mainImage.src = c.image;
+      selectedColor = c.id;
+      selectedColorInput.value = c.label;
+      document.querySelectorAll('.color-gallery-btn').forEach(b => {
+        b.classList.toggle('active-gallery', b.dataset.colorId === c.id);
+      });
+    });
+    gallery.appendChild(btn);
+  });
+}
+
+function populateWilayas() {
+  wilayaSelect.innerHTML = '<option value="">اختر الولاية</option>';
+  WILAYA_LIST.forEach(w => {
+    const opt = document.createElement('option');
+    opt.value = w;
+    opt.textContent = w;
+    wilayaSelect.appendChild(opt);
+  });
+}
+function populateCommunes(wilaya) {
+  communeSelect.innerHTML = '<option value="">اختر البلدية</option>';
+  if (!wilaya) { communeSelect.disabled = true; return; }
+  const list = COMMUNES_MAP[wilaya] || ['لا توجد بلديات'];
+  list.forEach(c => {
+    const opt = document.createElement('option');
+    opt.value = c;
+    opt.textContent = c;
+    communeSelect.appendChild(opt);
+  });
+  communeSelect.disabled = false;
+}
+function populateOffices(wilaya) {
+  officeSelect.innerHTML = '<option value="">اختر المكتب</option>';
+  if (!wilaya) { officeSelect.disabled = true; return; }
+  const list = OFFICES_MAP[wilaya] || ['لا توجد مكاتب'];
+  list.forEach(o => {
+    const opt = document.createElement('option');
+    opt.value = o;
+    opt.textContent = o;
+    officeSelect.appendChild(opt);
+  });
+  officeSelect.disabled = false;
+}
+
+function setDeliveryType(type) {
+  state.deliveryType = type;
+  document.getElementById('deliveryType').value = type;
+  $$('.delivery-toggle .toggle-btn').forEach(b => b.classList.toggle('active', b.dataset.value === type));
+  if (type === 'home') {
+    communeGroup.classList.remove('hidden');
+    officeGroup.classList.add('hidden');
+    addressGroup.classList.remove('hidden');
+    communeSelect.disabled = !wilayaSelect.value;
+    officeSelect.disabled = true;
+    addressInput.required = false;
+    officeSelect.value = '';
+  } else {
+    communeGroup.classList.add('hidden');
+    officeGroup.classList.remove('hidden');
+    addressGroup.classList.add('hidden');
+    communeSelect.disabled = true;
+    officeSelect.disabled = !wilayaSelect.value;
+    addressInput.required = false;
+    communeSelect.value = '';
+    addressInput.value = '';
+  }
+  if (wilayaSelect.value) {
+    if (type === 'home') populateCommunes(wilayaSelect.value);
+    else populateOffices(wilayaSelect.value);
+  }
+  updateUI();
+}
+
+deliveryToggle.addEventListener('click', e => {
+  const btn = e.target.closest('.toggle-btn');
+  if (!btn || btn.dataset.value === state.deliveryType) return;
+  setDeliveryType(btn.dataset.value);
+});
+wilayaSelect.addEventListener('change', () => {
+  const w = wilayaSelect.value;
+  if (state.deliveryType === 'home') {
+    populateCommunes(w);
+    communeSelect.disabled = !w;
+  } else {
+    populateOffices(w);
+    officeSelect.disabled = !w;
+  }
+  communeSelect.value = '';
+  officeSelect.value = '';
+  updateUI();
+});
+
+sizeCircles.forEach(circle => {
+  circle.addEventListener('click', () => {
+    sizeCircles.forEach(c => c.classList.remove('active-size'));
+    circle.classList.add('active-size');
+    selectedSize = circle.dataset.size;
+    selectedSizeInput.value = selectedSize;
+    sizeError.textContent = '';
+  });
+});
+
+function updateQuantity(val) {
+  let current = parseInt(quantityInput.value) || 1;
+  let newVal = current + val;
+  if (newVal < 1) newVal = 1;
+  if (newVal > 30) newVal = 30;
+  quantityInput.value = newVal;
+  updateUI();
+}
+qtyMinus.addEventListener('click', () => updateQuantity(-1));
+qtyPlus.addEventListener('click', () => updateQuantity(1));
+quantityInput.addEventListener('input', function() {
+  let val = parseInt(this.value) || 1;
+  if (val < 1) val = 1;
+  if (val > 30) val = 30;
+  this.value = val;
+  updateUI();
+});
+
+fullName.addEventListener('blur', () => {
+  if (!fullName.value.trim()) setError(fullName, 'الاسم الكامل مطلوب');
+  else setError(fullName, '');
+});
+phone1.addEventListener('blur', () => {
+  if (!phone1.value.trim()) setError(phone1, 'رقم الهاتف 1 مطلوب');
+  else setError(phone1, '');
+});
+
+function formatPhoneNumber(phone) {
+  let p = phone.replace(/\s/g, '');
+  if (p.startsWith('0')) p = p.substring(1);
+  if (!p.startsWith('+213')) p = '+213' + p;
+  return p;
+}
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  clearErrors();
+  let valid = true;
+  if (!fullName.value.trim()) { setError(fullName, 'الاسم الكامل مطلوب'); valid = false; }
+  if (!phone1.value.trim()) { setError(phone1, 'رقم الهاتف 1 مطلوب'); valid = false; }
+  if (!selectedSize) { sizeError.textContent = 'اختر المقاس'; valid = false; }
+  const qty = getTotalQuantity();
+  if (qty < 1) { setError(quantityInput, 'الكمية يجب أن تكون 1 على الأقل'); valid = false; }
+  if (!selectedColor) { showToast('الرجاء اختيار لون من معرض الألوان', 'error'); valid = false; }
+  if (!wilayaSelect.value) { setError(wilayaSelect, 'اختر الولاية'); valid = false; }
+  if (state.deliveryType === 'home') {
+    if (!communeSelect.value) { setError(communeSelect, 'اختر البلدية'); valid = false; }
+  } else {
+    if (!officeSelect.value) { setError(officeSelect, 'اختر المكتب'); valid = false; }
+  }
+  if (!valid) { showToast('الرجاء تعبئة جميع الحقول المطلوبة', 'error'); return; }
+
+  const size = selectedSize;
+  const color = selectedColorInput.value || 'لم يحدد';
+  const productDescription = `${color} | ${size}`;
+  const calc = calcTotal();
+  const formattedPhone1 = formatPhoneNumber(phone1.value.trim());
+  const formattedPhone2 = phone2.value.trim() ? formatPhoneNumber(phone2.value.trim()) : '';
+
+  const payload = {
+    NomComplet: fullName.value.trim(),
+    Telephone1: formattedPhone1,
+    Telephone2: formattedPhone2,
+    Produit: productDescription,
+    Quantite: qty,
+    Sku: '',
+    TypeStock: '',
+    Adresse: state.deliveryType === 'home' ? addressInput.value.trim() : '',
+    Wilaya: wilayaSelect.value,
+    Commune: state.deliveryType === 'home' ? communeSelect.value : '',
+    PrixTotal: calc.total,
+    Note: 'Yes',
+    ID: '',
+    Stopdesk: state.deliveryType === 'stopdesk' ? 'OUI' : '',
+    NomStopDesk: state.deliveryType === 'stopdesk' ? officeSelect.value : '',
+  };
+
+  submitBtn.disabled = true;
+  submitBtn.innerHTML = '<span class="spinner"></span> جاري الإرسال...';
+  submitStatus.textContent = 'جاري معالجة الطلبية...';
+  submitStatus.className = 'submit-status';
+
+  try {
+    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyvBkIrSetaiJj5QYumGTqSlb1lavcpjzfaArgFHkY-n3rUiIEUDkL9D7TkWGr6YVVR4A/exec';
+    const response = await fetch(SCRIPT_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+      body: JSON.stringify(payload),
+    });
+    const responseText = await response.text();
+    let result;
+    try { result = JSON.parse(responseText); } catch (parseErr) {
+      throw new Error('استجابة غير متوقعة من الخادم');
+    }
+    if (response.ok && result.status === 'success') {
+      // تتبع حدث شراء (Purchase) عبر ميتا بيكسل بعد نجاح الطلب
+      if (typeof fbq !== 'undefined') {
+        fbq('track', 'Purchase', {
+          value: calc.total,
+          currency: 'DZD'
+        });
+      }
+      showToast('✅ تم إرسال طلبك بنجاح! شكراً لك.', 'success');
+      submitStatus.textContent = '✅ تم إرسال الطلبية بنجاح! سنتصل بك قريباً.';
+      submitStatus.className = 'submit-status success';
+    } else {
+      const errorMsg = result.message || 'حدث خطأ غير معروف';
+      showToast('❌ ' + errorMsg, 'error');
+      submitStatus.textContent = '❌ ' + errorMsg;
+      submitStatus.className = 'submit-status error';
+    }
+  } catch (err) {
+    showToast('❌ حدث خطأ أثناء الإرسال. حاول مجدداً.', 'error');
+    submitStatus.textContent = '❌ حدث خطأ. تأكد من اتصالك بالإنترنت وحاول مجدداً.';
+    submitStatus.className = 'submit-status error';
+  } finally {
+    submitBtn.disabled = false;
+    submitBtn.innerHTML = '<span>تأكيد الطلبية</span>';
+  }
+});
+
+function init() {
+  populateWilayas();
+  renderGallery();
+  setDeliveryType('home');
+  quantityInput.value = 1;
+  mainImage.src = COLORS[0].image;
+  if (sizeCircles.length) {
+    sizeCircles[0].classList.add('active-size');
+    selectedSize = sizeCircles[0].dataset.size;
+    selectedSizeInput.value = selectedSize;
+  }
+  updateUI();
+}
+init();
+</script>
+</body>
+</html>
