@@ -1442,7 +1442,7 @@ form.addEventListener('submit', async (e) => {
 
   const size = selectedSize;
   const color = selectedColorInput.value || 'لم يحدد';
-  const productDescription = `${color} | ${size}`;
+  const productDescription = `${color} - ${size}`;
   const calc = calcTotal();
   const formattedPhone1 = formatPhoneNumber(phone1.value.trim());
   const formattedPhone2 = phone2.value.trim() ? formatPhoneNumber(phone2.value.trim()) : '';
