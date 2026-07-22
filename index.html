@@ -3,8 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ATHAR</title>
-<!-- Facebook Pixel Code -->
+<link rel="icon" type="image/png" href="favicon.png">
+<title>طلبية | أثر للألبسة الراقية</title>
+
+<!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -14,626 +16,1513 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '935552542883093');
+fbq('init', '3559372404231169');
 fbq('track', 'PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=935552542883093&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Facebook Pixel Code -->
-<link rel="icon" href="https://ik.imagekit.io/ATHAR/ATHAR/Favicon.png" type="image/png">
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=3559372404231169&ev=PageView&noscript=1"
+/>
+</noscript>
+<!-- End Meta Pixel Code -->
+
+<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet" />
 <style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Cairo', sans-serif; background: #fff; color: #000; }
-.container { max-width: 800px; margin: auto; padding: 15px; }
-
-.black-header { background: #000; padding: 12px 0; text-align: center; }
-.logo-box img { height: 48px; display: block; margin: 0 auto; }
-
-.product-title-main { text-align: center; font-size: 32px; font-weight: 700; margin: 20px 0 10px; }
-
-.slider-container { position: relative; max-width: 500px; margin: 0 auto 30px; direction: ltr; }
-.slider { display: flex; overflow: hidden; border-radius: 12px; }
-.slider img { width: 100%; flex-shrink: 0; object-fit: cover; }
-.slider-btn { position: absolute; top: 50%; transform: translateY(-50%); background: #000; color: #fff; border: none; width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 2; font-size: 22px; }
-.prev { right: 10px; }
-.next { left: 10px; }
-.thumbnails { display: flex; justify-content: center; gap: 8px; margin-top: 10px; direction: rtl; }
-.thumbnails img { width: 50px; height: 50px; object-fit: cover; border-radius: 8px; opacity: 0.6; cursor: pointer; border: 2px solid transparent; }
-.thumbnails img.active { opacity: 1; border-color: #000; }
-
-.price-wrapper { text-align: center; margin: 20px 0; }
-.price-img-container img { display: block; max-width: 250px; height: auto; margin: 0 auto; }
-
-.section-label { text-align: center; font-weight: 600; margin: 15px 0 5px; color: #000; }
-.sizes { display: flex; justify-content: center; gap: 12px; margin: 10px 0; }
-
-/* === تكبير الكتابة في أزرار المقاسات === */
-.size-btn {
-  width: 90px;
-  height: 90px;
-  background: linear-gradient(145deg, #e0e0e0, #c8c8c8);
-  border: 2px solid #bbb;
-  border-radius: 16px;
-  font-weight: 700;
-  font-size: 17px;
-  cursor: pointer;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Almarai', 'Cairo', sans-serif;
+  background: #f8f8f8;
+  color: #1a1a1a;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  transition: 0.2s;
-  gap: 4px;
+  padding: 1.5rem 1rem 2rem;
 }
-.size-btn.active { background: #000; color: #fff; }
-.size-label { font-size: 18px; font-weight: 700; opacity: 0.85; }
+.app-wrapper {
+  max-width: 820px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 28px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+  padding: 2rem 2.2rem 2.5rem;
+}
+@media (max-width: 520px) {
+  .app-wrapper { padding: 1.2rem 1rem 1.8rem; }
+}
 
-.quantity-section { text-align: center; margin: 15px 0; }
-.quantity-control { display: inline-flex; align-items: center; gap: 10px; }
-.quantity-btn { width: 40px; height: 40px; border-radius: 10px; background: #f0f0f0; border: none; font-size: 20px; cursor: pointer; }
-.quantity-input { width: 60px; text-align: center; font-size: 18px; border: 1px solid #ddd; border-radius: 10px; padding: 8px; }
-.product-description { margin: 30px 0; }
-.desc-title { background: #000; color: #fff; padding: 10px 15px; border-radius: 10px 10px 0 0; font-weight: 700; }
-.desc-body { border: 2px solid #000; border-top: none; padding: 15px; border-radius: 0 0 10px 10px; line-height: 1.8; }
+.brand-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.2rem;
+  border-bottom: 1px solid #ececec;
+  padding-bottom: 1.2rem;
+}
+.brand-logo {
+  max-height: 80px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.2s;
+}
+.brand-logo:hover { transform: scale(1.02); }
+.brand-text-image {
+  max-height: 30px;
+  width: auto;
+  margin-top: 12px;
+  object-fit: contain;
+}
 
-.order-card { background: #fff; border-radius: 16px; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); margin-top: 20px; }
-.order-title { text-align: center; font-size: 22px; margin-bottom: 20px; background: #000; color: #fff; border-radius: 14px; padding: 10px 28px; font-weight: 700; letter-spacing: 0.5px; display: inline-block; }
-.order-title-wrap { text-align: center; margin-bottom: 20px; }
-.form-group { margin-bottom: 20px; }
-.form-group label { display: block; font-weight: 600; margin-bottom: 5px; }
-.required { color: red; margin-left: 2px; }
-.form-group input, .form-group select { width: 100%; padding: 14px 15px; border: 1px solid #e0e0e0; border-radius: 10px; font-family: inherit; font-size: 16px; background: #fafafa; box-sizing: border-box; }
-.radio-group { display: flex; flex-direction: row; gap: 12px; }
-.radio-group label { display: flex; align-items: center; gap: 10px; font-weight: 600; background: #fff; border: 2px solid #e0e0e0; border-radius: 10px; padding: 12px 16px; cursor: pointer; transition: all 0.2s; flex: 1; justify-content: center; }
-.radio-group label.office-option { background: #f0f0f0; }
-.office-option { }
-input[type="radio"] { accent-color: #000; width: 20px; height: 20px; }
+.product-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0.8rem;
+  background: #fafafa;
+  border-radius: 20px;
+  padding: 1.2rem 1.5rem 1.5rem;
+}
+.product-name {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 0.8rem;
+  text-align: center;
+  letter-spacing: 0.5px;
+  font-family: 'Almarai', 'Cairo', sans-serif;
+}
+/* ===== صورة المنتج (مكبرة أكثر) ===== */
+.product-image-frame {
+  position: relative;
+  width: 100%;
+  max-width: 820px;
+  aspect-ratio: 1/1.1;
+  background: #f0f0f0;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.6rem;
+}
+.product-image-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.product-price-image {
+  max-width: 100%;
+  height: auto;
+  margin: 0.2rem 0 0.8rem;
+}
+.product-price-image img {
+  max-height: 60px;
+  width: auto;
+  display: block;
+}
+.color-prompt {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 0.4rem;
+  font-family: 'Almarai', 'Cairo', sans-serif;
+}
+.color-prompt .required-star {
+  color: #c0392b;
+  font-weight: 700;
+}
 
-.summary { background: #f9f9f9; border: 1px solid #e0e0e0; border-radius: 12px; padding: 28px 40px; margin: 20px auto; width: fit-content; }
-.summary-row { display: flex; justify-content: space-between; gap: 30px; margin-bottom: 10px; font-size: 18px; }
-.total-row { background: #000; color: #fff; padding: 18px 20px; border-radius: 8px; margin-top: 10px; font-weight: 700; font-size: 15px; display: flex; justify-content: space-between; gap: 20px; align-items: center; }
+/* ===== أيقونات الألوان (أكبر + حواف ناعمة + خط أكبر) ===== */
+.color-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  justify-content: center;
+  margin: 0.3rem 0 0.3rem;
+  width: 100%;
+}
+.color-gallery-btn {
+  padding: 0.55rem 1.3rem;
+  border: 2px solid rgba(0,0,0,0.12);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: 'Almarai', 'Cairo', sans-serif;
+  font-size: 0.98rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 80px;
+  min-height: 44px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  letter-spacing: 0.3px;
+}
+.color-gallery-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+.color-gallery-btn.active-gallery {
+  border-color: #111;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #111;
+  transform: scale(1.06);
+}
+.color-gallery-btn .gallery-text {
+  white-space: nowrap;
+}
 
-.submit-btn { width: 80%; display: block; margin: 0 auto; background: #1a7a1a; color: #fff; padding: 12px; border: none; border-radius: 30px; font-size: 18px; font-weight: bold; cursor: pointer; font-family: 'Cairo', sans-serif; }
-.submit-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+.size-quantity-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0.8rem 0 0.2rem;
+  width: 100%;
+}
+.size-group, .quantity-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+.size-group label, .quantity-group label {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #333;
+  letter-spacing: 0.5px;
+  font-family: 'Almarai', 'Cairo', sans-serif;
+}
+.size-circles {
+  display: flex;
+  gap: 0.6rem;
+}
+.size-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  background: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Almarai', 'Cairo', sans-serif;
+}
+.size-circle:hover {
+  border-color: #999;
+  transform: scale(1.05);
+}
+.size-circle.active-size {
+  border-color: #111;
+  background: #111;
+  color: #fff;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #111;
+}
 
-.hidden { display: none; }
+.quantity-control {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.quantity-control .qty-btn {
+  width: 44px;
+  height: 44px;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 12px;
+  background: #f5f5f5;
+  font-size: 1.3rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s;
+  color: #222;
+  flex-shrink: 0;
+  font-family: 'Almarai', 'Cairo', sans-serif;
+}
+.quantity-control .qty-btn:hover {
+  background: #e8e8e8;
+  border-color: #bbb;
+}
+.quantity-control .qty-btn:active {
+  transform: scale(0.92);
+}
+.quantity-control .qty-input {
+  width: 80px;
+  text-align: center;
+  padding: 0.5rem 0.2rem;
+  font-size: 1.1rem;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 12px;
+  font-family: 'Almarai', 'Cairo', sans-serif;
+  background: #fcfcfc;
+  direction: ltr;
+  font-weight: 600;
+}
+.quantity-control .qty-input:focus {
+  outline: none;
+  border-color: #111;
+  box-shadow: 0 0 0 3px rgba(0,0,0,0.04);
+}
+.quantity-control input[type="number"]::-webkit-outer-spin-button,
+.quantity-control input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.quantity-control input[type="number"] {
+  -moz-appearance: textfield;
+}
 
-.message-box { margin-top: 15px; padding: 12px 20px; border-radius: 10px; font-weight: 600; text-align: center; display: none; }
-.message-success { background: #e6ffed; color: #1b7a2c; border: 1px solid #b7ebc2; display: block; }
-.message-error { background: #ffeaea; color: #b71c1c; border: 1px solid #f5b7b7; display: block; }
+.size-error-msg {
+  font-size: 0.75rem;
+  color: #c0392b;
+  min-height: 1.1rem;
+  text-align: center;
+  width: 100%;
+  font-family: 'Almarai', 'Cairo', sans-serif;
+}
 
-.footer { text-align: center; margin-top: 40px; padding: 20px 0; }
-.footer .social-links { display: flex; justify-content: center; align-items: center; gap: 20px; margin-bottom: 30px; flex-wrap: wrap; }
+.form-notice {
+  text-align: right;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 0.3rem;
+  margin-top: 0.2rem;
+  background: transparent;
+  border: none;
+  padding: 0;
+  font-family: 'Almarai', 'Cairo', sans-serif;
+}
 
-.social-btn { display: inline-flex; align-items: center; justify-content: center; background: #000 !important; color: #fff; padding: 8px 16px; border-radius: 25px; font-size: 14px; font-weight: 600; text-decoration: none; gap: 7px; }
-.social-btn svg { width: 20px; height: 20px; fill: #fff; }
-.social-btn-wa { background: #000 !important; }
-.social-btn-fb { background: #000 !important; }
-
-.company-box { display: inline-block; background: #fecb08; padding: 10px 20px; border-radius: 10px; margin-top: 10px; }
-.company-box img { height: 36px; vertical-align: middle; }
-.company-text { font-size: 16px; font-weight: 600; margin-bottom: 5px; }
-
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 1.8rem;
+  margin-top: 0.4rem;
+}
 @media (max-width: 600px) {
-  .size-btn { width: 80px; height: 80px; font-size: 15px; }
-  .size-label { font-size: 16px; }
-  .summary-row { gap: 15px; font-size: 16px; }
+  .form-grid { grid-template-columns: 1fr; gap: 0.8rem; }
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.form-group.full-width {
+  grid-column: 1 / -1;
+}
+.form-group label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #222;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-family: 'Almarai', 'Cairo', sans-serif;
+}
+.form-group label .required {
+  color: #c0392b;
+  font-weight: 700;
+  font-size: 1rem;
+}
+.form-group label .hint {
+  font-weight: 400;
+  color: #999;
+  font-size: 0.7rem;
+}
+.form-control {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-family: 'Almarai', 'Cairo', sans-serif;
+  background: #fcfcfc;
+  transition: border 0.2s, box-shadow 0.2s;
+  color: #1a1a1a;
+  direction: rtl;
+}
+.form-control:focus {
+  outline: none;
+  border-color: #111;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.04);
+  background: #fff;
+}
+.form-control::placeholder {
+  color: #bbb;
+  font-size: 0.85rem;
+}
+select.form-control {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23333' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: left 0.9rem center;
+  padding-left: 2.4rem;
+  cursor: pointer;
+}
+.form-control:disabled {
+  background: #f0f0f0;
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+.form-control.error {
+  border-color: #c0392b;
+  background: #fff6f5;
+}
+.error-msg {
+  font-size: 0.75rem;
+  color: #c0392b;
+  min-height: 1.1rem;
+  font-family: 'Almarai', 'Cairo', sans-serif;
+}
+
+.note-box {
+  font-size: 0.85rem;
+  color: #fff;
+  background: #000;
+  padding: 0.4rem 0.9rem;
+  border-radius: 8px;
+  display: inline-block;
+  width: fit-content;
+  line-height: 1.6;
+  margin-top: -6px;
+  font-weight: 400;
+  border: none;
+  font-family: 'Almarai', 'Cairo', sans-serif;
+}
+
+.delivery-toggle {
+  display: flex;
+  gap: 0.8rem;
+  background: #f0f0f0;
+  border-radius: 14px;
+  padding: 0.3rem;
+  width: 100%;
+  max-width: 340px;
+}
+.delivery-toggle .toggle-btn {
+  flex: 1;
+  padding: 0.55rem 0.8rem;
+  border: none;
+  border-radius: 11px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  font-family: 'Almarai', 'Cairo', sans-serif;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  background: transparent;
+  color: #666;
+  text-align: center;
+}
+.delivery-toggle .toggle-btn.active {
+  background: #fff;
+  color: #111;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.price-summary {
+  margin-top: 1.6rem;
+  background: #f7f7f7;
+  border-radius: 16px;
+  padding: 1.2rem 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  border: 1px solid #ececec;
+}
+.price-summary .price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.95rem;
+  font-weight: 400;
+  font-family: 'Almarai', 'Cairo', sans-serif;
+}
+.price-summary .price-row.total {
+  font-size: 1.4rem;
+  font-weight: 800;
+  border-top: 1px dashed #ccc;
+  padding-top: 0.6rem;
+  margin-top: 0.2rem;
+}
+.price-summary .price-row .label {
+  color: #444;
+}
+.price-summary .price-row .value {
+  font-weight: 700;
+  direction: ltr;
+  unicode-bidi: embed;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.price-summary .price-row .value .currency-symbol {
+  font-weight: 700;
+  color: #111;
+}
+.price-summary .price-row .value .amount-number {
+  font-weight: 700;
+  color: #111;
+}
+#totalPriceDisplay {
+  background: #111;
+  color: #fff;
+  padding: 4px 18px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  direction: ltr;
+}
+#totalPriceDisplay .currency-symbol {
+  color: #fff;
+  font-weight: 800;
+}
+#totalPriceDisplay .amount-number {
+  color: #fff;
+  font-weight: 800;
+}
+
+.price-summary .price-row.discount {
+  color: #c0392b;
+  font-weight: 700;
+  font-size: 1rem;
+  background: #fff0ee;
+  padding: 0.3rem 0.8rem;
+  border-radius: 30px;
+  margin-top: 0.2rem;
+  border: 1px solid #ffcdcd;
+}
+.price-summary .price-row.discount .value {
+  color: #c0392b;
+  font-weight: 700;
+  direction: ltr;
+}
+
+.submit-row {
+  margin-top: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+.btn-submit {
+  width: 100%;
+  max-width: 380px;
+  padding: 0.9rem 1.8rem;
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: 60px;
+  font-size: 1.1rem;
+  font-weight: 800;
+  font-family: 'Almarai', 'Cairo', sans-serif;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+}
+.btn-submit:hover {
+  background: #2a2a2a;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
+}
+.btn-submit:active {
+  transform: scale(0.98);
+}
+.btn-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none !important;
+  box-shadow: none !important;
+}
+.btn-submit .spinner {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+.submit-status {
+  font-size: 0.85rem;
+  color: #666;
+  min-height: 1.4rem;
+  font-family: 'Almarai', 'Cairo', sans-serif;
+}
+.submit-status.success { color: #1e7e34; }
+.submit-status.error { color: #c0392b; }
+
+.contact-phones {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.2rem;
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #333;
+  font-family: 'Almarai', 'Cairo', sans-serif;
+}
+.contact-phones .phone-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: #f0f0f0;
+  padding: 0.3rem 0.9rem;
+  border-radius: 30px;
+  border: 1px solid #e0e0e0;
+}
+.contact-phones .phone-item svg {
+  width: 18px;
+  height: 18px;
+  fill: #25D366;
+}
+.contact-phones .phone-item a {
+  color: #111;
+  text-decoration: none;
+  direction: ltr;
+  font-weight: 700;
+  font-size: 0.9rem;
+  font-family: 'Almarai', 'Cairo', sans-serif;
+}
+.contact-phones .phone-item a:hover {
+  color: #25D366;
+}
+.contact-phones .phone-label {
+  font-weight: 400;
+  color: #888;
+  font-size: 0.75rem;
+}
+
+.footer-delivery {
+  margin-top: 2.8rem;
+  padding-top: 1.6rem;
+  border-top: 1px solid #ececec;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+.footer-delivery .partner-label {
+  font-size: 0.8rem;
+  color: #999;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  font-family: 'Almarai', 'Cairo', sans-serif;
+}
+.footer-delivery .partner-logo {
+  max-height: 48px;
+  width: auto;
+  object-fit: contain;
+  opacity: 0.9;
+  transition: opacity 0.2s;
+}
+.footer-delivery .partner-logo:hover {
+  opacity: 1;
+}
+.hidden {
+  display: none !important;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 1000;
+}
+.whatsapp-float a {
+  display: block;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #25D366;
+  color: #fff;
+  text-align: center;
+  line-height: 42px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+}
+.whatsapp-float a:hover {
+  transform: scale(1.08);
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.35);
+}
+.whatsapp-float a svg {
+  display: inline-block;
+  vertical-align: middle;
+  width: 22px;
+  height: 22px;
+  margin-top: -2px;
+}
+@media (max-width: 520px) {
+  .whatsapp-float a {
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+  }
+  .whatsapp-float a svg {
+    width: 20px;
+    height: 20px;
+  }
+  .contact-phones {
+    gap: 0.8rem;
+    font-size: 0.8rem;
+  }
+  .contact-phones .phone-item {
+    padding: 0.2rem 0.6rem;
+  }
+  .contact-phones .phone-item a {
+    font-size: 0.75rem;
+  }
+  .size-quantity-row {
+    gap: 1rem;
+  }
+  .size-circle {
+    width: 42px;
+    height: 42px;
+    font-size: 0.85rem;
+  }
+  .product-image-frame {
+    max-width: 100%;
+  }
+  .product-name {
+    font-size: 1.3rem;
+  }
+  .color-gallery-btn {
+    padding: 0.45rem 0.9rem;
+    font-size: 0.85rem;
+    min-width: 65px;
+    min-height: 40px;
+  }
+}
+
+.toast {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%) translateY(80px);
+  background: #1a1a1a;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border-radius: 60px;
+  font-size: 0.95rem;
+  font-weight: 400;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+  opacity: 0;
+  transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  pointer-events: none;
+  z-index: 999;
+  max-width: 90%;
+  text-align: center;
+  font-family: 'Almarai', 'Cairo', sans-serif;
+}
+.toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+.toast.success { background: #1e7e34; }
+.toast.error { background: #b03a2e; }
+
+@media (max-width: 440px) {
+  .product-image-frame { max-width: 100%; }
+  .price-summary .price-row.total { font-size: 1.1rem; }
+  .brand-text-image { max-height: 25px; }
+  .product-price-image img { max-height: 40px; }
+  .color-gallery-btn { padding: 0.4rem 0.7rem; font-size: 0.78rem; min-width: 60px; min-height: 38px; }
+  .quantity-control .qty-btn { width: 38px; height: 38px; font-size: 1.1rem; }
+  .quantity-control .qty-input { width: 65px; font-size: 1rem; }
+  #totalPriceDisplay { font-size: 1.1rem; padding: 2px 12px; }
+  .size-circle { width: 38px; height: 38px; font-size: 0.75rem; }
 }
 </style>
 </head>
 <body>
-
-<header class="black-header">
-<div class="logo-box">
-<img src="https://ik.imagekit.io/ATHAR/ATHAR/logooo.png" alt="ATHAR">
-</div>
+<div class="app-wrapper">
+<header class="brand-header">
+  <a href="#" class="logo-link">
+    <img src="https://ik.imagekit.io/ATHAR/ATHAR/public/logo.png?updatedAt=1783932474943" alt="شعار أثر" class="brand-logo" />
+  </a>
+  <img src="https://ik.imagekit.io/ATHAR/ATHAR/public/Textt.png" alt="أثر للألبسة الأنيقة" class="brand-text-image" />
 </header>
 
-<div class="product-title-main">لباس السباحة | أثر</div>
+<section class="product-section">
+  <div class="product-name">قميص رجالي أنيق</div>
+  <div class="product-image-frame">
+    <img id="mainProductImage" src="https://ik.imagekit.io/ATHAR/ATHAR/Qamis Color/1.JPEG" alt="قميص رجالي" loading="lazy" />
+  </div>
+  <div class="product-price-image">
+    <img src="https://ik.imagekit.io/ATHAR/ATHAR/Sum.png" alt="سعر القميص" loading="lazy" />
+  </div>
+  <div class="color-prompt">اختر لوناً من ألواننا الراقية<span class="required-star">*</span></div>
+  <div class="color-gallery" id="colorGallery"></div>
 
-<main class="container">
-<!-- سلايدر -->
-<div class="slider-container">
-<button class="slider-btn prev" onclick="slide(-1)">&#9654;</button>
-<button class="slider-btn next" onclick="slide(1)">&#9664;</button>
-<div class="slider" id="slider">
-<img src="https://ik.imagekit.io/ATHAR/ATHAR/Swiming/22-1.jpg" alt="1">
-<img src="https://ik.imagekit.io/ATHAR/ATHAR/Swiming/22-2.jpg" alt="2">
-<img src="https://ik.imagekit.io/ATHAR/ATHAR/Swiming/22-3.jpg" alt="3">
-<img src="https://ik.imagekit.io/ATHAR/ATHAR/Swiming/22-4.jpg" alt="4">
-<img src="https://ik.imagekit.io/ATHAR/ATHAR/Swiming/22-5.jpg" alt="5">
-<img src="https://ik.imagekit.io/ATHAR/ATHAR/Swiming/22-6.jpg" alt="6">
-<img src="https://ik.imagekit.io/ATHAR/ATHAR/Swiming/22-7.jpg" alt="7">
-</div>
-<div class="thumbnails" id="thumbnails"></div>
-</div>
+  <div class="size-quantity-row">
+    <div class="size-group">
+      <label>المقاس</label>
+      <div class="size-circles" id="sizeCircles">
+        <button type="button" class="size-circle" data-size="52">52</button>
+        <button type="button" class="size-circle" data-size="54">54</button>
+        <button type="button" class="size-circle" data-size="56">56</button>
+        <button type="button" class="size-circle" data-size="58">58</button>
+      </div>
+    </div>
+    <div class="quantity-group">
+      <label>الكمية</label>
+      <div class="quantity-control">
+        <button type="button" class="qty-btn" id="qty-minus">−</button>
+        <input type="number" id="quantity" class="qty-input" min="1" max="30" value="1" />
+        <button type="button" class="qty-btn" id="qty-plus">+</button>
+      </div>
+    </div>
+  </div>
+  <div class="size-error-msg" id="sizeError"></div>
+</section>
 
-<div class="price-wrapper">
-<div class="price-img-container">
-<img src="https://ik.imagekit.io/ATHAR/ATHAR/Somma.png?updatedAt=1784674887350" alt="السعر">
-</div>
-</div>
+<div class="form-notice">لتأكيد الطلب يرجى منكم ملء المعلومات.</div>
 
-<div class="section-label">يرجى اختيار المقاس المناسب</div>
-<div class="sizes">
-<button class="size-btn active" onclick="selectSize(this)"><span class="size-label">M-S</span></button>
-<button class="size-btn" onclick="selectSize(this)"><span class="size-label">L-XL</span></button>
-<button class="size-btn" onclick="selectSize(this)"><span class="size-label">XXL</span></button>
-</div>
+<form id="orderForm" novalidate>
+  <div class="form-grid">
+    <div class="form-group full-width">
+      <label for="fullName">الاسم الكامل <span class="required">*</span></label>
+      <input type="text" id="fullName" class="form-control" placeholder="مثال: رياض بن السعيد" required />
+      <div class="error-msg" id="fullNameError"></div>
+    </div>
 
-<div class="section-label">الكمية المطلوبة</div>
-<div class="quantity-section">
-<div class="quantity-control">
-<button class="quantity-btn" onclick="changeQuantity(-1)">-</button>
-<input type="number" class="quantity-input" id="quantity" value="1" min="1" onchange="updateSummary()">
-<button class="quantity-btn" onclick="changeQuantity(1)">+</button>
-</div>
-</div>
+    <div class="form-group">
+      <label for="phone1">رقم الهاتف 1 <span class="required">*</span></label>
+      <input type="tel" id="phone1" class="form-control" placeholder="00 00 00 00 00" required />
+      <div class="error-msg" id="phone1Error"></div>
+    </div>
 
-<div class="product-description">
-<div class="desc-title">وصف المنتج</div>
-<div class="desc-body">
-استمتع بالسباحة براحة وثقة مع لباس السباحة الساتر للعورة، المصمم خصيصًا للرجال الذي يجمع بين الاحتشام والأناقة.
-صُنع من قماش عالي الجودة مقاوم للماء والكلور، ليضمن لك متانة تدوم طويلًا مع الحفاظ على راحة استثنائية أثناء السباحة. يتميز بتصميم عصري يوفر تغطية كاملة للعورة، مع تفصيل عملي يمنحك حرية الحركة في البحر أو المسبح.
-</div>
-</div>
+    <div class="form-group">
+      <label for="phone2">رقم الهاتف 2 <span class="hint">(اختياري)</span></label>
+      <input type="tel" id="phone2" class="form-control" placeholder="00 00 00 00 00" />
+    </div>
 
-<div class="order-card">
-<div class="order-title-wrap"><div class="order-title">للطلب يرجى منكم ملء معلوماتكم</div></div>
-<form id="order-form" onsubmit="return false;">
-<div class="form-group">
-<label><span class="required">*</span>الاسم الكامل</label>
-<input type="text" id="fullName" required placeholder="مثال: رياض بن سعيد.">
-</div>
-<div class="form-group">
-<label><span class="required">*</span>رقم الهاتف الأساسي</label>
-<input type="tel" id="phone" required placeholder="00 00 00 00 00" pattern="\d{10}" maxlength="10" oninput="validatePhone()">
-<small id="phone-error" style="color:red; display:none;">يجب أن يتكون الرقم من 10 أرقام</small>
-</div>
-<div class="form-group">
-<label>رقم هاتف احتياطي (اختياري)</label>
-<input type="tel" id="altPhone" placeholder="00 00 00 00 00" maxlength="10">
-</div>
+    <div class="form-group full-width" style="margin-top: -6px;">
+      <div class="note-box">
+        📌 ملاحظة: لطلب أكثر من: نوع | لون | مقاس، راسلنا وسنتصل بكم.
+      </div>
+    </div>
 
-<div class="form-group">
-<label><span class="required">*</span>طريقة التوصيل</label>
-<div class="radio-group">
-<label class="office-option"><input type="radio" name="deliveryMethod" value="office" checked onchange="handleDeliveryChange()"> توصيل للمكتب</label>
-<label><input type="radio" name="deliveryMethod" value="home" onchange="handleDeliveryChange()"> توصيل للمنزل</label>
-</div>
-</div>
+    <div class="form-group full-width">
+      <label>نوع التوصيل <span class="required">*</span></label>
+      <div class="delivery-toggle" id="deliveryToggle">
+        <button type="button" class="toggle-btn active" data-value="home">إلى المنزل</button>
+        <button type="button" class="toggle-btn" data-value="stopdesk">إلى المكتب (Stop Desk)</button>
+      </div>
+      <div class="error-msg" id="deliveryError"></div>
+    </div>
 
-<div class="form-group" id="wilaya-group">
-<label><span class="required">*</span>الولاية</label>
-<select id="wilaya" required onchange="handleWilayaChange()">
-<option value="">اختر الولاية</option>
-</select>
-</div>
+    <div class="form-group">
+      <label for="wilayaSelect">الولاية <span class="required">*</span></label>
+      <select id="wilayaSelect" class="form-control" required>
+        <option value="">اختر الولاية</option>
+      </select>
+      <div class="error-msg" id="wilayaError"></div>
+    </div>
 
-<div class="form-group hidden" id="office-group">
-<label><span class="required">*</span>المكتب</label>
-<select id="office"></select>
-</div>
+    <div class="form-group" id="communeGroup">
+      <label for="communeSelect">البلدية <span class="required">*</span></label>
+      <select id="communeSelect" class="form-control" disabled>
+        <option value="">اختر البلدية</option>
+      </select>
+      <div class="error-msg" id="communeError"></div>
+    </div>
 
-<div class="form-group hidden" id="commune-group">
-<label><span class="required">*</span>البلدية</label>
-<select id="commune" onchange="handleCommuneChange()"></select>
-</div>
+    <div class="form-group hidden" id="officeGroup">
+      <label for="officeSelect">اسم المكتب <span class="required">*</span></label>
+      <select id="officeSelect" class="form-control" disabled>
+        <option value="">اختر المكتب</option>
+      </select>
+      <div class="error-msg" id="officeError"></div>
+    </div>
 
-<div class="form-group hidden" id="address-group">
-<label>العنوان الكامل (اختياري)</label>
-<input type="text" id="address" placeholder="شارع، حي، إلخ">
-</div>
+    <div class="form-group full-width address-field" id="addressGroup">
+      <label for="address">العنوان الكامل</label>
+      <input type="text" id="address" class="form-control" placeholder="الشارع، رقم العمارة، الطابق، ... (اختياري)" />
+      <div class="error-msg" id="addressError"></div>
+    </div>
 
-<div class="summary">
-<div class="summary-row"><span>سعر المنتج</span><span id="products-cost">0 دج</span></div>
-<div class="summary-row"><span>سعر التوصيل</span><span id="delivery-cost">0 دج</span></div>
-<div class="total-row"><span>السعر الإجمالي</span><span id="total-cost">0 دج</span></div>
-</div>
+    <input type="hidden" id="deliveryType" value="home" />
+    <input type="hidden" id="selectedColor" value="" />
+    <input type="hidden" id="selectedSize" value="" />
+  </div>
 
-<button type="button" class="submit-btn" id="submit-button" onclick="submitOrder()">تأكيد الطلب</button>
-<div id="messageBox" class="message-box"></div>
+  <div class="price-summary" id="priceSummary">
+    <div class="price-row">
+      <span class="label">المنتج</span>
+      <span class="value" id="productSubtotal">
+        <span class="currency-symbol">دج</span>
+        <span class="amount-number">2,900</span>
+      </span>
+    </div>
+    <div class="price-row">
+      <span class="label">التوصيل</span>
+      <span class="value" id="deliverySubtotal">
+        <span class="currency-symbol">دج</span>
+        <span class="amount-number">0</span>
+      </span>
+    </div>
+    <div class="price-row discount hidden" id="discountRow">
+      <span class="label">🎯 تخفيض</span>
+      <span class="value" id="discountText">التوصيل مجاني</span>
+    </div>
+    <div class="price-row total">
+      <span class="label">المجموع الكلي</span>
+      <span class="value" id="totalPriceDisplay">
+        <span class="currency-symbol">دج</span>
+        <span class="amount-number">2,900</span>
+      </span>
+    </div>
+  </div>
+
+  <div class="submit-row">
+    <button type="submit" class="btn-submit" id="submitBtn">
+      <span>تأكيد الطلبية</span>
+    </button>
+    <div class="submit-status" id="submitStatus"></div>
+    <div class="contact-phones">
+      <div class="phone-item">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <span class="phone-label">📞</span>
+        <a href="tel:+213659199296" dir="ltr">+213 659 19 92 96</a>
+      </div>
+      <div class="phone-item">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <span class="phone-label">📞</span>
+        <a href="tel:+213661218727" dir="ltr">+213 661 21 87 27</a>
+      </div>
+    </div>
+  </div>
 </form>
+
+  <footer class="footer-delivery">
+            <div class="partner-label">شركة التوصيل المعتمدة لمنتجاتنا</div>
+            <img src="https://ik.imagekit.io/ATHAR/ATHAR/public/Chriki.png" alt="شريك التوصيل" class="partner-logo" loading="lazy" 
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+            <span style="display:none; font-size:0.8rem; color:#999;">ZR Express</span>
+        </footer>
+    </div>
+
+<div class="whatsapp-float">
+  <a href="https://wa.me/213659199296" target="_blank" title="اتصل بنا عبر واتساب (الرقم الأول)">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+  <a href="https://wa.me/213661218727" target="_blank" title="اتصل بنا عبر واتساب (الرقم الثاني)">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
 </div>
 
-<div class="footer">
-<div class="social-links">
-<a href="https://wa.me/213661218727" target="_blank" class="social-btn social-btn-wa">
-<svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.33 4.95L2.05 22l5.32-1.41c1.46.8 3.1 1.22 4.77 1.22 5.46 0 9.91-4.45 9.91-9.91 0-5.45-4.45-9.9-9.91-9.9zm0 18.18c-1.46 0-2.9-.38-4.16-1.1l-.3-.18-3.16.83.84-3.08-.2-.31c-.78-1.24-1.2-2.68-1.2-4.14 0-4.39 3.57-7.96 7.96-7.96s7.96 3.57 7.96 7.96-3.57 7.96-7.96 7.96z"/><path d="M17.45 14.31c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.34.22-.63.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.34.45-.51.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.06 2.87 1.21 3.07.15.2 2.09 3.19 5.07 4.47.71.3 1.26.48 1.69.62.71.22 1.36.19 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z"/></svg>
-0661218727
-</a>
-<a href="https://wa.me/213659199296" target="_blank" class="social-btn social-btn-wa">
-<svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.33 4.95L2.05 22l5.32-1.41c1.46.8 3.1 1.22 4.77 1.22 5.46 0 9.91-4.45 9.91-9.91 0-5.45-4.45-9.9-9.91-9.9zm0 18.18c-1.46 0-2.9-.38-4.16-1.1l-.3-.18-3.16.83.84-3.08-.2-.31c-.78-1.24-1.2-2.68-1.2-4.14 0-4.39 3.57-7.96 7.96-7.96s7.96 3.57 7.96 7.96-3.57 7.96-7.96 7.96z"/><path d="M17.45 14.31c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.34.22-.63.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.34.45-.51.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.06 2.87 1.21 3.07.15.2 2.09 3.19 5.07 4.47.71.3 1.26.48 1.69.62.71.22 1.36.19 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z"/></svg>
-0659199296
-</a>
-<a href="https://www.facebook.com/profile.php?id=100080664548094" target="_blank" class="social-btn social-btn-fb">
-<svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-فيسبوك
-</a>
-</div>
-<div class="company-text">شركة التوصيل المعتمدة لمنتجاتنا</div>
-<div class="company-box">
-<img src="https://app.zrexpress.app/assets/logo_zr_express_black-xuq63WkE.svg" alt="ZR Express">
-</div>
-</div>
-</main>
+<div class="toast" id="toast"></div>
 
 <script>
-const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwxTuR7PG-N0eBklyULgs6PWsv50G-l-258pmPbxHEdELEabsPCudDOc74UH_voWaXB/exec';
+const DELIVERY_FEES = {
+'أدرار': { home: 1450, stopdesk: 1070 },
+'الشلف': { home: 850, stopdesk: 570 },
+'الأغواط': { home: 950, stopdesk: 670 },
+'أم البواقي': { home: 800, stopdesk: 570 },
+'باتنة': { home: 900, stopdesk: 570 },
+'بجاية': { home: 900, stopdesk: 570 },
+'بسكرة': { home: 950, stopdesk: 670 },
+'بشار': { home: 1200, stopdesk: 770 },
+'البليدة': { home: 700, stopdesk: 520 },
+'البويرة': { home: 750, stopdesk: 570 },
+'تمنراست': { home: 1650, stopdesk: 1270 },
+'تبسة': { home: 950, stopdesk: 570 },
+'تلمسان': { home: 900, stopdesk: 570 },
+'تيارت': { home: 850, stopdesk: 520 },
+'تيزي وزو': { home: 750, stopdesk: 570 },
+'الجزائر': { home: 600, stopdesk: 520 },
+'الجلفة': { home: 950, stopdesk: 670 },
+'جيجل': { home: 900, stopdesk: 570 },
+'سطيف': { home: 850, stopdesk: 570 },
+'سعيدة': { home: 900, stopdesk: 620 },
+'سكيكدة': { home: 900, stopdesk: 570 },
+'سيدي بلعباس': { home: 900, stopdesk: 570 },
+'عنابة': { home: 900, stopdesk: 570 },
+'قالمة': { home: 850, stopdesk: 570 },
+'قسنطينة': { home: 850, stopdesk: 570 },
+'المدية': { home: 850, stopdesk: 570 },
+'مستغانم': { home: 900, stopdesk: 570 },
+'المسيلة': { home: 900, stopdesk: 570 },
+'معسكر': { home: 900, stopdesk: 570 },
+'ورقلة': { home: 1000, stopdesk: 670 },
+'وهران': { home: 850, stopdesk: 570 },
+'البيض': { home: 1100, stopdesk: 670 },
+'إيليزي': { home: 0, stopdesk: 0 },
+'برج بوعريريج': { home: 850, stopdesk: 570 },
+'بومرداس': { home: 500, stopdesk: 420 },
+'الطارف': { home: 900, stopdesk: 570 },
+'تندوف': { home: 0, stopdesk: 0 },
+'تيسمسيلت': { home: 900, stopdesk: 520 },
+'الوادي': { home: 1000, stopdesk: 670 },
+'خنشلة': { home: 900, stopdesk: 500 },
+'سوق أهراس': { home: 900, stopdesk: 570 },
+'تيبازة': { home: 800, stopdesk: 570 },
+'ميلة': { home: 900, stopdesk: 570 },
+'عين الدفلى': { home: 900, stopdesk: 570 },
+'النعامة': { home: 1200, stopdesk: 670 },
+'عين تموشنت': { home: 900, stopdesk: 570 },
+'غرداية': { home: 950, stopdesk: 670 },
+'غليزان': { home: 900, stopdesk: 570 },
+'تيميمون': { home: 1450, stopdesk: 1070 },
+'برج باجي مختار': { home: 0, stopdesk: 0 },
+'أولاد جلال': { home: 950, stopdesk: 670 },
+'بني عباس': { home: 1450, stopdesk: 1070 },
+'عين صالح': { home: 1650, stopdesk: 1270 },
+'عين قزام': { home: 1650, stopdesk: 0 },
+'تقرت': { home: 950, stopdesk: 670 },
+'جانت': { home: 0, stopdesk: 0 },
+'المغير': { home: 950, stopdesk: 0 },
+'المنيعة': { home: 1100, stopdesk: 670 }
+};
 
-const communesData = [
-  [],
-  [["أدرار","Adrar"], ["أقبلي","Akabli"], ["أولف","Aoulef"], ["بودة","Bouda"], ["فنوغيل","Fenoughil"], ["إن زغمير","In Zghmir"], ["أولاد أحمد تيمي","Ouled Ahmed Timmi"], ["رقان","Reggane"], ["صالي","Sali"], ["السبعة","Sebaa"], ["تيمنطيط","Tamantit"], ["تمست","Tamest"], ["تيمقتن","Timekten"], ["تيت","Tit"], ["تسابيت","Tsabit"], ["زاوية كنتة","Zaouiet Kounta"]],
-  [["أبو الحسن","Abou El Hassane"], ["عين مران","Ain Merane"], ["بنايرية","Benairia"], ["بني بوعتاب","Beni Bouattab"], ["بني حواء","Beni Haoua"], ["بني راشد","Beni Rached"], ["بوقادير","Boukadir"], ["بوزغاية","Bouzeghaia"], ["بريرة","Breira"], ["الشطية","Chettia"], ["الشلف","Chlef"], ["الظهرة","Dahra"], ["الحجاج","El Hadjadj"], ["الكريمية","El Karimia"], ["المرسى","El Marsa"], ["حرشون","Harchoun"], ["الهرانفة","Herenfa"], ["الأبيض مجاجة","Labiod Medjadja"], ["مصدق","Moussadek"], ["وادي الفضة","Oued Fodda"], ["وادي قوسين","Oued Goussine"], ["وادي سلي","Oued Sly"], ["أولاد عباس","Ouled Abbes"], ["أولاد بن عبد القادر","Ouled Ben Abdelkader"], ["أولاد فارس","Ouled Fares"], ["أم الدروع","Oum Drou"], ["سنجاس","Sendjas"], ["سيدي عبد الرحمن","Sidi Abderrahmane"], ["سيدي عكاشة","Sidi Akkacha"], ["الصبحة","Sobha"], ["تاجنة","Tadjena"], ["تلعصة","Talassa"], ["تاوقريت","Taougrit"], ["تنس","Tenes"], ["الزبوجة","Zeboudja"]],
-  [["آفلو","Aflou"], ["عين ماضي","Ain Madhi"], ["عين سيدي علي","Ain Sidi Ali"], ["بن ناصر بن شهرة","Benacer Benchohra"], ["بريدة","Brida"], ["العسافية","El Assafia"], ["البيضاء","El Beidha"], ["الغيشة","El Ghicha"], ["حميدية","El Haouaita"], ["قلتة سيدي سعد","Gueltat Sidi Saad"], ["حاج مشري","Hadj Mechri"], ["حاسي الدلاعة","Hassi Delaa"], ["حاسي الرمل","Hassi R'mel"], ["الخنق","Kheneg"], ["قصر الحيران","Ksar El Hirane"], ["الأغواط","Laghouat"], ["وادي مزي","Oued M'zi"], ["وادي مرة","Oued Morra"], ["سبقاق","Sebgag"], ["سيدي بوزيد","Sidi Bouzid"], ["سيدي مخلوف","Sidi Makhlouf"], ["تاجموت","Tadjemout"], ["تاجرونة","Tadjrouna"], ["تاويالة","Taouiala"]],
-  [["عين ببوش","Ain Babouche"], ["عين بيضاء","Ain Beida"], ["عين الديس","Ain Diss"], ["عين فكرون","Ain Fekroun"], ["قيقبة","Ain Kercha"], ["عين مليلة","Ain M'lila"], ["عين الزيتون","Ain Zitoun"], ["بحيرة الشرقي","Behir Chergui"], ["بئر رقعة","Berriche"], ["بحيرة الطيور","Bir Chouhada"], ["الضلعة","Dhalaa"], ["العامرية","El Amiria"], ["بلعالا","El Belala"], ["الجازية","El Djazia"], ["رجاص","El Fedjoudj"], ["الحرملية","El Harmilia"], ["فكيرينة","Fkirina"], ["هنشير تومغني","Hanchir Toumghani"], ["قصر الصبيحي","Ksar Sbahi"], ["مسكانة","Meskiana"], ["وادي نيني","Oued Nini"], ["أولاد قاسم","Ouled Gacem"], ["أولاد حملة","Ouled Hamla"], ["أولاد زواي","Ouled Zouai"], ["أم البواقي","Oum El Bouaghi"], ["الرحية","Rahia"], ["سيقوس","Sigus"], ["سوق نعمان","Souk Naamane"], ["الزرقاء","Zorg"]],
-  [["عين جاسر","Ain Djasser"], ["عين التوتة","Ain Touta"], ["عين ياقوت","Ain Yagout"], ["أريس","Arris"], ["عزيل عبد القادر","Azil Abedelkader"], ["بريكة","Barika"], ["باتنة","Batna"], ["بني فضالة الحقانية","Beni Foudhala El Hakania"], ["بني ملول","Beni Mloul"], ["بيطام","Bitam"], ["الرميلة","Boulhilat"], ["بوماقر","Boumagueur"], ["بوزينة","Bouzina"], ["شمرة","Chemora"], ["الشير","Chir"], ["تقصري","Djerma"], ["جزار","Djezzar"], ["الحاسي","El Hassi"], ["المعذر","El Madher"], ["فسديس","Fesdis"], ["فم تطوب","Foum Toub"], ["غسيرة","Ghassira"], ["قصبة","Gosbat"], ["هيدوسة","Hidoussa"], ["إشمول","Ichemoul"], ["إنوغيسن","Inoughissen"], ["كيمل","Kimmel"], ["قصر بلزمة","Ksar Bellezma"], ["العربعاء","Larbaa"], ["لازرو","Lazrou"], ["لمسان","Lemsane"], ["مدوكال","M Doukal"], ["معافة","Maafa"], ["منعة","Menaa"], ["مروانة","Merouana"], ["نقاوس","N Gaous"], ["وادي الشعبة","Oued Chaaba"], ["وادي المرة","Oued El Ma"], ["وادي الطاقة","Oued Taga"], ["أولاد عمار","Ouled Ammar"], ["ثنية العابد","Ouled Aouf"], ["أولاد عوف","Ouled Aouf"], ["أولاد فضل","Ouled Fadel"], ["أولاد سليمان","Ouled Sellem"], ["أولاد سيدي سليمان","Ouled Si Slimane"], ["عيون العصافير","Ouyoun El Assafir"], ["رحبات","Rahbat"], ["رأس العيون","Ras El Aioun"], ["صفيان","Sefiane"], ["سقانة","Seggana"], ["سريانة","Seriana"], ["تكوت","T Kout"], ["تالخمت","Talkhamt"], ["تاكسنة","Taxlent"], ["تازولت","Tazoult"], ["ثنية العابد","Teniet El Abed"], ["تيقارغار","Tighanimine"], ["تيغرغار","Tigharghar"], ["تيلاتو","Tilatou"], ["تيمقاد","Timgad"], ["زانة البيضاء","Zanet El Beida"]],
-  [["آدكار","Adekar"], ["آيت رزين","Ait R'zine"], ["آيت إسماعيل","Ait-Smail"], ["أقبو","Akbou"], ["أقفادو","Akfadou"], ["أمالو","Amalou"], ["أميزور","Amizour"], ["أوقاس","Aokas"], ["برباشة","Barbacha"], ["بجاية","Bejaia"], ["بني جليل","Beni Djellil"], ["بني كسيلة","Beni K'sila"], ["بني مليكش","Beni-Mallikeche"], ["كسيلة","Benimaouche"], ["بودجليل","Boudjellil"], ["بوحمزة","Bouhamza"], ["بوخليفة","Boukhelifa"], ["شلاطة","Chellata"], ["شميني","Chemini"], ["درقينة","Darguina"], ["ذراع القائد","Dra El Caid"], ["القصر","El Kseur"], ["فناية المثائن","Fenaia Il Maten"], ["فراعون","Feraoun"], ["فريكات","Frikat"], ["إيجور","Idjeur"], ["إيفيغا","Ifigha"], ["إيغيل علي","Ighil-Ali"], ["إيغرام","Ighram"], ["كنديرة","Kendira"], ["خراطة","Kherrata"], ["لفلاي","Leflaye"], ["مسيسنة","M'cisna"], ["ملبو","Melbou"], ["وادي غير","Oued Ghir"], ["أوزلاقن","Ouzellaguen"], ["صدوق","Seddouk"], ["آيت عيسى","Sidi Ayad"], ["سيدي عيش","Sidi-Aich"], ["سماعون","Smaoun"], ["سوق الاثنين","Souk El Tenine"], ["سوق أوفلا","Souk Oufella"], ["تالة حمزة","Tala Hamza"], ["تامريجت","Tamridjet"], ["تاوريرت إيغيل","Taourit Ighil"], ["تازمالت","Tazmalt"], ["طيبان","Tibane"], ["تيشي","Tichy"], ["تيمزريت","Timezrit"], ["تينبدار","Tinebdar"], ["تيزي نبرار","Tizi-N'berber"], ["توجة","Toudja"]],
-  [["عين الناقة","Ain Naga"], ["عين زعطوط","Ain Zaatout"], ["عين الزاوية","Ain Zaouia"], ["البسباس","Besbes"], ["بسكرة","Biskra"], ["برج بن عزوز","Bordj Ben Azzouz"], ["بوشقرون","Bouchakroun"], ["براني","Branis"], ["شتمة","Chetma"], ["جمورة","Djemorah"], ["الفيض","El Feidh"], ["الغروس","El Ghrous"], ["الحاجب","El Hadjab"], ["الحاجب الشرقي","El Hadjeb"], ["الحوش","El Haouch"], ["الحايطية","El Haythem"], ["القنطرة","El Kantara"], ["لوطاية","El Outaya"], ["فغالة","Foughala"], ["قرطة","Gortta"], ["خنقة سيدي ناجي","Khenguet Sidi Nadji"], ["ليشانة","Lichana"], ["ليوة","Lioua"], ["مشونش","M'chouneche"], ["مليلي","M'lili"], ["مخادمة","Mekhadma"], ["المزيرعة","Meziraa"], ["أوماش","Oumache"], ["أورلال","Ourlal"], ["الشعيبية","Sidi Ali Ben Naceur"], ["سيدي عقبة","Sidi Okba"], ["طولقة","Tolga"], ["زريبة الوادي","Zeribet El Oued"]],
-  [["أبادلة","Abadla"], ["بشار","Bechar"], ["بشار الجديد","Bechar Djedid"], ["بني ونيف","Beni-Ounif"], ["بوكايس","Boukais"], ["عرق فراج","Erg-Ferradj"], ["كنادسة","Kenadsa"], ["لحمر","Lahmar"], ["مشرع هواري بومدين","Machraa-Houari-Boumediene"], ["مريجة","Meridja"], ["موقل","Mogheul"], ["تأغيت","Tabelbala"]],
-  [["عين الرمانة","Ain Romana"], ["بني مراد","Beni Mered"], ["بني تامو","Beni-Tamou"], ["بني خليل","Benkhelil"], ["البليدة","Blida"], ["بوعرفة","Bouarfa"], ["بوفاريك","Boufarik"], ["بوقرة","Bougara"], ["بوعينان","Bouinan"], ["الشبلي","Chebli"], ["الشفة","Chiffa"], ["الشريعة","Chrea"], ["جبابرة","Djebabra"], ["العفرون","El-Affroun"], ["قرواو","Guerrouaou"], ["حمام ملوان","Hammam Elouane"], ["الأربعاء","Larbaa"], ["مفتاح","Meftah"], ["موزاية","Mouzaia"], ["وادي الجر","Oued Djer"], ["وادي العلايق","Oued El Alleug"], ["أولاد سلامة","Ouled Slama"], ["أولاد يعيش","Ouled Yaich"], ["صوحان","Souhane"], ["الصومعة","Soumaa"]],
-  [["أغبالو","Aghbalou"], ["عين لالوي","Ain Laloui"], ["بئر رنة","Ain Turk"], ["عين البسام","Ain-Bessem"], ["آيت لعزيز","Ait Laaziz"], ["عمر","Aomar"], ["الأطمة","Ath Mansour"], ["بشلول","Bechloul"], ["بئر غبالو","Bir Ghbalou"], ["برج أخريص","Bordj Okhriss"], ["بودربالة","Bouderbala"], ["البويرة","Bouira"], ["بوكرام","Boukram"], ["الشرفاء","Chorfa"], ["الدشمية","Dechmia"], ["الديرة","Dirah"], ["الجباحية","Djebahia"], ["الجداول","Djouab"], ["العجيبة","El Adjiba"], ["الأصنام","El Asnam"], ["الديدان","El Asnam-Bouira"], ["الهاشمية","El Hachimia"], ["الحاكمية","El-Hakimia"], ["المقراني","El-Mokrani"], ["قرومة","Guerrouma"], ["حجرة الزرقاء","Hadjera Zerga"], ["حيزر","Haizer"], ["أهنيف","Hanif"], ["قادرية","Kadiria"], ["الأخضرية","Lakhdaria"], ["مشدالة","M Chedallah"], ["مسلم","M'Chedallah-Ext"], ["معالة","Maala"], ["المعمورة","Maamora"], ["مسدور","Mezdour"], ["وادي البردي","Oued El Berdi"], ["أولاد راشد","Ouled Rached"], ["روراوة","Raouraoua"], ["ريدان","Ridane"], ["الصحاريج","Saharidj"], ["سوق الخميس","Souk El Khemis"], ["سور الغزلان","Sour El Ghozlane"], ["تاغزوت","Taghzout"], ["تاقديتة","Taguedite"], ["الزبير","Z'barbar"]],
-  [["أبالسة","Abelsa"], ["عين أمقل","Ain Amguel"], ["أمغيد","Amguid"], ["إدلس","Idles"], ["إن مقل","In Mguel"], ["تافس","Tafassasset"], ["تاهيفت","Tahifet"], ["تمنراست","Tamanrasset"], ["تازروك","Tazrouk"], ["تيفلفل","Tifelatine"], ["تين تارابين","Tin Tarabine"]],
-  [["عين الزرقاء","Ain Zerga"], ["بجن","Bedjene"], ["بكارية","Bekkaria"], ["بئر الذهب","Bir Dheheb"], ["بئر مقدم","Bir Mokkadem"], ["بئر العاتر","Bir-El-Ater"], ["بوخضرة","Boukhadra"], ["بولحاف الدير","Boulhaf Dyr"], ["الشريعة","Cheria"], ["الكويف","El Kouif"], ["الماء الأبيض","El Malabiod"], ["المريج","El Meridj"], ["المزرعة","El Mezeraa"], ["العقلة","El Ogla"], ["العقلة المالحة","El Ogla El Malha"], ["العوينات","El-Aouinet"], ["الحويجبات","El-Houidjbet"], ["فركان","Ferkane"], ["قريقر","Guorriguer"], ["حمامات","Hammamet"], ["مرسوط","Morsott"], ["نقرين","Negrine"], ["الونزة","Ouenza"], ["أم علي","Oum Ali"], ["صفصاف الوسرى","Saf Saf El Ouesra"], ["سطح قنتيس","Stah Guentis"], ["تبسة","Tebessa"], ["ثليجان","Telidjen"]],
-  [["عين فتح","Ain Fetah"], ["عين غرابة","Ain Ghoraba"], ["عين الكبيرة","Ain Kebira"], ["عين يوسف","Ain Youcef"], ["عميور","Amieur"], ["الفلاوسن","Amieur"], ["عزائل","Azail"], ["باب العسة","Bab El Assa"], ["بني بحدل","Beni Bahdel"], ["بني بوسعيد","Beni Boussaid"], ["بني مستر","Beni Mester"], ["بني ورسوس","Beni Ouarsous"], ["بني بوسعيد","Beni Rached-T"], ["بني سميل","Beni Smiel"], ["بني سنوس","Beni Snous"], ["بن سكران","Bensekrane"], ["بوهليل","Bouhlou"], ["بوقيرات","Bouihi"], ["دار يعغموراسن","Dar Yaghmoracen"], ["جبالة","Djebala"], ["العريشة","El Aricha"], ["الفحول","El Fehoul"], ["الجامعة","El Gor"], ["فلاوسن","Fellaoucene"], ["الغزوات","Ghazaouet"], ["حمام بوغرارة","Hammam Boughrara"], ["حناية","Hennaya"], ["قنى","Hennaya-T"], ["حونين","Honnaine"], ["مسيردة الفواقة","M'sirda Fouaga"], ["مغنية","Maghnia"], ["منصورة","Mansourah"], ["مرسى بن مهيدي","Marsa Ben M'hidi"], ["ندرومة","Nedroma"], ["وادي لخضر","Oued Lakhdar"], ["أولاد بوجمعة","Ouled Boudjemaa-T"], ["أولاد ميمون","Ouled Mimoun"], ["أولاد رياح","Ouled Riyah"], ["الرمشي","Remchi"], ["الصبرة","Sabra"], ["تيارت","Sebaine"], ["سبعة شيوخ","Sebbaa Chioukh"], ["سبدو","Sebdou"], ["صهالة","Sehala"], ["سيدي عبدلي","Sidi Abdelli"], ["سيدي الجيلالي","Sidi Djillali"], ["سيدي مجاهد","Sidi Medjahed"], ["السواحلية","Souahlia"], ["السواهلية","Souahlia-T"], ["سوق الثلاثاء","Souk Tleta"], ["تيرني بني هديل","Terny Beni Hediel"], ["تلمسان","Tlemcen"], ["زناتة","Zenata"]],
-  [["عين بوشقيف","Ain Bouchekif"], ["عين الذهب","Ain Deheb"], ["عين دزاريت","Ain Dzarit"], ["سيدي بوشيف","Ain El Hadid"], ["عين كرمس","Ain Kermes"], ["بلعربي","Bel Arbi"], ["بن علال","Ben Allal-T"], ["بوقارة","Bougara"], ["شحيمة","Chehaima"], ["الدحموني","Dahmouni"], ["جبيلات رصفة","Djebilet Rosfa"], ["جيلالي بن عمار","Djillali Ben Amar"], ["فايجة","Faidja"], ["فريق","Fariig"], ["فرندة","Frenda"], ["قصر الشلالة","Ksar Chellala"], ["مادنة","Madna"], ["مهدية","Mahdia"], ["مشرع الصفا","Mechraa Safa"], ["مدروسة","Medroussa"], ["مغيلة","Meghila"], ["ملاكو","Mellakou"], ["الناذرة","Nadorah"], ["النعيمية","Naima"], ["وادي ليلي","Oued Lilli"], ["أولاد عيسى","Ouled Aissa-T"], ["راهوية","Rahouia"], ["الرحوية","Rahouia-T"], ["الرشايقة","Rechaiga"], ["السبت","Sebt"], ["سرغين","Serghine"], ["سيدي عبد الرحمن","Sidi Abderrahmane"], ["سيدي علي ملال","Sidi Ali Mellal"], ["سيدي بختي","Sidi Bakhti"], ["سيدي الحسني","Sidi Hosni"], ["سيدي الحسين","Sidi Hosni-T"], ["السوقر","Sougueur"], ["تاقدمت","Tagdempt"], ["تيارت","Tiaret"], ["تيداس","Tidda"], ["قصر القناط","Tousnina"], ["زمالة الأمير عبد القادر","Zmalet El Emir Abdelkader"]],
-  [["أبي يوسف","Abi-Youcef"], ["أغريب","Aghribs"], ["أقني قغران","Agouni-Gueghrane"], ["عين الحمام","Ain-El-Hammam"], ["عين الزاوية","Ain-Zaouia"], ["آيت عقواش","Ait Aggouacha"], ["فريحة الشرقية","Ait Bouadda"], ["آيت بومهدي","Ait Boumahdi"], ["آيت رزين الشرق","Ait Chafaa-E"], ["آيت الحسن","Ait El Hassen"], ["آيت خليل","Ait Khelili-N"], ["آيت خليلي","Ait Khellili"], ["أيت وقنون","Ait Ougnoun"], ["آيت يحيى موسى","Ait Yahia Moussa"], ["آيت عيسى ميمون","Ait-Aissa-Mimoun"], ["آيت شافع","Ait-Chafaa"], ["آيت محمود","Ait-Mahmoud"], ["آيت أومالو","Ait-Oumalou"], ["آيت تودموت","Ait-Toudert"], ["آيت يحيى","Ait-Yahia"], ["أقريب","Akbil"], ["أمقران","Amqran"], ["آسي يوسف","Assi-Youcef"], ["عزازقة","Azazga"], ["أزفون","Azeffoun"], ["بني زمنيز","Beni Zmenzer"], ["بني عيسى","Beni-Aissi"], ["بني دوالة","Beni-Douala"], ["بني يني","Beni-Yenni"], ["بني زكي","Beni-Zikki"], ["بوغني","Boghni"], ["بوجيمة","Boudjima"], ["بونوح","Bounouh"], ["بوزقان","Bouzeguene"], ["ذراع بن خدة","Draa-Ben-Khedda"], ["ذراع الميزان","Draa-El-Mizan"], ["فريحة","Freha"], ["إقجار","Iboudrarene"], ["إيفرهونن","Iferhounene"], ["إيفيغا","Ifigha-T"], ["إليلتان","Illilten"], ["إيلولا أمالو","Illoula Oumalou"], ["إيراجن","Irdjen"], ["الأربعاء نايث إيراثن","Larbaa Nath Irathen"], ["مكيرة","M'kira"], ["ماعاتقة","Maatkas"], ["مقلع","Makouda"], ["مكلع","Mechtras"], ["مقلع","Mekla"], ["واضية","Ouacif"], ["واقنون","Ouaguenoun"], ["سيدي نعمان","Sidi Namane"], ["سوما","Souama"], ["تيزي مكلال","Tadmait"], ["تالة عيلان","Tala Ailane"], ["تمقدة","Tamqaddet"], ["تيغزرت","Tigheghert"], ["تيقزيرت","Tigzirt"], ["تيمزريت","Timizart"], ["تيرميتين","Tirmitine"], ["تيزي نتلاتة","Tizi N'tleta"], ["تيزي ثلث","Tizi Telatha"], ["تيزي غنيف","Tizi-Gheniff"], ["تيزي وزو","Tizi-Ouzou"], ["تيزي راشد","Tizi-Rached"], ["يعكورن","Yakourene"], ["زكري","Zekri"]],
-  [["عين البنيان","Ain Benian"], ["عين طاية","Ain Taya"], ["باب الوادي","Bab El Oued"], ["باب الزوار","Bab Ezzouar"], ["بابا حسن","Baba Hassen"], ["باش جراح","Bachedjerah"], ["براقي","Baraki"], ["بن عكنون","Ben Aknoun"], ["بني مسوس","Beni Messous"], ["بئر مراد رايس","Bir Mourad Rais"], ["بئر توتة","Bir Touta"], ["بئر خادم","Birkhadem"], ["برتوتة","Birtouta"], ["بولوغين","Bologhine Ibnou Ziri"], ["برج البحري","Bordj El Bahri"], ["برج الكيفان","Bordj El Kiffan"], ["بوروبة","Bourouba"], ["بوزريعة","Bouzareah"], ["القصبة","Casbah"], ["الشراقة","Cheraga"], ["الدار البيضاء","Dar El Beida"], ["دالي إبراهيم","Dely Ibrahim"], ["جسر قسنطينة","Djasr Kasentina"], ["الدويرة","Douira"], ["درارية","Draria"], ["العاشور","El Achour"], ["الأبيار","El Biar"], ["الحراش","El Harrach"], ["المدنية","El Madania"], ["المقرية","El Magharia"], ["المرسى","El Marsa"], ["المرادية","El Mouradia"], ["الحمامات","Hammamet"], ["هراوة","Herraoua"], ["حسين داي","Hussein Dey"], ["حيدرة","Hydra"], ["الخرايسية","Khraissia"], ["القبة","Kouba"], ["الكاليتوس","Les Eucalyptus"], ["المعالمة","Maalma"], ["بلوزداد","Mohamed Belouzdad"], ["المحمدية","Mohammadia"], ["وادي قريش","Oued Koriche"], ["وادي السمار","Oued Smar"], ["أولاد شبل","Ouled Chebel"], ["أولاد فايت","Ouled Fayet"], ["الرحمانية","Rahmania"], ["الرايس حميدو","Rais Hamidou"], ["الرغاية","Reghaia"], ["الرويبة","Rouiba"], ["الجزائر الوسطى","Sehaoula"], ["سيدي محمد","Sidi M'hamed"], ["سيدي موسى","Sidi Moussa"], ["السويدانية","Souidania"], ["سطاوالي","Staoueli"], ["تسالة المرجة","Tessala El Merdja"], ["زرالدة","Zeralda"]],
-  [["عين الشهداء","Ain Chouhada"], ["عين الإبل","Ain El Ibel"], ["عين فقه","Ain Fekka"], ["عين المعبد","Ain Maabed"], ["عين وسارة","Ain Oussera"], ["عمورة","Amourah"], ["بنهار","Benhar"], ["البيرين","Birine"], ["زاوية الباقل","Bouira Lahdab"], ["الشارف","Charef"], ["دار الشيوخ","Dar Chioukh"], ["الجلفة","Djelfa"], ["الدويس","Douis"], ["الزبيرية","El Abiodh"], ["الغزالة","El Guedid-D"], ["الإدريسية","El Idrissia"], ["الخميس","El Khemis"], ["الخميسية","El Khemissia"], ["فيض البطمة","Faidh El Botma"], ["القرنيني","Guernini"], ["قطارة","Guettara"], ["حد الصحاري","Had Sahary"], ["حاسي بحبح","Hassi Bahbah"], ["حاسي العش","Hassi El Euch"], ["حاسي فدول","Hassi Fedoul"], ["المليليحة","M'liliha"], ["مسعد","Messaad"], ["مجبارة","Moudjebara"], ["أم العظام","Oum Laadham"], ["سيدي مقران","Sed Rahal"], ["سلمانة","Selmana"], ["سيدي بايزيد","Sidi Baizid"], ["سيدي لعجال","Sidi Laadjel"], ["تعظميت","Taadmit"], ["الزعفران","Zaafrane"], ["زكار","Zaccar"]],
-  [["قنار","Bordj T'har"], ["بن ياجيس","Boudria Beniyadjis"], ["برج الطهر","Bouraoui Belhadef"], ["بوراوي بلهادف","Bouraoui Belhadef-J"], ["الشحنة","Chahna"], ["الشقفة","Chekfa"], ["الجمعة بني حبيبي","Djemaa Beni Habibi"], ["جيجل","Djimla"], ["العنصر","El Ancer"], ["العوانة","El Aouana"], ["القنار نشفي","El Kennar Nouchfi"], ["الميلية","El Milia"], ["الأمير عبد القادر","Emir Abdelkader"], ["إيراقن سويسي","Erraguene Souissi"], ["غبالة","Ghebala"], ["جيجل (مركز)","Jijel"], ["قاوس","Kaous"], ["خيري وادي عجول","Khiri Oued Adjoul"], ["وجانة","Oudjana"], ["أولاد رباح","Ouled Rabah"], ["أولاد يحيى خدروش","Ouled Yahia Khadrouch"], ["سلمى بن زيادة","Selma Benziada"], ["السطارة","Settara"], ["سيدي عبد العزيز","Sidi Abdelaziz"], ["سيدي معروف","Sidi Marouf"], ["الطاهير","Taher"], ["تاكسنة","Texenna"], ["زيامة منصورية","Ziama Mansouriah"]],
-  [["عين عباسة","Ain Abessa"], ["عين أرنات","Ain Arnat"], ["عين أزال","Ain Azel"], ["عين الكبيرة","Ain El Kebira"], ["عين لحجر","Ain Lahdjar"], ["عين أولمان","Ain Oulmene"], ["عين لقراج","Ain-Legradj"], ["عين الروى","Ain-Roua"], ["عين السبت","Ain-Sebt"], ["آيت نوال مزادة","Ait Naoual Mezada"], ["آيت تيزي","Ait-Tizi"], ["أمقل","Amoucha"], ["بابور","Babor"], ["بازر سكرة","Bazer-Sakra"], ["بيضاء برج","Beidha Bordj"], ["الولجة","Bellaa"], ["البلاعة","Bellaa-S"], ["بني شبانة","Beni Chebana"], ["بني فودة","Beni Fouda"], ["بني ورتيلان","Beni Ourtilane"], ["بني حسين","Beni Oussine"], ["بني عزيز","Beni-Aziz"], ["بني عزيز","Beni-Mouhli"], ["بئر حدادة","Bir Haddada"], ["بئر العرش","Bir-El-Arch"], ["بوعنداس","Bouandas"], ["بوقاعة","Bougaa"], ["بوسلام","Bousselam"], ["بوطالب","Boutaleb"], ["بوظهير","Boutaleb-S"], ["الدهامشة","Dehamcha"], ["جميلة","Djemila"], ["ذراع قبيلة","Draa-Kebila"], ["العلمة","El Eulma"], ["حامة","El Hammam"], ["العريا","El Ouricia"], ["قلال","Guellal"], ["قلتة زرقاء","Guelta Zerka"], ["قنزات","Guenzet"], ["قجال","Guidjel"], ["حمام السخنة","Hamam Soukhna"], ["صالح باي نفيس","Hami"], ["حمام قرقور","Hammam Guergour"], ["حربيل","Harbil"], ["قصر الأبطال","Kasr El Abtal"], ["ماعاوية","Maaouia"], ["المزيرعة","Meziraa-S"], ["المعاضيد","Mezloug"], ["التلة","N'gaous-S"], ["وادي البارد","Oued El Bared"], ["أولاد عدوان","Ouled Addouane"], ["أولاد صابر","Ouled Sabor"], ["صالح باي","Salah Bey"], ["سرج الغول","Serdj-El-Ghoul"], ["سطيف","Setif"], ["تاشودة","Tachouda"], ["غلاسة","Tala-Ifacene"], ["الطاية","Taya"], ["التلة","Tella"], ["تيزي نبشار","Tizi N'bechar"]],
-  [["عين الحجر","Ain El Hadjar"], ["عين السخونة","Ain Sekhouna"], ["عين سلطان","Ain Soltane"], ["دوي ثابت","Doui Thabet"], ["الحساسنة","El Hassasna"], ["حونات","Hounet"], ["المعمورة","Maamora"], ["مولاي العربي","Moulay Larbi"], ["أولاد إبراهيم","Ouled Brahim"], ["أولاد خالد","Ouled Khaled"], ["سعيدة","Saida"], ["سيدي أحمد","Sidi Ahmed"], ["سيدي عمار","Sidi Amar"], ["سيدي بوبكر","Sidi Boubekeur"], ["تيرسين","Tircine"], ["يوب","Youb"]],
-  [["عين بوزيان","Ain Bouziane"], ["عين شرشار","Ain Charchar"], ["عين قشرة","Ain Kechra"], ["سيدي علي الشارف","Ain Zouit"], ["عزابة","Azzaba"], ["بكوش لخضر","Bekkouche Lakhdar"], ["بن عزوز","Ben Azzouz"], ["بني بشير","Beni Bechir"], ["بني ولبان","Beni Oulbane"], ["بني زيد","Beni Zid"], ["بين الويدان","Bin El Ouiden"], ["بوشطاطة","Bouchetata"], ["بوخالفة","Boukhalf"], ["الشرائع","Cheraia"], ["القل","Collo"], ["الحروش","El Arrouch"], ["الغدير","El Ghedir"], ["الحدائق","El Hadaiek"], ["المرسى","El Marsa"], ["أمجاز الدشيش","Emjez Edchich"], ["السبت","Es Sebt"], ["فلفلة","Filfila"], ["حمادي كروما","Hammadi Krouma"], ["كنواع","Kanoua"], ["الكراكرة","Kerkara"], ["خناق مايون","Khenag Maoune"], ["وادي الزهور","Oued Zhour"], ["الولجة بوبالوط","Ouldja Boulbalout"], ["أولاد عطية","Ouled Attia"], ["أولاد حبابة","Ouled Habbaba"], ["أم الطوب","Oum Toub"], ["رمضان جمال","Ramdane Djamel"], ["صالح بوشعور","Salah Bouchaour"], ["سيدي مزغيش","Sidi Mezghiche"], ["سكيكدة","Skikda"], ["تمالوس","Tamalous"], ["زردازة","Zerdezas"], ["زيتونة","Zitouna"]],
-  [["عين البرد","Ain El Berd"], ["عين قادة","Ain Kada"], ["عين ثريد","Ain Thrid"], ["عين تيندامين","Ain Tindamine"], ["عين عدن","Ain- Adden"], ["عمارنة","Amarnas"], ["بدرابين المقراني","Bedrabine El Mokrani"], ["بلعربي","Belarbi"], ["بن باديس","Ben Badis"], ["بن أشيبة شليا","Benachiba Chelia"], ["بئر الحمام","Bir El Hammam"], ["بودجبعة البرج","Boudjebaa El Bordj"], ["بوخنيفيس","Boukhanefis"], ["شيطوان بليلة","Chetouane Belaila"], ["ضاية","Dhaya"], ["الحصايبة","El Hacaiba"], ["حاسي الدحو","Hassi Dahou"], ["حاسي زهانة","Hassi Zahana"], ["لمطار","Lamtar"], ["مسيد","M'cid"], ["مكيدرة","Makedra"], ["مرحوم","Marhoum"], ["مرين","Merine"], ["مزاورو","Mezaourou"], ["بودينة","Mezaourou-S"], ["مصطفى بن إبراهيم","Mostefa Ben Brahim"], ["وادي السبع","Oued Sebaa"], ["وادي سفيون","Oued Sefioun"], ["وادي تاورير","Oued Taourira"], ["رأس الماء","Ras El Ma"], ["رأس الماء","Ras El Ma-S"], ["رجم دموش","Redjem Demouche"], ["السهالة الثاورة","Sehala Thaoura"], ["سفيزف","Sfisef"], ["سيدي علي بن يوب","Sidi Ali Benyoub"], ["سيدي علي بوسيدي","Sidi Ali Boussidi"], ["سيدي بلعباس","Sidi Bel-Abbes"], ["سيدي إبراهيم","Sidi Brahim"], ["سيدي شعيب","Sidi Chaib"], ["سيدي داحو الزائر","Sidi Dahou Zairs"], ["سيدي حمادوش","Sidi Hamadouche"], ["سيدي خالد","Sidi Khaled"], ["سيدي لحسن","Sidi Lahcene"], ["سيدي يعقوب","Sidi Yacoub"], ["طابية","Tabia"], ["تاوسة","Taousseret"], ["تغاليمات","Teghalimet"], ["تلاغ","Telagh"], ["تنيرة","Tenira"], ["تسالة","Tessala"], ["تيلموني","Tilmouni"], ["زروالة","Zerouala"]],
-  [["عين البردة","Ain El Berda"], ["عنابة","Annaba"], ["برحال","Berrahal"], ["شطايبي","Chetaibi"], ["الشرفة","Cheurfa"], ["البوني","El Bouni"], ["العلمة","El Eulma"], ["الحجار","El Hadjar"], ["وادي العنب","Oued El Aneb"], ["سرايدي","Seraidi"], ["سيدي عمار","Sidi Amar"], ["التريعات","Treat"]],
-  [["عين بن بيضاء","Ain Ben Beida"], ["عين العربي","Ain Larbi"], ["عين مخلوف","Ain Makhlouf"], ["عين رقادة","Ain Regada"], ["عين صندل","Ain Sandel"], ["بلخير","Belkheir"], ["بن جراح","Bendjarah"], ["بني مزلين","Beni Mezline"], ["برج صباط","Bordj Sabath"], ["بوحشانة","Bou Hachana"], ["بوحمدان","Bou Hamdane"], ["بوعطي محمود","Bouati Mahmoud"], ["بوشقوف","Bouchegouf"], ["بومهرة أحمد","Boumahra Ahmed"], ["دهوارة","Dahouara"], ["جبالة خميسي","Djeballah Khemissi"], ["الفجوج","El Fedjoudj"], ["قلعة بوصبع","Guelaat Bou Sbaa"], ["قالمة","Guelma"], ["حمام دباغ","Hammam Debagh"], ["حمام النبائل","Hammam N'bail"], ["هيليوبوليس","Heliopolis"], ["حواري بومدين","Houari Boumedienne"], ["خزارة","Khezaras"], ["مجاز عمار","Medjez Amar"], ["مجاز الصفاء","Medjez Sfa"], ["النشماية","Nechmaya"], ["وادي الشحم","Oued Cheham"], ["وادي فراغة","Oued Ferragha"], ["وادي الزناتي","Oued Zenati"], ["رأس العقبة","Ras El Agba"], ["روكنية","Roknia"], ["سلاوة عنونة","Sellaoua Announa"], ["تاملوكة","Tamlouka"]],
-  [["عين عبيد","Ain Abid"], ["عين السمارة","Ain Smara"], ["ابن باديس","Ben Badis"], ["بني حميدان","Beni Hamidane"], ["قسنطينة","Constantine"], ["ديدوش مراد","Didouche Mourad"], ["الخروب","El Khroub"], ["حامة بوزيان","Hamma Bouziane"], ["ابن زياد","Ibn Ziad"], ["مسعود بوجريو","Messaoud Boudjeriou"], ["أولاد رحمون","Ouled Rahmoun"], ["زيغود يوسف","Zighoud Youcef"]],
-  [["عين بوسيف","Ain Boucif"], ["عين أوقسير","Ain Ouksir"], ["العيساوية","Aissaouia"], ["عزيز","Aziz"], ["باعطة","Baata"], ["بن شيكاو","Ben Chicao"], ["بني سليمان","Beni Slimane"], ["البرواغية","Berrouaghia"], ["بئر بن عابد","Bir Ben Laabed"], ["بوغار","Boghar"], ["بوعيش","Bouaiche"], ["بوشراحيل","Bouchrahil"], ["بوغزول","Boughzoul"], ["شهبونية","Chabounia"], ["شلالة العذاورة","Chelalet El Adhaoura"], ["شنيغل","Cheniguel"], ["درق","Derrag"], ["مزارة","Djouab-M"], ["ذراع السمار","Draa Esmar"], ["ذراع السمار","Draa Esmar-M"], ["القلب الكبير","El Guelbelkebir"], ["الحمدانية","El Hamdania"], ["الحوادن","El Haoudane"], ["العمرية","El Omaria"], ["الوينات","El Ouinet"], ["حناشة","Hannacha"], ["كف الأخضر","Kef Lakhdar"], ["خمس جوامع","Khams Djouamaa"], ["قصر البخاري","Ksar El Boukhari"], ["مفاتحة","M'fatha"], ["المغراوة","Maghraoua"], ["المدية","Medea"], ["مجبار","Medjebar"], ["وزرة","Mezerana"], ["وامري","Ouamri"], ["وادي الشرفاء","Oued Harbil"], ["أولاد عنتر","Ouled Antar"], ["أولاد بوعشرة","Ouled Bouachra"], ["أولاد إبراهيم","Ouled Brahim-M"], ["أولاد ديد","Ouled Deid"], ["أولاد معرف","Ouled Emaaraf"], ["أولاد هلال","Ouled Hellal"], ["أولاد هلال","Ouled Hellal-M"], ["أولاد صالح","Ouled Saleh"], ["أم الجليل","Oum El Djellil"], ["أوزرة","Ouzera"], ["ربعية","Rebaia"], ["سانق","Saneg"], ["سيغوال","Seghouane"], ["سيدي عبد الله","Si Mahdjoub"], ["سيدي دامد","Sidi Demed"], ["سيدي دامد","Sidi Demed-M"], ["سيدي نعمان","Sidi Naamane"], ["سيدي ربيع","Sidi Rabie"], ["سيدي ربيع","Sidi Rabie-M"], ["سيدي زيان","Sidi Ziane"], ["السواقي","Souagui"], ["تابلاط","Tablat"], ["تفراوت","Tafraout"], ["تمسقيدة","Tamesguida"], ["تيزي مهدي","Tizi Mahdi"], ["تيزي أوقلي","Tizi Oughlali"], ["ثلاثة الدوائر","Tletat Ed Douair"], ["زبيرية","Zoubiria"]],
-  [["عشعاشة","Achaacha"], ["عين بن خديجة","Ain Ben Khedija"], ["عين بودينار","Ain-Boudinar"], ["عين نويسي","Ain-Nouissy"], ["عين سيدي شريف","Ain-Sidi Cherif"], ["عين تدلس","Ain-Tedles"], ["بلعصل بوزقزة","Benabdelmalek Ramdane"], ["بوقيرات","Bouguirat"], ["فرناقة","Fornaka"], ["حجاج","Hadjadj"], ["حاسي ماماش","Hassi Mameche"], ["حاسي مامش توفيق","Hassi Mameche-M"], ["الطواهرية","Hassiane"], ["خضرة","Khadra"], ["خير الدين","Kheir-Eddine"], ["منصورة","Mansourah"], ["مازاغران","Mazagran"], ["مسرى","Mesra"], ["مستغانم","Mostaganem"], ["نقمارية","Nekmaria"], ["وادي الخير","Oued El Kheir"], ["أولاد بوقالم","Ouled Boughalem"], ["أولاد معلة","Ouled-Maalah"], ["صفصاف","Safsaf"], ["صيادة","Sayada"], ["سيدي علي","Sidi Ali"], ["سيدي بلعطار","Sidi Belaattar"], ["سيدي لخضر","Sidi-Lakhdar"], ["السيرات","Sirat"], ["صور","Sour"], ["تازقايت","Tazgait"], ["تواهرية","Touahria"]],
-  [["عين الحجل","Ain El Hadjel"], ["عين الملح","Ain El Melh"], ["عين فارس","Ain Fares"], ["عين الخضراء","Ain Khadra"], ["عين الريش","Ain Rich"], ["بلعيبة","Belaiba"], ["بن سرور","Ben Srour"], ["بن سرور","Ben Srour-M"], ["بني يلمان","Beni Ilmane"], ["بنزوه","Benzouh"], ["برهوم","Berhoum"], ["أولاد غانم","Bir El Hamam"], ["بئر فودة","Bir Foda"], ["بوسعادة","Bou Saada"], ["بوطي السياح","Bouti Sayeh"], ["شلال","Chellal"], ["الدهاهنة","Dehahna"], ["جبل مساعد","Djebel Messaad"], ["الهامل","El Hamel"], ["الحواميد","El Houamed"], ["حمام الضلعة","Hammam Dalaa"], ["الكيمل","Khettouti"], ["خبانة","Khoubana"], ["المعاريف","M'cif"], ["المسيلة","M'sila"], ["مطارفة","M'tarfa"], ["معاضيد","Maadid"], ["مقرة","Magra"], ["المحاميد","Mahamid"], ["مجدل","Medjedel"], ["محمد بوضياف","Mohamed Boudiaf"], ["ونوغة","Ouanougha"], ["أولاد عدي لقبالة","Ouled Addi Guebala"], ["أولاد درادج","Ouled Derradj"], ["أولاد ماضي","Ouled Madhi"], ["أولاد منصور","Ouled Mansour"], ["أولاد سيدي إبراهيم","Ouled Sidi Brahim"], ["أولاد سليمان","Ouled Slimane"], ["ولجة","Oulteme"], ["سيدي عيسى","Sidi Aissa"], ["سيدي عامر","Sidi Ameur"], ["سيدي هجرس","Sidi Hadjeres"], ["سيدي محمد","Sidi M'hamed"], ["الشرفة","Slimane"], ["سومع","Souamaa"], ["تارمونت","Tarmount"], ["الزرازور","Zarzour"]],
-  [["عين فارس","Ain Fares"], ["عين فكان","Ain Fekan"], ["عين فرح","Ain Ferah"], ["عين فراس","Ain Frass"], ["العلايق","Alaimia"], ["عوف","Aouf"], ["البنيان","Benian"], ["غليزان توابع","Bou Henni"], ["بوحنيفية","Bouhanifia"], ["الشرفاء","Chorfa"], ["العمارية","El Borj"], ["الغمري","El Ghomri"], ["زهانة","El Gueitena"], ["الحاكم","El Hachem"], ["الشرفاء","El Keurt"], ["المحمدية","El Mamounia"], ["المأمونية","El Mamounia-M"], ["المنور","El Menaouer"], ["فراقيق","Ferraguig"], ["فروحة","Froha"], ["البرج","Froha-M"], ["غريس","Ghriss"], ["قريقر","Guerdjoum"], ["حاسين","Hacine"], ["ماوسة","Maoussa"], ["الصبونة","Maoussa-E"], ["معسكر","Mascara"], ["مقطع دوز","Mocta-Douz"], ["محمدية","Mohammadia"], ["نسموط","Nesmot"], ["أوقاز","Oggaz"], ["وادي الأبطال","Oued El Abtal"], ["وادي التاغية","Oued Taria"], ["أولاد علي بن عامر","Ouled Ali Ben Amer"], ["سيدي عبد الرحمن","Ras El Ain Amirouche"], ["السجرارة","Sedjerara"], ["الشهايلية","Sehailia"], ["سيدي عبد الجبار","Sidi Abdeldjebar"], ["سيدي عبد المؤمن","Sidi Abdelmoumene"], ["سيدي بوسعيد","Sidi Boussaid"], ["سيدي قادة","Sidi Kada"], ["سيق","Sig"], ["تيغنيف","Tighennif"], ["تيزي","Tizi"], ["زهانة","Zahana"], ["زلامطة","Zelamta"]],
-  [["عين البيضاء","Ain Beida"], ["بن ناصر","Benaceur-O"], ["بلدة عمر","Blidet Amor-O"], ["البرمة","El Borma"], ["الحجيرة","El Hadjira-O"], ["حاسي بن عبد الله","Hassi Ben Abdellah"], ["حاسي مسعود","Hassi Messaoud"], ["المنقر","M'naguer-O"], ["مقارين","Megarine-N"], ["المقارين","Megarine-O"], ["نقوسة","N'goussa"], ["النزلة","Nezla-O"], ["ورقلة","Ouargla"], ["الرويسات","Rouissat"], ["سيدي خويلد","Sidi Khouiled"], ["سيدي سليمان","Sidi Slimane-O"], ["الطيبات","Taibet-O"], ["تبسبست","Tebesbest-O"], ["تمامين","Temacine-O"], ["تقرت","Touggourt-O"], ["الزاوية العابدية","Zaouia El Abidia"]],
-  [["عين البية","Ain Biya"], ["برج البشير","Ain El Kerma-O"], ["عين الكرمة","Ain Kerma"], ["عين الترك","Ain Turk"], ["أرزيو","Arzew"], ["بن فريحة","Ben Freha"], ["بطيوة","Bethioua"], ["بئر الجير","Bir El Djir"], ["بوفاطيس","Boufatis"], ["بوسفر","Bousfer"], ["بوتليليس","Boutlelis"], ["العنصر","El Ancor"], ["الكرمة","El Kerma"], ["السانية","Es Senia"], ["قديل","Gdyel"], ["حاسي بن عقبة","Hassi Ben Okba"], ["حاسي بونيف","Hassi Bounif"], ["حاسي مفسوخ","Hassi Mefsoukh"], ["مرسى الحجاج","Marsat El Hadjadj"], ["المرسى الكبير","Mers El Kebir"], ["مسرغين","Messerghin"], ["وهران","Oran"], ["وادي تليلات","Oued Tlelat"], ["سيدي بن يبقى","Sidi Ben Yebka"], ["سيدي الشحمي","Sidi Chami"], ["طافراوي","Tafraoui"]],
-  [["عين العراك","Ain El Orak"], ["أربوات","Arbaouat"], ["بوعلام","Boualem"], ["بوقطب","Bougtoub"], ["بوسمغون","Boussemghoun"], ["بريزينة","Brezina"], ["الشقيق","Cheguig"], ["الشلالة","Chellala"], ["البيض","El Bayadh"], ["البنود","El Bnoud"], ["الخيثر","El Kheiter"], ["المحرة","El Mehara"], ["الغاسول","Ghassoul"], ["كاف الأحمر","Kef El Ahmar"], ["الكراكدة","Krakda"], ["الأبيض سيدي الشيخ","Labiodh Sidi Cheikh"], ["الرقاصة","Rogassa"], ["سيدي عامر","Sidi Ameur"], ["سيدي سليمان","Sidi Slimane"], ["سيدي طيفور","Sidi Tiffour"], ["ستيتن","Stitten"], ["توسمولين","Tousmouline"]],
-  [["برج عمر إدريس","Bordj Omar Driss"], ["الدبداب","Debdeb"], ["إليزي","Illizi"], ["إن أميناس","In Amenas"]],
-  [["عين تغروت","Ain Taghrout"], ["عين تسرة","Ain Tesra"], ["برج بوعريريج","B. B. Arreridj"], ["بليمور","Belimour"], ["بن داود","Ben Daoud"], ["بئر قاصد علي","Bir Kasdali"], ["برج الغدير","Bordj Ghedir"], ["برج زمورة","Bordj Zemmoura"], ["قلة","Colla"], ["الجعافرة","Djaafra"], ["العشير","El Achir"], ["العناصر","El Annasseur"], ["العش","El Euch"], ["المهير","El M'hir"], ["الماين","El Main"], ["الحمادية","Elhammadia"], ["غيلاسة","Ghailasa"], ["حرازة","Haraza"], ["حسناوة","Hasnaoua"], ["خليل","Khelil"], ["القصور","Ksour"], ["المنصورة","Mansoura"], ["مجانة","Medjana"], ["أولاد براهم","Ouled Brahem"], ["أولاد دحمان","Ouled Dahmane"], ["أولاد سيدي إبراهيم","Ouled Sidi-Brahim"], ["الرابطة","Rabta"], ["رأس الوادي","Ras El Oued"], ["سيدي مبارك","Sidi-Embarek"], ["تاغلايت","Taglait"], ["تسامرت","Tassamert"], ["تفرق","Tefreg"], ["ثنية النصر","Teniet En Nasr"], ["تيكستار","Tixter"]],
-  [["أعفير","Afir"], ["عمال","Ammal"], ["بغلية","Baghlia"], ["بن شود","Ben Choud"], ["بني عمران","Beni Amrane"], ["برج منايل","Bordj Menaiel"], ["بودواو","Boudouaou"], ["بودواو البحري","Boudouaou El Bahri"], ["بومرداس","Boumerdes"], ["بوزقزة قدارة","Bouzegza Keddara"], ["شعبة العامر","Chabet El Ameur"], ["قورصو","Corso"], ["دلس","Dellys"], ["جينات","Djinet"], ["الخروبة","El Kharrouba"], ["حمادي","Hammedi"], ["يسر","Isser"], ["خميس الخشنة","Khemis El Khechna"], ["العربعاطاش","Larbatache"], ["لقاطة","Leghata"], ["الناصرية","Naciria"], ["أولاد عيسى","Ouled Aissa"], ["أولاد هداج","Ouled Hedadj"], ["أولاد موسى","Ouled Moussa"], ["سي مصطفى","Si Mustapha"], ["سيدي داود","Sidi Daoud"], ["سوق الحد","Souk El Had"], ["تاورقة","Taourga"], ["ثنية","Thenia"], ["تيجلابين","Tidjelabine"], ["تيمزريت","Timezrit"], ["زموري","Zemmouri"]],
-  [["عين العسل","Ain El Assel"], ["عين الكرمة","Ain Kerma"], ["عصفور","Asfour"], ["بن مهيدي","Ben M Hidi"], ["بريهان","Berrihane"], ["البسباس","Besbes"], ["بوقوس","Bougous"], ["بوحجار","Bouhadjar"], ["بوتلجة","Bouteldja"], ["شباييطة مختار","Chebaita Mokhtar"], ["الشافية","Chefia"], ["شيحاني","Chihani"], ["الذرعان","Drean"], ["الشط","Echatt"], ["العيون","El Aioun"], ["القالة","El Kala"], ["الطارف","El Tarf"], ["حمام بني صالح","Hammam Beni Salah"], ["بحيرة الطيور","Lac Des Oiseaux"], ["وادي الزيتون","Oued Zitoun"], ["رمل السوق","Raml Souk"], ["السوارخ","Souarekh"], ["زريزر","Zerizer"], ["زيتونة","Zitouna"]],
-  [["أم العسل","Oum El Assel"], ["تندوف","Tindouf"]],
-  [["عماري","Ammari"], ["بني شعيب","Beni Chaib"], ["بني لحسن","Beni Lahcene"], ["برج بونعامة","Bordj Bounaama"], ["برج الأمير عبد القادر","Bordj El Emir Abdelkader"], ["بوقايد","Boucaid"], ["خميستي","Khemisti"], ["الأربعاء","Larbaa"], ["لرجام","Lardjem"], ["العيون","Layoune"], ["الأزهرية","Lazharia"], ["معاصم","Maacem"], ["ملعب","Melaab"], ["أولاد بسام","Ouled Bessam"], ["سيدي عابد","Sidi Abed"], ["سيدي بوتوشنت","Sidi Boutouchent"], ["سيدي لنتري","Sidi Lantri"], ["سيدي سليمان","Sidi Slimane"], ["تملاحت","Tamellahet"], ["ثنية الحد","Theniet El Had"], ["تيسمسيلت","Tissemsilt"], ["اليوسفية","Youssoufia"]],
-  [["البياضة","Bayadha"], ["بن قشة","Ben Guecha"], ["الدبيلة","Debila"], ["الدبيلة الكبيرة","Debila-E"], ["دوار الماء","Douar El Maa"], ["العقلة","El Ogla"], ["الوادي","El-Oued"], ["قمار","Guemar"], ["الحمراية","Hamraia"], ["حساني عبد الكريم","Hassani Abdelkrim"], ["عمر","Hassi Hafid"], ["حاسي خليفة","Hassi Khalifa"], ["حاسي خليفة","Hassi Khalifa-E"], ["كوينين","Kouinine"], ["المقرن","Magrane"], ["المقرن","Magrane-E"], ["أمية وانسة","Mih Ouansa"], ["النخلة","Nakhla"], ["النخلة الجنوبية","Nakhla-E"], ["وادي العلندة","Oued El Alenda"], ["ورماس","Ourmes"], ["الرقيبة","Reguiba"], ["الرباح","Robbah"], ["سيدي عون","Sidi Aoun"], ["سيدي عون","Sidi Aoun-E"], ["سيدي خليل","Sidi Khelil-E"], ["تغزوت","Taghzout"], ["طالب العربي","Taleb Larbi"], ["الطالب العربي","Taleb Larbi-E"], ["الطريفاوي","Trifaoui"]],
-  [["عين الطويلة","Ain Touila"], ["بابار","Babar"], ["بغاي","Baghai"], ["بوحمامة","Bouhmama"], ["ششار","Chechar"], ["شيلية","Chelia"], ["جلال","Djellal"], ["الحامة","El Hamma"], ["المحمل","El Mahmal"], ["الولجة","El Oueldja"], ["إنسيغة","Ensigha"], ["قايس","Kais"], ["خنشلة","Khenchela"], ["خيران","Khirane"], ["مصارة","M'sara"], ["متوسة","M'toussa"], ["أولاد رشاش","Ouled Rechache"], ["الرميلة","Remila"], ["طامزة","Tamza"], ["تاوزيانت","Taouzianat"], ["يابوس","Yabous"]],
-  [["عين سنور","Ain Soltane"], ["عين الزانة","Ain Zana"], ["بئر بوحوش","Bir Bouhouche"], ["الدريعة","Drea"], ["الحدادة","Haddada"], ["الحنانشة","Hanencha"], ["الخضارة","Khedara"], ["خميسة","Khemissa"], ["مداوروش","M'daourouche"], ["المشروحة","Machroha"], ["المراهنة","Merahna"], ["وادي الكبريت","Oued Kebrit"], ["ويلان","Ouillen"], ["أولاد إدريس","Ouled Driss"], ["أولاد مومن","Ouled Moumen"], ["أم العظائم","Oum El Adhaim"], ["الراقوبة","Ragouba"], ["سافل الويدان","Safel El Ouiden"], ["سدراتة","Sedrata"], ["سيدي فرج","Sidi Fredj"], ["سوق أهراس","Souk Ahras"], ["تاورة","Taoura"], ["ترقالت","Terraguelt"], ["تيفاش","Tiffech"], ["الزعرورية","Zaarouria"], ["الزوابي","Zouabi"]],
-  [["أغبال","Aghbal"], ["أحمر العين","Ahmer El Ain"], ["عين تاقورايت","Ain Tagourait"], ["حطاطبة","Attatba"], ["بني ميلك","Beni Mileuk"], ["بوحارون","Bou Haroun"], ["بوإسماعيل","Bou Ismail"], ["بورقيقة","Bourkika"], ["الشعيبة","Chaiba"], ["شرشال","Cherchell"], ["الداموس","Damous"], ["الدواودة","Douaouda"], ["فوكة","Fouka"], ["قورايا","Gouraya"], ["حجوط","Hadjout"], ["حجرة النص","Hadjret Ennous"], ["خميستي","Khemisti"], ["القليعة","Kolea"], ["لارهاط","Larhat"], ["مناصر","Menaceur"], ["مراد","Merad"], ["مسلمون","Messelmoun"], ["الناظور","Nador"], ["سيدي غيلاس","Sidi Ghiles"], ["سيدي راشد","Sidi Rached"], ["سيدي سميان","Sidi Semiane"], ["سيدي عمر","Sidi-Amar"], ["تيبازة","Tipaza"]],
-  [["أحمد راشدي","Ahmed Rachedi"], ["عين بيضاء أحريش","Ain Beida Harriche"], ["عين مليوك","Ain Mellouk"], ["عين التين","Ain Tine"], ["أميرة عراس","Amira Arres"], ["بن يحيى عبد الرحمن","Benyahia Abderrahmane"], ["بوحاتم","Bouhatem"], ["شلغوم العيد","Chelghoum Laid"], ["الشيقارة","Chigara"], ["دراحي بوصلاح","Derrahi Bousselah"], ["العياضي بربس","El Ayadi Barbes"], ["المشيرة","El Mechira"], ["فرجيوة","Ferdjioua"], ["قرارم قوقة","Grarem Gouga"], ["حمالة","Hamala"], ["ميلة","Mila"], ["مينار زارزة","Minar Zarza"], ["وادي العثمانية","Oued Athmenia"], ["وادي النجاء","Oued Endja"], ["وادي سقان","Oued Seguen"], ["أولاد خلوف","Ouled Khalouf"], ["الرواشد","Rouached"], ["سيدي خليفة","Sidi Khelifa"], ["سيدي مروان","Sidi Merouane"], ["تاجنانت","Tadjenanet"], ["تسدان حدادة","Tassadane Haddada"], ["تسالة لمطاعي","Tassala Lematai"], ["التلاغمة","Teleghma"], ["ترعي باينان","Terrai Bainen"], ["تيبرقنت","Tiberguent"], ["يحيى بني قشة","Yahia Beniguecha"], ["زغاية","Zeghaia"]],
-  [["عين تركي","Ain Torki-AD"], ["عين البنيان","Ain-Benian"], ["عين بويحيى","Ain-Bouyahia"], ["عين الدفلى","Ain-Defla"], ["عين لشياخ","Ain-Lechiakh"], ["عين سلطان","Ain-Soltane"], ["عين ترك","Ain-Torki"], ["عريب","Arib"], ["البطحية","Bathia"], ["بلعاص","Belaas"], ["بن علال","Ben Allal"], ["بئر ولد خليفة","Bir-Ould-Khelifa"], ["بيربوش","Birbouche"], ["برج أمير خالد","Bordj-Emir-Khaled"], ["بومدفع","Boumedfaa"], ["بوراشد","Bourached"], ["جليدة","Djelida"], ["قادة","Djelida-AD"], ["جمعة أولاد الشيخ","Djemaa Ouled Cheikh"], ["جندل","Djendel"], ["العامرة","El-Amra"], ["العطاف","El-Attaf"], ["حمام ريغة","Hammam-Righa"], ["حصانية","Hassania"], ["حوصنية","Hoceinia"], ["خميس مليانة","Khemis-Miliana"], ["مليانة","Miliana"], ["واد الشرفاء","Oued Chorfa"], ["وادي الجمعة","Oued Djemaa"], ["روينة","Rouina"], ["سيدي لخضر","Sidi-Lakhdar"], ["تاشتة زقاغة","Tacheta Zegagha"], ["طارق بن زياد","Tarik-Ibn-Ziad"], ["الطريق","Theniet El Had-AD"], ["تيبركانين","Tiberkanine"], ["زدين","Zeddine"]],
-  [["عين بن خليل","Ain Ben Khelil"], ["عين الصفراء","Ain Sefra"], ["أسلة","Asla"], ["جنين بورزق","Djenienne Bourezg"], ["البيوض","El Biodh"], ["القصدير","Kasdir"], ["مكمن بن عمار","Makmen Ben Amar"], ["المشرية","Mecheria"], ["مغرار","Moghrar"], ["النعامة","Naama"], ["صفيصيفة","Sfissifa"], ["تيوت","Tiout"]],
-  [["آغلال","Aghlal"], ["عين الأربعاء","Ain El Arbaa"], ["عين الكيال","Ain Kihal"], ["عين تموشنت","Ain Temouchent"], ["عين الطلبة","Ain Tolba"], ["عوبليل","Aoubellil"], ["بني صاف","Beni Saf"], ["بوزجار","Bouzedjar"], ["شعبة اللحم","Chaabat El Ham"], ["شنتوف","Chentouf"], ["العامرية","El Amria"], ["المالح","El Maleh"], ["المساعيد","El Messaid"], ["الأمير عبد القادر","Emir Abdelkader"], ["حمام بوحجر","Hammam Bou Hadjar"], ["حساسنة","Hassasna"], ["حاسي الغلة","Hassi El Ghella"], ["وادي برقش","Oued Berkeche"], ["وادي الصباح","Oued Sebbah"], ["أولاد بوجمعة","Ouled Boudjemaa"], ["أولاد الكيهل","Ouled Kihal"], ["أولهاصة الغرابة","Oulhaca El Gheraba"], ["سيدي بن عدة","Sidi Ben Adda"], ["سيدي بومدين","Sidi Boumediene"], ["سيدي أورياش","Sidi Ouriache"], ["سيدي صافي","Sidi Safi"], ["تمزوغة","Tamzoura"], ["ترقة","Terga"]],
-  [["بريان","Berriane"], ["بريان الجنوبي","Berriane-S"], ["بونورة","Bounoura"], ["ضاية بن ضحوة","Dhayet Bendhahoua"], ["الصنيعة","El Ateuf-G"], ["العطف","El Atteuf"], ["الغرارة","El Guerrara"], ["الغرارة","El Guerrara-G"], ["غرداية","Ghardaia"], ["المنصورة","Mansoura"], ["متليلي","Metlili"], ["سبصب","Sebseb"], ["زلفانة","Zelfana"]],
-  [["عين الرحمة","Ain Rahma"], ["عين طارق","Ain-Tarek"], ["عمي موسى","Ammi Moussa"], ["بلعصل بوزقزة","Belaassel Bouzagza"], ["بن داود","Bendaoud"], ["بني درقون","Beni Dergoun"], ["بني زنتيس","Beni Zentis"], ["دار بن عبد الله","Dar Ben Abdelah"], ["جديوية","Djidiouia"], ["الحاسي","El Hassi"], ["الولجة","El Ouldja"], ["القطار","El-Guettar"], ["المطمار","El-Matmar"], ["حد الشكالة","Had Echkalla"], ["حمري","Hamri"], ["القلعة","Kalaa"], ["لحلف","Lahlef"], ["مازونة","Mazouna"], ["مديونة","Mediouna"], ["الحمري الشرقي","Mendes"], ["المرجة","Merdja Sidi Abed"], ["واريزان","Ouarizane"], ["وادي الجمعة","Oued El Djemaa"], ["وادي السلام","Oued Essalem"], ["وادي رهيو","Oued-Rhiou"], ["أولاد يعيش","Ouled Aiche"], ["سلمى بن زيادة","Ouled Sidi Mihoub"], ["وادي ليلي","Ouled Sidi Mihoub-R"], ["الرمكة","Ramka"], ["غليزان","Relizane"], ["سيدي خطاب","Sidi Khettab"], ["سيدي لزرق","Sidi Lazreg"], ["سيدي أمحمد بن علي","Sidi M'hamed Benali"], ["سيدي محمد بن عودة","Sidi M'hamed Benaouda"], ["سيدي سعادة","Sidi Saada"], ["سوق الحد","Souk El Had"], ["يلل","Yellel"], ["زمورة","Zemmoura"]],
-  [["أوقروت","Aougrout"], ["شروين","Charouine"], ["دلدول","Deldoul"], ["قصر قدور","Ksar Kaddour"], ["متارفة","Metarfa"], ["أولاد عيسى","Ouled Aissa-T"], ["أولاد سعيد","Ouled Said"], ["طالمين","Talmine"], ["تيميمون","Timimoun"], ["تينركوك","Tinerkouk"]],
-  [["برج باجي مختار","Bordj Badji Mokhtar"], ["تيمياوين","Timiaouine"]],
-  [["بسباس","Besbes"], ["الشعيبة","Chaiba"], ["الدوسن","Doucen"], ["أولاد جلال","Ouled Djellal"], ["رأس الميعاد","Ras El Miad"], ["سيدي خالد","Sidi Khaled"]],
-  [["بني عباس","Beni-Abbes"], ["بني إخلف","Beni-Ikhlef"], ["الواتة","El Ouata"], ["إيقلي","Igli"], ["كرزاز","Kerzaz"], ["قصابي","Ksabi"], ["أولاد خضير","Ouled-Khodeir"], ["تامترت","Tamtert"], ["تيمودي","Timoudi"]],
-  [["إن صالح","Ain Salah"], ["فقارة الزوى","Foggaret Ezzoua"], ["إن إقر","In Ikher"], ["إن غار","Inghar"]],
-  [["إن قزام","Ain Guezzam"], ["تين زواتين","Tin Zouatine"]],
-  [["بن ناصر","Benaceur"], ["بليدة عمر","Blidet Amor"], ["العالية","El Alia"], ["الحاجرة","El-Hadjira"], ["مناقر","M'naguer"], ["المقارين","Megarine"], ["نزلة","Nezla"], ["سيدي سليمان","Sidi Slimane"], ["تايبت","Taibet"], ["تبسبست","Tebesbest"], ["تماسين","Temacine"]],
-  [["برج الحواس","Bordj El Haouass"], ["جانت","Djanet"]],
-  [["جامعة","Djamaa"], ["المغير","El-M'ghaier"], ["المرارة","M'rara"], ["أم الطيور","Oum Touyour"], ["سيدي عمران","Sidi Amrane"], ["سيدي خليل","Sidi Khelil"], ["ستيل","Still"], ["تندلة","Tenedla"]],
-  [["المنيعة","El Meniaa"], ["حاسي لفحل","Hassi Fehal"], ["حاسي القارة","Hassi Gara"]],
+const WILAYA_LIST = [
+'أدرار','الشلف','الأغواط','أم البواقي','باتنة','بجاية','بسكرة','بشار',
+'البليدة','البويرة','تمنراست','تبسة','تلمسان','تيارت','تيزي وزو',
+'الجزائر','الجلفة','جيجل','سطيف','سعيدة','سكيكدة','سيدي بلعباس',
+'عنابة','قالمة','قسنطينة','المدية','مستغانم','المسيلة','معسكر',
+'ورقلة','وهران','البيض','إيليزي','برج بوعريريج','بومرداس','الطارف',
+'تندوف','تيسمسيلت','الوادي','خنشلة','سوق أهراس','تيبازة','ميلة',
+'عين الدفلى','النعامة','عين تموشنت','غرداية','غليزان','تيميمون',
+'برج باجي مختار','أولاد جلال','بني عباس','عين صالح','عين قزام',
+'تقرت','جانت','المغير','المنيعة'
 ];
 
-const communesByWilaya = [
-  [],
-  ["أدرار", "أقبلي", "أولف", "بودة", "فنوغيل", "إن زغمير", "أولاد أحمد تيمي", "رقان", "صالي", "السبعة", "تيمنطيط", "تمست", "تيمقتن", "تيت", "تسابيت", "زاوية كنتة"],
-  ["أبو الحسن", "عين مران", "بنايرية", "بني بوعتاب", "بني حواء", "بني راشد", "بوقادير", "بوزغاية", "بريرة", "الشطية", "الشلف", "الظهرة", "الحجاج", "الكريمية", "المرسى", "حرشون", "الهرانفة", "الأبيض مجاجة", "مصدق", "وادي الفضة", "وادي قوسين", "وادي سلي", "أولاد عباس", "أولاد بن عبد القادر", "أولاد فارس", "أم الدروع", "سنجاس", "سيدي عبد الرحمن", "سيدي عكاشة", "الصبحة", "تاجنة", "تلعصة", "تاوقريت", "تنس", "الزبوجة"],
-  ["آفلو", "عين ماضي", "عين سيدي علي", "بن ناصر بن شهرة", "بريدة", "العسافية", "البيضاء", "الغيشة", "حميدية", "قلتة سيدي سعد", "حاج مشري", "حاسي الدلاعة", "حاسي الرمل", "الخنق", "قصر الحيران", "الأغواط", "وادي مزي", "وادي مرة", "سبقاق", "سيدي بوزيد", "سيدي مخلوف", "تاجموت", "تاجرونة", "تاويالة"],
-  ["عين ببوش", "عين بيضاء", "عين الديس", "عين فكرون", "قيقبة", "عين مليلة", "عين الزيتون", "بحيرة الشرقي", "بئر رقعة", "بحيرة الطيور", "الضلعة", "العامرية", "بلعالا", "الجازية", "رجاص", "الحرملية", "فكيرينة", "هنشير تومغني", "قصر الصبيحي", "مسكانة", "وادي نيني", "أولاد قاسم", "أولاد حملة", "أولاد زواي", "أم البواقي", "الرحية", "سيقوس", "سوق نعمان", "الزرقاء"],
-  ["عين جاسر", "عين التوتة", "عين ياقوت", "أريس", "عزيل عبد القادر", "بريكة", "باتنة", "بني فضالة الحقانية", "بني ملول", "بيطام", "الرميلة", "بوماقر", "بوزينة", "شمرة", "الشير", "تقصري", "جزار", "الحاسي", "المعذر", "فسديس", "فم تطوب", "غسيرة", "قصبة", "هيدوسة", "إشمول", "إنوغيسن", "كيمل", "قصر بلزمة", "العربعاء", "لازرو", "لمسان", "مدوكال", "معافة", "منعة", "مروانة", "نقاوس", "وادي الشعبة", "وادي المرة", "وادي الطاقة", "أولاد عمار", "ثنية العابد", "أولاد عوف", "أولاد فضل", "أولاد سليمان", "أولاد سيدي سليمان", "عيون العصافير", "رحبات", "رأس العيون", "صفيان", "سقانة", "سريانة", "تكوت", "تالخمت", "تاكسنة", "تازولت", "ثنية العابد", "تيقارغار", "تيغرغار", "تيلاتو", "تيمقاد", "زانة البيضاء"],
-  ["آدكار", "آيت رزين", "آيت إسماعيل", "أقبو", "أقفادو", "أمالو", "أميزور", "أوقاس", "برباشة", "بجاية", "بني جليل", "بني كسيلة", "بني مليكش", "كسيلة", "بودجليل", "بوحمزة", "بوخليفة", "شلاطة", "شميني", "درقينة", "ذراع القائد", "القصر", "فناية المثائن", "فراعون", "فريكات", "إيجور", "إيفيغا", "إيغيل علي", "إيغرام", "كنديرة", "خراطة", "لفلاي", "مسيسنة", "ملبو", "وادي غير", "أوزلاقن", "صدوق", "آيت عيسى", "سيدي عيش", "سماعون", "سوق الاثنين", "سوق أوفلا", "تالة حمزة", "تامريجت", "تاوريرت إيغيل", "تازمالت", "طيبان", "تيشي", "تيمزريت", "تينبدار", "تيزي نبرار", "توجة"],
-  ["عين الناقة", "عين زعطوط", "عين الزاوية", "البسباس", "بسكرة", "برج بن عزوز", "بوشقرون", "براني", "شتمة", "جمورة", "الفيض", "الغروس", "الحاجب", "الحاجب الشرقي", "الحوش", "الحايطية", "القنطرة", "لوطاية", "فغالة", "قرطة", "خنقة سيدي ناجي", "ليشانة", "ليوة", "مشونش", "مليلي", "مخادمة", "المزيرعة", "أوماش", "أورلال", "الشعيبية", "سيدي عقبة", "طولقة", "زريبة الوادي"],
-  ["أبادلة", "بشار", "بشار الجديد", "بني ونيف", "بوكايس", "عرق فراج", "كنادسة", "لحمر", "مشرع هواري بومدين", "مريجة", "موقل", "تأغيت"],
-  ["عين الرمانة", "بني مراد", "بني تامو", "بني خليل", "البليدة", "بوعرفة", "بوفاريك", "بوقرة", "بوعينان", "الشبلي", "الشفة", "الشريعة", "جبابرة", "العفرون", "قرواو", "حمام ملوان", "الأربعاء", "مفتاح", "موزاية", "وادي الجر", "وادي العلايق", "أولاد سلامة", "أولاد يعيش", "صوحان", "الصومعة"],
-  ["أغبالو", "عين لالوي", "بئر رنة", "عين البسام", "آيت لعزيز", "عمر", "الأطمة", "بشلول", "بئر غبالو", "برج أخريص", "بودربالة", "البويرة", "بوكرام", "الشرفاء", "الدشمية", "الديرة", "الجباحية", "الجداول", "العجيبة", "الأصنام", "الديدان", "الهاشمية", "الحاكمية", "المقراني", "قرومة", "حجرة الزرقاء", "حيزر", "أهنيف", "قادرية", "الأخضرية", "مشدالة", "مسلم", "معالة", "المعمورة", "مسدور", "وادي البردي", "أولاد راشد", "روراوة", "ريدان", "الصحاريج", "سوق الخميس", "سور الغزلان", "تاغزوت", "تاقديتة", "الزبير"],
-  ["أبالسة", "عين أمقل", "أمغيد", "إدلس", "إن مقل", "تافس", "تاهيفت", "تمنراست", "تازروك", "تيفلفل", "تين تارابين"],
-  ["عين الزرقاء", "بجن", "بكارية", "بئر الذهب", "بئر مقدم", "بئر العاتر", "بوخضرة", "بولحاف الدير", "الشريعة", "الكويف", "الماء الأبيض", "المريج", "المزرعة", "العقلة", "العقلة المالحة", "العوينات", "الحويجبات", "فركان", "قريقر", "حمامات", "مرسوط", "نقرين", "الونزة", "أم علي", "صفصاف الوسرى", "سطح قنتيس", "تبسة", "ثليجان"],
-  ["عين فتح", "عين غرابة", "عين الكبيرة", "عين يوسف", "عميور", "الفلاوسن", "عزائل", "باب العسة", "بني بحدل", "بني بوسعيد", "بني مستر", "بني ورسوس", "بني بوسعيد", "بني سميل", "بني سنوس", "بن سكران", "بوهليل", "بوقيرات", "دار يعغموراسن", "جبالة", "العريشة", "الفحول", "الجامعة", "فلاوسن", "الغزوات", "حمام بوغرارة", "حناية", "قنى", "حونين", "مسيردة الفواقة", "مغنية", "منصورة", "مرسى بن مهيدي", "ندرومة", "وادي لخضر", "أولاد بوجمعة", "أولاد ميمون", "أولاد رياح", "الرمشي", "الصبرة", "تيارت", "سبعة شيوخ", "سبدو", "صهالة", "سيدي عبدلي", "سيدي الجيلالي", "سيدي مجاهد", "السواحلية", "السواهلية", "سوق الثلاثاء", "تيرني بني هديل", "تلمسان", "زناتة"],
-  ["عين بوشقيف", "عين الذهب", "عين دزاريت", "سيدي بوشيف", "عين كرمس", "بلعربي", "بن علال", "بوقارة", "شحيمة", "الدحموني", "جبيلات رصفة", "جيلالي بن عمار", "فايجة", "فريق", "فرندة", "قصر الشلالة", "مادنة", "مهدية", "مشرع الصفا", "مدروسة", "مغيلة", "ملاكو", "الناذرة", "النعيمية", "وادي ليلي", "أولاد عيسى", "راهوية", "الرحوية", "الرشايقة", "السبت", "سرغين", "سيدي عبد الرحمن", "سيدي علي ملال", "سيدي بختي", "سيدي الحسني", "سيدي الحسين", "السوقر", "تاقدمت", "تيارت", "تيداس", "قصر القناط", "زمالة الأمير عبد القادر"],
-  ["أبي يوسف", "أغريب", "أقني قغران", "عين الحمام", "عين الزاوية", "آيت عقواش", "فريحة الشرقية", "آيت بومهدي", "آيت رزين الشرق", "آيت الحسن", "آيت خليل", "آيت خليلي", "أيت وقنون", "آيت يحيى موسى", "آيت عيسى ميمون", "آيت شافع", "آيت محمود", "آيت أومالو", "آيت تودموت", "آيت يحيى", "أقريب", "أمقران", "آسي يوسف", "عزازقة", "أزفون", "بني زمنيز", "بني عيسى", "بني دوالة", "بني يني", "بني زكي", "بوغني", "بوجيمة", "بونوح", "بوزقان", "ذراع بن خدة", "ذراع الميزان", "فريحة", "إقجار", "إيفرهونن", "إيفيغا", "إليلتان", "إيلولا أمالو", "إيراجن", "الأربعاء نايث إيراثن", "مكيرة", "ماعاتقة", "مقلع", "مكلع", "مقلع", "واضية", "واقنون", "سيدي نعمان", "سوما", "تيزي مكلال", "تالة عيلان", "تمقدة", "تيغزرت", "تيقزيرت", "تيمزريت", "تيرميتين", "تيزي نتلاتة", "تيزي ثلث", "تيزي غنيف", "تيزي وزو", "تيزي راشد", "يعكورن", "زكري"],
-  ["عين البنيان", "عين طاية", "باب الوادي", "باب الزوار", "بابا حسن", "باش جراح", "براقي", "بن عكنون", "بني مسوس", "بئر مراد رايس", "بئر توتة", "بئر خادم", "برتوتة", "بولوغين", "برج البحري", "برج الكيفان", "بوروبة", "بوزريعة", "القصبة", "الشراقة", "الدار البيضاء", "دالي إبراهيم", "جسر قسنطينة", "الدويرة", "درارية", "العاشور", "الأبيار", "الحراش", "المدنية", "المقرية", "المرسى", "المرادية", "الحمامات", "هراوة", "حسين داي", "حيدرة", "الخرايسية", "القبة", "الكاليتوس", "المعالمة", "بلوزداد", "المحمدية", "وادي قريش", "وادي السمار", "أولاد شبل", "أولاد فايت", "الرحمانية", "الرايس حميدو", "الرغاية", "الرويبة", "الجزائر الوسطى", "سيدي محمد", "سيدي موسى", "السويدانية", "سطاوالي", "تسالة المرجة", "زرالدة"],
-  ["عين الشهداء", "عين الإبل", "عين فقه", "عين المعبد", "عين وسارة", "عمورة", "بنهار", "البيرين", "زاوية الباقل", "الشارف", "دار الشيوخ", "الجلفة", "الدويس", "الزبيرية", "الغزالة", "الإدريسية", "الخميس", "الخميسية", "فيض البطمة", "القرنيني", "قطارة", "حد الصحاري", "حاسي بحبح", "حاسي العش", "حاسي فدول", "المليليحة", "مسعد", "مجبارة", "أم العظام", "سيدي مقران", "سلمانة", "سيدي بايزيد", "سيدي لعجال", "تعظميت", "الزعفران", "زكار"],
-  ["قنار", "بن ياجيس", "برج الطهر", "بوراوي بلهادف", "الشحنة", "الشقفة", "الجمعة بني حبيبي", "جيجل", "العنصر", "العوانة", "القنار نشفي", "الميلية", "الأمير عبد القادر", "إيراقن سويسي", "غبالة", "جيجل (مركز)", "قاوس", "خيري وادي عجول", "وجانة", "أولاد رباح", "أولاد يحيى خدروش", "سلمى بن زيادة", "السطارة", "سيدي عبد العزيز", "سيدي معروف", "الطاهير", "تاكسنة", "زيامة منصورية"],
-  ["عين عباسة", "عين أرنات", "عين أزال", "عين الكبيرة", "عين لحجر", "عين أولمان", "عين لقراج", "عين الروى", "عين السبت", "آيت نوال مزادة", "آيت تيزي", "أمقل", "بابور", "بازر سكرة", "بيضاء برج", "الولجة", "البلاعة", "بني شبانة", "بني فودة", "بني ورتيلان", "بني حسين", "بني عزيز", "بني عزيز", "بئر حدادة", "بئر العرش", "بوعنداس", "بوقاعة", "بوسلام", "بوطالب", "بوظهير", "الدهامشة", "جميلة", "ذراع قبيلة", "العلمة", "حامة", "العريا", "قلال", "قلتة زرقاء", "قنزات", "قجال", "حمام السخنة", "صالح باي نفيس", "حمام قرقور", "حربيل", "قصر الأبطال", "ماعاوية", "المزيرعة", "المعاضيد", "التلة", "وادي البارد", "أولاد عدوان", "أولاد صابر", "صالح باي", "سرج الغول", "سطيف", "تاشودة", "غلاسة", "الطاية", "التلة", "تيزي نبشار"],
-  ["عين الحجر", "عين السخونة", "عين سلطان", "دوي ثابت", "الحساسنة", "حونات", "المعمورة", "مولاي العربي", "أولاد إبراهيم", "أولاد خالد", "سعيدة", "سيدي أحمد", "سيدي عمار", "سيدي بوبكر", "تيرسين", "يوب"],
-  ["عين بوزيان", "عين شرشار", "عين قشرة", "سيدي علي الشارف", "عزابة", "بكوش لخضر", "بن عزوز", "بني بشير", "بني ولبان", "بني زيد", "بين الويدان", "بوشطاطة", "بوخالفة", "الشرائع", "القل", "الحروش", "الغدير", "الحدائق", "المرسى", "أمجاز الدشيش", "السبت", "فلفلة", "حمادي كروما", "كنواع", "الكراكرة", "خناق مايون", "وادي الزهور", "الولجة بوبالوط", "أولاد عطية", "أولاد حبابة", "أم الطوب", "رمضان جمال", "صالح بوشعور", "سيدي مزغيش", "سكيكدة", "تمالوس", "زردازة", "زيتونة"],
-  ["عين البرد", "عين قادة", "عين ثريد", "عين تيندامين", "عين عدن", "عمارنة", "بدرابين المقراني", "بلعربي", "بن باديس", "بن أشيبة شليا", "بئر الحمام", "بودجبعة البرج", "بوخنيفيس", "شيطوان بليلة", "ضاية", "الحصايبة", "حاسي الدحو", "حاسي زهانة", "لمطار", "مسيد", "مكيدرة", "مرحوم", "مرين", "مزاورو", "بودينة", "مصطفى بن إبراهيم", "وادي السبع", "وادي سفيون", "وادي تاورير", "رأس الماء", "رأس الماء", "رجم دموش", "السهالة الثاورة", "سفيزف", "سيدي علي بن يوب", "سيدي علي بوسيدي", "سيدي بلعباس", "سيدي إبراهيم", "سيدي شعيب", "سيدي داحو الزائر", "سيدي حمادوش", "سيدي خالد", "سيدي لحسن", "سيدي يعقوب", "طابية", "تاوسة", "تغاليمات", "تلاغ", "تنيرة", "تسالة", "تيلموني", "زروالة"],
-  ["عين البردة", "عنابة", "برحال", "شطايبي", "الشرفة", "البوني", "العلمة", "الحجار", "وادي العنب", "سرايدي", "سيدي عمار", "التريعات"],
-  ["عين بن بيضاء", "عين العربي", "عين مخلوف", "عين رقادة", "عين صندل", "بلخير", "بن جراح", "بني مزلين", "برج صباط", "بوحشانة", "بوحمدان", "بوعطي محمود", "بوشقوف", "بومهرة أحمد", "دهوارة", "جبالة خميسي", "الفجوج", "قلعة بوصبع", "قالمة", "حمام دباغ", "حمام النبائل", "هيليوبوليس", "حواري بومدين", "خزارة", "مجاز عمار", "مجاز الصفاء", "النشماية", "وادي الشحم", "وادي فراغة", "وادي الزناتي", "رأس العقبة", "روكنية", "سلاوة عنونة", "تاملوكة"],
-  ["عين عبيد", "عين السمارة", "ابن باديس", "بني حميدان", "قسنطينة", "ديدوش مراد", "الخروب", "حامة بوزيان", "ابن زياد", "مسعود بوجريو", "أولاد رحمون", "زيغود يوسف"],
-  ["عين بوسيف", "عين أوقسير", "العيساوية", "عزيز", "باعطة", "بن شيكاو", "بني سليمان", "البرواغية", "بئر بن عابد", "بوغار", "بوعيش", "بوشراحيل", "بوغزول", "شهبونية", "شلالة العذاورة", "شنيغل", "درق", "مزارة", "ذراع السمار", "ذراع السمار", "القلب الكبير", "الحمدانية", "الحوادن", "العمرية", "الوينات", "حناشة", "كف الأخضر", "خمس جوامع", "قصر البخاري", "مفاتحة", "المغراوة", "المدية", "مجبار", "وزرة", "وامري", "وادي الشرفاء", "أولاد عنتر", "أولاد بوعشرة", "أولاد إبراهيم", "أولاد ديد", "أولاد معرف", "أولاد هلال", "أولاد هلال", "أولاد صالح", "أم الجليل", "أوزرة", "ربعية", "سانق", "سيغوال", "سيدي عبد الله", "سيدي دامد", "سيدي دامد", "سيدي نعمان", "سيدي ربيع", "سيدي ربيع", "سيدي زيان", "السواقي", "تابلاط", "تفراوت", "تمسقيدة", "تيزي مهدي", "تيزي أوقلي", "ثلاثة الدوائر", "زبيرية"],
-  ["عشعاشة", "عين بن خديجة", "عين بودينار", "عين نويسي", "عين سيدي شريف", "عين تدلس", "بلعصل بوزقزة", "بوقيرات", "فرناقة", "حجاج", "حاسي ماماش", "حاسي مامش توفيق", "الطواهرية", "خضرة", "خير الدين", "منصورة", "مازاغران", "مسرى", "مستغانم", "نقمارية", "وادي الخير", "أولاد بوقالم", "أولاد معلة", "صفصاف", "صيادة", "سيدي علي", "سيدي بلعطار", "سيدي لخضر", "السيرات", "صور", "تازقايت", "تواهرية"],
-  ["عين الحجل", "عين الملح", "عين فارس", "عين الخضراء", "عين الريش", "بلعيبة", "بن سرور", "بن سرور", "بني يلمان", "بنزوه", "برهوم", "أولاد غانم", "بئر فودة", "بوسعادة", "بوطي السياح", "شلال", "الدهاهنة", "جبل مساعد", "الهامل", "الحواميد", "حمام الضلعة", "الكيمل", "خبانة", "المعاريف", "المسيلة", "مطارفة", "معاضيد", "مقرة", "المحاميد", "مجدل", "محمد بوضياف", "ونوغة", "أولاد عدي لقبالة", "أولاد درادج", "أولاد ماضي", "أولاد منصور", "أولاد سيدي إبراهيم", "أولاد سليمان", "ولجة", "سيدي عيسى", "سيدي عامر", "سيدي هجرس", "سيدي محمد", "الشرفة", "سومع", "تارمونت", "الزرازور"],
-  ["عين فارس", "عين فكان", "عين فرح", "عين فراس", "العلايق", "عوف", "البنيان", "غليزان توابع", "بوحنيفية", "الشرفاء", "العمارية", "الغمري", "زهانة", "الحاكم", "الشرفاء", "المحمدية", "المأمونية", "المنور", "فراقيق", "فروحة", "البرج", "غريس", "قريقر", "حاسين", "ماوسة", "الصبونة", "معسكر", "مقطع دوز", "محمدية", "نسموط", "أوقاز", "وادي الأبطال", "وادي التاغية", "أولاد علي بن عامر", "سيدي عبد الرحمن", "السجرارة", "الشهايلية", "سيدي عبد الجبار", "سيدي عبد المؤمن", "سيدي بوسعيد", "سيدي قادة", "سيق", "تيغنيف", "تيزي", "زهانة", "زلامطة"],
-  ["عين البيضاء", "بن ناصر", "بلدة عمر", "البرمة", "الحجيرة", "حاسي بن عبد الله", "حاسي مسعود", "المنقر", "مقارين", "المقارين", "نقوسة", "النزلة", "ورقلة", "الرويسات", "سيدي خويلد", "سيدي سليمان", "الطيبات", "تبسبست", "تمامين", "تقرت", "الزاوية العابدية"],
-  ["عين البية", "برج البشير", "عين الكرمة", "عين الترك", "أرزيو", "بن فريحة", "بطيوة", "بئر الجير", "بوفاطيس", "بوسفر", "بوتليليس", "العنصر", "الكرمة", "السانية", "قديل", "حاسي بن عقبة", "حاسي بونيف", "حاسي مفسوخ", "مرسى الحجاج", "المرسى الكبير", "مسرغين", "وهران", "وادي تليلات", "سيدي بن يبقى", "سيدي الشحمي", "طافراوي"],
-  ["عين العراك", "أربوات", "بوعلام", "بوقطب", "بوسمغون", "بريزينة", "الشقيق", "الشلالة", "البيض", "البنود", "الخيثر", "المحرة", "الغاسول", "كاف الأحمر", "الكراكدة", "الأبيض سيدي الشيخ", "الرقاصة", "سيدي عامر", "سيدي سليمان", "سيدي طيفور", "ستيتن", "توسمولين"],
-  ["برج عمر إدريس", "الدبداب", "إليزي", "إن أميناس"],
-  ["عين تغروت", "عين تسرة", "برج بوعريريج", "بليمور", "بن داود", "بئر قاصد علي", "برج الغدير", "برج زمورة", "قلة", "الجعافرة", "العشير", "العناصر", "العش", "المهير", "الماين", "الحمادية", "غيلاسة", "حرازة", "حسناوة", "خليل", "القصور", "المنصورة", "مجانة", "أولاد براهم", "أولاد دحمان", "أولاد سيدي إبراهيم", "الرابطة", "رأس الوادي", "سيدي مبارك", "تاغلايت", "تسامرت", "تفرق", "ثنية النصر", "تيكستار"],
-  ["أعفير", "عمال", "بغلية", "بن شود", "بني عمران", "برج منايل", "بودواو", "بودواو البحري", "بومرداس", "بوزقزة قدارة", "شعبة العامر", "قورصو", "دلس", "جينات", "الخروبة", "حمادي", "يسر", "خميس الخشنة", "العربعاطاش", "لقاطة", "الناصرية", "أولاد عيسى", "أولاد هداج", "أولاد موسى", "سي مصطفى", "سيدي داود", "سوق الحد", "تاورقة", "ثنية", "تيجلابين", "تيمزريت", "زموري"],
-  ["عين العسل", "عين الكرمة", "عصفور", "بن مهيدي", "بريهان", "البسباس", "بوقوس", "بوحجار", "بوتلجة", "شباييطة مختار", "الشافية", "شيحاني", "الذرعان", "الشط", "العيون", "القالة", "الطارف", "حمام بني صالح", "بحيرة الطيور", "وادي الزيتون", "رمل السوق", "السوارخ", "زريزر", "زيتونة"],
-  ["أم العسل", "تندوف"],
-  ["عماري", "بني شعيب", "بني لحسن", "برج بونعامة", "برج الأمير عبد القادر", "بوقايد", "خميستي", "الأربعاء", "لرجام", "العيون", "الأزهرية", "معاصم", "ملعب", "أولاد بسام", "سيدي عابد", "سيدي بوتوشنت", "سيدي لنتري", "سيدي سليمان", "تملاحت", "ثنية الحد", "تيسمسيلت", "اليوسفية"],
-  ["البياضة", "بن قشة", "الدبيلة", "الدبيلة الكبيرة", "دوار الماء", "العقلة", "الوادي", "قمار", "الحمراية", "حساني عبد الكريم", "عمر", "حاسي خليفة", "حاسي خليفة", "كوينين", "المقرن", "المقرن", "أمية وانسة", "النخلة", "النخلة الجنوبية", "وادي العلندة", "ورماس", "الرقيبة", "الرباح", "سيدي عون", "سيدي عون", "سيدي خليل", "تغزوت", "طالب العربي", "الطالب العربي", "الطريفاوي"],
-  ["عين الطويلة", "بابار", "بغاي", "بوحمامة", "ششار", "شيلية", "جلال", "الحامة", "المحمل", "الولجة", "إنسيغة", "قايس", "خنشلة", "خيران", "مصارة", "متوسة", "أولاد رشاش", "الرميلة", "طامزة", "تاوزيانت", "يابوس"],
-  ["عين سنور", "عين الزانة", "بئر بوحوش", "الدريعة", "الحدادة", "الحنانشة", "الخضارة", "خميسة", "مداوروش", "المشروحة", "المراهنة", "وادي الكبريت", "ويلان", "أولاد إدريس", "أولاد مومن", "أم العظائم", "الراقوبة", "سافل الويدان", "سدراتة", "سيدي فرج", "سوق أهراس", "تاورة", "ترقالت", "تيفاش", "الزعرورية", "الزوابي"],
-  ["أغبال", "أحمر العين", "عين تاقورايت", "حطاطبة", "بني ميلك", "بوحارون", "بوإسماعيل", "بورقيقة", "الشعيبة", "شرشال", "الداموس", "الدواودة", "فوكة", "قورايا", "حجوط", "حجرة النص", "خميستي", "القليعة", "لارهاط", "مناصر", "مراد", "مسلمون", "الناظور", "سيدي غيلاس", "سيدي راشد", "سيدي سميان", "سيدي عمر", "تيبازة"],
-  ["أحمد راشدي", "عين بيضاء أحريش", "عين مليوك", "عين التين", "أميرة عراس", "بن يحيى عبد الرحمن", "بوحاتم", "شلغوم العيد", "الشيقارة", "دراحي بوصلاح", "العياضي بربس", "المشيرة", "فرجيوة", "قرارم قوقة", "حمالة", "ميلة", "مينار زارزة", "وادي العثمانية", "وادي النجاء", "وادي سقان", "أولاد خلوف", "الرواشد", "سيدي خليفة", "سيدي مروان", "تاجنانت", "تسدان حدادة", "تسالة لمطاعي", "التلاغمة", "ترعي باينان", "تيبرقنت", "يحيى بني قشة", "زغاية"],
-  ["عين تركي", "عين البنيان", "عين بويحيى", "عين الدفلى", "عين لشياخ", "عين سلطان", "عين ترك", "عريب", "البطحية", "بلعاص", "بن علال", "بئر ولد خليفة", "بيربوش", "برج أمير خالد", "بومدفع", "بوراشد", "جليدة", "قادة", "جمعة أولاد الشيخ", "جندل", "العامرة", "العطاف", "حمام ريغة", "حصانية", "حوصنية", "خميس مليانة", "مليانة", "واد الشرفاء", "وادي الجمعة", "روينة", "سيدي لخضر", "تاشتة زقاغة", "طارق بن زياد", "الطريق", "تيبركانين", "زدين"],
-  ["عين بن خليل", "عين الصفراء", "أسلة", "جنين بورزق", "البيوض", "القصدير", "مكمن بن عمار", "المشرية", "مغرار", "النعامة", "صفيصيفة", "تيوت"],
-  ["آغلال", "عين الأربعاء", "عين الكيال", "عين تموشنت", "عين الطلبة", "عوبليل", "بني صاف", "بوزجار", "شعبة اللحم", "شنتوف", "العامرية", "المالح", "المساعيد", "الأمير عبد القادر", "حمام بوحجر", "حساسنة", "حاسي الغلة", "وادي برقش", "وادي الصباح", "أولاد بوجمعة", "أولاد الكيهل", "أولهاصة الغرابة", "سيدي بن عدة", "سيدي بومدين", "سيدي أورياش", "سيدي صافي", "تمزوغة", "ترقة"],
-  ["بريان", "بريان الجنوبي", "بونورة", "ضاية بن ضحوة", "الصنيعة", "العطف", "الغرارة", "الغرارة", "غرداية", "المنصورة", "متليلي", "سبصب", "زلفانة"],
-  ["عين الرحمة", "عين طارق", "عمي موسى", "بلعصل بوزقزة", "بن داود", "بني درقون", "بني زنتيس", "دار بن عبد الله", "جديوية", "الحاسي", "الولجة", "القطار", "المطمار", "حد الشكالة", "حمري", "القلعة", "لحلف", "مازونة", "مديونة", "الحمري الشرقي", "المرجة", "واريزان", "وادي الجمعة", "وادي السلام", "وادي رهيو", "أولاد يعيش", "سلمى بن زيادة", "وادي ليلي", "الرمكة", "غليزان", "سيدي خطاب", "سيدي لزرق", "سيدي أمحمد بن علي", "سيدي محمد بن عودة", "سيدي سعادة", "سوق الحد", "يلل", "زمورة"],
-  ["أوقروت", "شروين", "دلدول", "قصر قدور", "متارفة", "أولاد عيسى", "أولاد سعيد", "طالمين", "تيميمون", "تينركوك"],
-  ["برج باجي مختار", "تيمياوين"],
-  ["بسباس", "الشعيبة", "الدوسن", "أولاد جلال", "رأس الميعاد", "سيدي خالد"],
-  ["بني عباس", "بني إخلف", "الواتة", "إيقلي", "كرزاز", "قصابي", "أولاد خضير", "تامترت", "تيمودي"],
-  ["إن صالح", "فقارة الزوى", "إن إقر", "إن غار"],
-  ["إن قزام", "تين زواتين"],
-  ["بن ناصر", "بليدة عمر", "العالية", "الحاجرة", "مناقر", "المقارين", "نزلة", "سيدي سليمان", "تايبت", "تبسبست", "تماسين"],
-  ["برج الحواس", "جانت"],
-  ["جامعة", "المغير", "المرارة", "أم الطيور", "سيدي عمران", "سيدي خليل", "ستيل", "تندلة"],
-  ["المنيعة", "حاسي لفحل", "حاسي القارة"],
+const COMMUNES_MAP = {
+'أدرار':['أدرار','أقبلي','أولف','بودة','فنوغيل','إن زغمير','تامنطيت','تامست','تيمكتن','تيت','تسابيط','زاویت كونتة'],
+'الشلف':['الشلف','أبو الحسن','عين مران','بنايرية','بني بوعتاب','بني حواء','بني راشد','بوقادیر','بوزغاية','شطية','دھرة','الحجاج','الكریمیة','وادي فدة','وادي قوسين','وادي سلي','أولاد عباس','أولاد بن عبد القادر','أولاد فارس','أم ذراع','سندجاس','سيدي عبد الرحمان','سيدي عقاش','صوبحة','تاجنة','تلاسة','تاوقريت','تنس','زبودجة'],
+'الأغواط':['الأغواط','أفلو','عين ماضي','عين سيدي علي','البيضاء','بريدة','الغيشة','حاج مشري','حاسي الدلاع','حاسي الرمل','خنق','قصر الحيران','وادي مرة','وادي مزي','سبقاق','سيدي بوزيد','سيدي مخلوف','تاجموت','تاجرونة','تاويالة'],
+'أم البواقي':['أم البواقي','عين بابوش','عين البيضاء','عين ديس','عين فكرون','عين كرشة','عين مليلة','عين الزيتون','العميرية','بشير شروحة','بحير شوقي','بريش','ذلا','العامرية','الفضل','الحرمیلية','فكيرينة','حنشیر تومغاني','قصر صباحي','مسكيانة','وادي نيني','أولاد قاسم','أولاد حملة','أولاد زواي','راهية','سيقوس','سوق نعمان','زرق'],
+'باتنة':['باتنة','عين جاسر','عين توتة','عين ياقوت','آريس','عزيل عبد القادر','باریکة','بني فضالة الحكانیة','بیتام','بولحیلات','بومغور','بومیا','بوزینة','شمرة','جزار','الجرف','جرمة','الهاسي','فاسدس','غسيرة','غويغة','قسباط','إشمول','إنوغيسن','كيمل','قصر بلزمة','لاربعة','لازرو','لمسين','م دوكل','معافة','مناة','مروانة','نجاوة','واد الشعبة','واد الماء','واد التاغة','أولاد عمار','أولاد عوف','أولاد فاضل','أولاد سلام','أولاد سي سليمان','عيون العساف','رحبات','رأس العيون','سفيان','سقانة','سريانة','ت كوت','تالخمت','تاكسلنت','تازولت','تينيت العابد','تيغانمين','تيغارغار','تيلاتو','تيمقاد','زنت البيضاء'],
+'بجاية':['بجاية','أدكار','أيت رزين','أيت سماعیل','أقبو','أمازور','أوقاس','برباشة','بني جليل','بني كسيلة','بني معوش','بودجليل','بوحمزة','بوكحيلة','شلاطة','شمني','دارقينة','القصر','فرعون','إغیل علي','إغرم','تازمالت','تيفرا','تيمريت','تيزي نبربر'],
+'بسكرة':['بسكرة','عين ناقة','برج بن عزوز','بوشكرون','شتمة','طولقة','الغروس','الحاجب','الكانتارا','ليشانة','مشونش','مليلي','أوماش','أورلال','سيدي عقبة','زريبة الوادي'],
+'بشار':['بشار','عبادلة','بني ونيف','بوكايس','المرسى','كنادسة','لحمر','مشرع','مغيل','تغيت','تابلبالة'],
+'البليدة':['البليدة','عين رمانة','بني تامو','بني مراد','بوفر يك','موزاية','بوقرة','شبلي','شريعة','جبابرة','العفرون','حمام ملوان','لاربعاء','مفتاح','مزغران','واد جر','أولاد السلامة','سوحان','سومعة'],
+'البويرة':['البويرة','أغبالو','عين الحجر','أيت لعزيز','بشلول','بئر غبالو','بوردة','بوكرم','الشرفة','ديرة','الحاكمية','هانيف','خبوزية','لخضرية','معالة','مشدالة','الموقران','أولاد راشد','الروينة','سحرج','سور الغزلان','تاغزوت','زبربر'],
+'تمنراست':['تمنراست','عين أمقل','إيدلس','تازروك','تين زاواتين'],
+'تبسة':['تبسة','عين الزرقاء','بئر الذهب','بكارية','بوقدرة','شريعة','الخوين','الكويف','المالح','مرسوت','نقرين','أم علي','صفصاف','ستيت','تيلجين'],
+'تلمسان':['تلمسان','عين فزة','عين الكبيرة','عين النهالة','عين تالوت','أمير','باب العسة','بني بحل','بني بوسعيد','بني قرة','بني سميل','بني سنوس','بني ورتيلان','شتوانة','د يغمراسن','الفلاوسن','غزوات','هنين','منصورة','مرسى بن مهيدي','نيدروما','وادي لخضر','أولاد ميمون','أولاد رياح','رمشي','سبدو','سوق الطلعة','تيرني بني هديل','زيناتة'],
+'تيارت':['تيارت','عين بوشقيف','عين الذهب','عين الحديد','عين قرمس','عين كرمس','بوقرة','شحيمة','دحموني','جبيلة الرصفا','فرندة','قرطوفة','حمادية','قصر الشلالة','مادنة','مدروس','مغيلة','الناظور','رحوية','سبعينة','سرغين','سيدي عبد الرحمان','سيدي بختي','سيدي حسني','سوقر','تاكمارت','تيارت','توسنينة','الزمالة'],
+'تيزي وزو':['تيزي وزو','أبو يوسف','أقني قغران','أيت عيسى ميمون','أيت بومهدي','أيت خليلي','أيت محمود','أيت يحيى','أيت يوسف','أزازقة','أزفون','بني دوالة','بني يني','بني زيكي','بني عيسى','بوجيما','بوزغن','دراع بن خدة','فريكات','إفرحونن','إيلولة أمالو','إيفيغاء','إمصوحل','إيرجن','ماكودة','مقران','مشطراس','مزرانة','واقنون','أواذياس','أواسيف','وقاص','تيغرزين','تيرميتين','تيزي غنيف','تيزي راشد','تيزي نتلاطا','ياقوران','يكورين'],
+'الجزائر':['الجزائر الوسطى','سيدي أمحمد','المدنية','محمد بلوزداد','باب الوادي','بولوغين بن زيري','القصبة','واد قريش','الرايس حميدو','بئر مراد رايس','حيدرة','سحاولة','بئر خادم','باب الزوار','بني مسوس','بوزريعة','الحراش','براقي','الرويبة','عين بنيان','الرحمانية','سويدانية','جسر قسنطينة','الخروبة','أولاد فايت','المرادية','بئر توتة','دالي إبراهيم','الشريعة','حمامات','سيدي موسى','الدار البيضاء','المحمدية','القبة','عين طاية','المرسى'],
+'الجلفة':['الجلفة','عين الشهداء','عين وسارة','آيت واعر','بني يقوب','بوسعادة','بويرة الأحداب','الشارف','دار الشيوخ','الدويس','العطف','الخميس','حاسي بحبح','حاسي العش','حاسي الفد','الهامل','الإدريسية','مسعد','مليليحة','مطارفة','مولود','أم العظام','القديد','سيدي بايزيد','سيدي يوسف','تعضميت','زكار'],
+'جيجل':['جيجل','العنصر','البني','برج الطاهر','بوسيف','جيملة','الشحنة','الخيرية','الراقصة','الوساسية','قاوس','القلعة','الميلية','أولاد عاشة','أولاد يحيى','الشقفة','سيدي عبد العزيز','سيدي معرف','التالة','الطاهير','زيامة منصورية'],
+'سطيف':['سطيف','عين عزة','عين الروى','عين السبت','عين ولاية','أولاد أعباس','أولاد تبان','أولاد صابر','أولاد سي أحمد','بن عزة','بن علي','بن واردة','بيضاء برج','بوسلام','بوعنداس','بوقاعة','شعبة','شلالة','الدهامشة','جيملة','قنزات','قراع','قلال','العمورية','المعاصر','ماوكلان','مزلوق','واد أبلد','واد الخروب','أولاد عدوان','أولاد مسعود','الرصفة','صالح باي','سرج الغول','تاشودة','تاية','تالا إيفاسن','تيزي نبشار','العلمة','الاوريسية'],
+'سعيدة':['سعيدة','عين الحجر','عين سكينة','الدوي ثابت','العويزات','الحساسنة','مولاي العربي','أولاد براهيم','أولاد خالد','سيدي بوبكر','سيدي عيسى','تيرسين'],
+'سكيكدة':['سكيكدة','عين بوزيان','أم الطوب','بني بشير','بني زيد','بني ولبان','بوشطاطة','السرايدي','الكوار','الحروش','الجندل','الغدير','الحمادي كروما','كانوا','المصالحة','أولاد عطية','أولاد حبابة','أولاد معروف','رمضان جمال','الروية','سلام بوغرارة','تمالوس','زردازة','زيغود يوسف'],
+'سيدي بلعباس':['سيدي بلعباس','عين أدان','عين البرد','عين تندامين','أمرناس','بني خطاب','بني مسعود','بن عشيبة','بوقلع','بوسعادة','شريعة','الغروس','الحساسنة','حاسي دحول','حاسي زهانة','لمطار','مقارة','مرين','مصطفى بن إبراهيم','مولاي سليسن','وادي السبع','أولاد بن عابد','أولاد براهم','أولاد خير','رأس الماء','سيدي علي بن يوب','سيدي حمادوش','سيدي خالد','سيدي لحسن','سيدي شيب','سيدي يوسف','تافسور','تليغ','تلموني','تيرني','تيسة','تيزي'],
+'عنابة':['عنابة','عين الباردة','البرحال','شطايبي','الحجار','سيراي','واد العنب'],
+'قالمة':['قالمة','عين بن بيضاء','عين العربي','عين السطارة','عين صندل','بني مزلين','بوشقوف','بوعاتي محمود','الجزارية','الحدادة','حمام دباغ','حمام النبايل','الخزارة','النخلة','ولد خير الله','واد الشحم','واد فراغة','واد زناتي','الروبية','سلاوة عنونة','تاملوكة','الطويل'],
+'قسنطينة':['قسنطينة','عين اسمارة','الخروب','ابن باديس','زيغود يوسف','حمام بوزيان','عين الباي','الكبانية','دیدوش مراد','مسعود بوجريو','أولاد رحمون','الرگايسة'],
+'المدية':['المدية','عين بوسيف','عين قصر','عين سيدي علي','بعطشة','بن شكاو','بني سليمان','برواقية','بوزقزة','شهبونية','شلالة العذاورة','شنيق','العزيزية','الدراق','العمارية','العوينات','الغزلان','حمرية','الحوض','خميس الجبل','مجبر','مفتاح','مزغران','ميهوب','وادي حربيل','وادي المقرن','عمر','أولاد بوعشيرة','أولاد إبراهيم','أولاد دايد','أولاد هلال','أولاد معافة','الربعية','سانق','سغوان','سيدي زهار','الطافر','تامسا','تيزي محدي','ثلاثة دوائر','زيزان'],
+'مستغانم':['مستغانم','أشعاشة','عين بوصيف','عين تادلس','بنقردان','بوقيرات','الخير','الحسيان','حدجاج','حرشون','ماسرة','نكمارية','القدم','صيادة','سيدي علي','سيدي بلعطار','سيدي لخضر','سيدي معمر','سليمان','تاوقريت','تازة'],
+'المسيلة':['المسيلة','عين الحجل','عين الريش','عين فارس','عين خضرة','بني إلّمان','بوعيسى','بوثان','الشعيرة','القصور','العمارة','الهامل','حمام الدالعة','حمام الضلعة','خبوبة','مطارفة','مسيف','محمد بوضياف','المعيد','ماوة','تارمونت','تامسة','زرزور'],
+'معسكر':['معسكر','عين فراح','عين فكان','عين الزيتون','الغريس','الحاسي','العمايرية','الصفصاف','البرج','بوهاني','بوقادر','شرف','الشهيدية','دقاقة','الغزال','قريدة','ماسرة','مطمور','مفراتة','محي الدين','النقاوسية','واد تاغية','أولاد أعمر','أولاد خلوف','أولاد منصور','رسن عين عامر','سجرارة','سيدي عبد المؤمن','سيدي بوسعيد','سيدي خضير','تاحامات','تيزي','زلمطة'],
+'ورقلة':['ورقلة','عين البيدة','حاسي بن عبد الله','حاسي مسعود','نجوسة','الرويسات','سيدي خويلد','تقرت'],
+'وهران':['وهران','عين البيضاء','عين الترك','أرزيو','بني بوصابر','بني وريان','بئر الجير','بوتليليس','البرية','الكركرية','السنية','العنصر','الفنتار','حاسي بونيف','حاسي مفسوخ','مرسى الحجاج','مسرغين','سيدي بن يبقى','سيدي الشحمي','تفراواي','وادي تليلات'],
+'البيض':['البيض','الأبيض سيدي الشيخ','بوعلام','بريكة','الشفاء','المرارة','الناظور','سيدي عمار','سيدي طيفور','توسمولين'],
+'إيليزي':['إيليزي','برج عمر إدريس','دبداب','إن أميناس'],
+'برج بوعريريج':['برج بوعريريج','عين تسرة','اليشير','بني سليمان','بني يعقوب','برج الغدير','برج زمورة','الجابرية','الخناق','الميناء','المنصورة','أولاد براهيم','أولاد دحمان','أولاد سيدي براهيم','الربطة','سيدي امبارك','تافرغة','تاغليت','تيكستار'],
+'بومرداس':['بومرداس','أفير','بغلية','بن شود','بني عمران','برج منايل','بودواو','بودواو البحري','الشبابطة','الحرش','الدلس','العامرية','حمادي','الخروبة','لارباطاش','القليعة','الناصرية','أولاد عيسى','أولاد موسى','سي مصطفى','سوق الحد','تيدجلابين','ثنية','زموري'],
+'الطارف':['الطارف','عين العسل','عين الكرمة','بوسلام','بوشقوف','شبيطة مختار','الشباني','الذرعان','الحمام','القالة','رميل السوق','سوقة','زريزر','الزيطونة'],
+'تندوف':['تندوف','أم العسل'],
+'تيسمسيلت':['تيسمسيلت','برج بونعامة','بوسعادة','الخميس','العيون','القرنة','لرجام','الأربعاء','المعاصم','سيدي عبد الرحمان','سيدي بوتاش','ثنية الحد','تملاحت','يوسفية'],
+'الوادي':['الوادي','البياضة','الدبيلة','الرويسات','الطريقة','القمار','المغير','النخلة','أم الطيور','رڤبة','سيدي عون','تڨرت','ترفاوي'],
+'خنشلة':['خنشلة','عين الطويلة','بابار','بغاي','الشليعة','جلال','الحامة','الخيران','المحمل','المرسى','أولاد رشاش','رميلة','تامزة','يابوس'],
+'سوق أهراس':['سوق أهراس','عين الحجر','عين سلامة','عين الزانة','بئر بوحوش','درعة','حناشة','خضارة','مشروحة','أولاد دراج','أولاد معة','الرقوبة','صفال','سيدي فرج','تارة','تيفاش','زعرورية'],
+'تيبازة':['تيبازة','أغبال','أحمر العين','بني ميلك','بوع إسماعيل','بورقيقة','شبلي','شرشال','دواودة','فوكة','قوراية','حجارة النص','خميستي','لارهات','مناصر','مسلمون','ناظور','سيدي غيلاس','سيدي راشد','سيدي سميان','تاقسرت'],
+'ميلة':['ميلة','أحمد رشدي','عين البيضاء حريش','عين التين','عمارة','بني قشة','بني يحى','بوشقرون','الشلغوم العيد','جمالة','فرجيوة','قرحم','حمالا','مينار زارزة','وادي الكبير','وادي سقان','أولاد خالف','أولاد محمد','الربوة','رواشد','سيدي خليفة','سيدي مروان','تاجنانت','تزده','ترعي باينان','تيسة','زغاية'],
+'عين الدفلى':['عين الدفلى','أبو رياح','أين بنيان','أين بو يحيى','أين السلطان','العطارف','بطحية','بني داود','بومدفع','برج الأمير خالد','برشيش','جدلية','جندل','العامرة','الحسنية','حمام ريغة','الحمادية','خرايسية','المخاطرية','المعاينية','مليانة','واد الشرفة','واد الجمعة','رومينه','سيدي الأخضر','سيدي بوطاش','تابلكت','تاشتة زيغاغة','العارف'],
+'النعامة':['النعامة','عين بن خليل','عين صفرا','البيض','القصدير','المغيرة','مكمن بن عمار','مشريا','تيوط'],
+'عين تموشنت':['عين تموشنت','أغلال','العامرية','بني صاف','بوعبد الله','بوزجار','الشبات','الحمادة','حاسي الغلة','مسعود','واد بركة','أولاد الكيحل','أولاد صابر','سيدي بن عدا','سيدي بومدين','تامزورة','ترقة'],
+'غرداية':['غرداية','العطف','بريان','بونورة','الضاية بن ضحوة','المنصورة','مزاب','سبسب','زلفانة'],
+'غليزان':['غليزان','أم علي','بن دراجن','بن يحيى','بوزغار','الحمادنة','الجليلة','الغسول','حد الشكالة','الحاج','السلايمية','المطمر','مزونة','واد جمعة','واد الرحمون','واد السلام','أولاد سيدي مخليفة','القليعة','رمكة','سيدي سعادة','يليل','زيدية'],
+'تيميمون':['تيميمون','أوقروت','شاروين','دلدول','قصر قدور','مطارفة','أولاد عيسى','تالمين','تيرنكوك'],
+'برج باجي مختار':['برج باجي مختار','تيمياوين'],
+'أولاد جلال':['أولاد جلال','بسباس','دوسن','الغروس','حاسي فدول','سيدي خالد','تارين'],
+'بني عباس':['بني عباس','بني إخلاف','إرغ فراج','إيغلي','كرزاز','الوطاية','تامترت','تيمودي'],
+'عين صالح':['عين صالح','فوغاريت الزاوية','إنغار','تين تارتار'],
+'عين قزام':['عين قزام','تيت','تيمياوين'],
+'تقرت':['تقرت','البلغيط','العامرية','بن ناصر','بلدة عمر','المغير','المنقر','النزلة','سيدي سليمان','تماسين'],
+'جانت':['جانت','البرج','الحواس','أولاد عيسى','أولاد زيد'],
+'المغير':['المغير','جماعة','مرارة','أم الطيور','سيدي خليل','ستيل','تمية'],
+'المنيعة':['المنيعة','حاسي قارة','حاسي البراك','قارا','تاقزيرت']
+};
+
+const OFFICES_MAP = {
+'أدرار':['Hub Adrar 01 مكتب أدرار'],
+'الشلف':['Hub Chlef 02 مكتب الشلف','hub Ténès 02 مكتب تـنـس'],
+'الأغواط':['Hub Laghouat 03 مكتب الأغواط'],
+'أم البواقي':['Hub Ain El Beida04مكتب عين البيضاء','Oum El Bouaghi04مكتب أم بواقي'],
+'باتنة':['Hub Batna 05 مكتب باتنة'],
+'بجاية':['Hub Bejaia 06 مكتب بجاية','Hub Akbou 06 مكتب أقبو'],
+'بسكرة':['Hub Biskra 07 مكتب بسكرة'],
+'بشار':['Hub Béchar 08 مكتب بشار'],
+'البليدة':['Hub Blida 09 مكتب البليدة','Hub Bougara 09 مكتب بوقرة','Hub Mouzaia 09 مكتب موزاية'],
+'البويرة':['Hub Bouira 10 مكتب البويرة'],
+'تمنراست':['Hub Tamanrasset 11 مكتب تامنراست'],
+'تبسة':['Hub Tebessa 12 مكتب تبسة'],
+'تلمسان':['Hub Tlemcen 13 مكتب تلمسان'],
+'تيارت':['Hub Tiaret 14 مكتب تيارت'],
+'تيزي وزو':['Hub Tizi Ouzou 15 مكتب تيزي وزو'],
+'الجزائر':['Hub El Jomhoria 16 مكتب الجمهورية','Hub Reghaia 16  مكتب رغاية','Hub Birtouta 16 مكتب بئرتوتة','Hub Ouled Fayet 16 مكتب أولاد فايت','Hub Birkhadem 16 مكتب بئرخادم','Hub Baraki 16 مكتب براقي','Hub Lidou 16  مكتب برج الكيفان'],
+'الجلفة':['Hub Djelfa 17 مكتب الجلفة'],
+'جيجل':['Hub Jijel 18 مكتب جيجل','Hub Taher 18 مكتب الطاهير'],
+'سطيف':['Hub Setif 19 مكتب سطيف','Hub El Eulma 19 مكتب العلمة'],
+'سعيدة':['Hub Saida 20 مكتب سعيدة'],
+'سكيكدة':['Hub Skikda 21 مكتب سكيكدة'],
+'سيدي بلعباس':['Hub Sidi Belabes 22 مكتب سيدي بلعباس'],
+'عنابة':['Hub Annaba 23 مكتب عنابة','Hub El Bouni 23 مكتب البوني'],
+'قالمة':['Hub Guelma 24 مكتب قالمة'],
+'قسنطينة':['Hub Belle vue 25 مكتب المنظر الجميل','Hub Constantine 25 مكتب قسنطينة','Hub Zouaghi 25 مكتب زواغي'],
+'المدية':['Hub Médéa 26 مكتب المدية'],
+'مستغانم':['Hub Mostaganem 27 مكتب مستغانم'],
+'المسيلة':["Hub M'sila 28 مكتب مسيلة",'Hub Bou Saada 28 مكتب بوسعادة'],
+'معسكر':['Hub Mascara 29 مكتب معسكر'],
+'ورقلة':['Hub Hassi Messaoud 30 مكتب حاسي مسعود','Hub Ouargla 30 مكتب ورقلة'],
+'وهران':['Hub Canastel 31 مكتب كاناستال','Hub El Morchid 31 مكتب المرشد','Hub Maraval 31 مكتب مارافال'],
+'البيض':['Hub El Bayadh 32 مكتب البيض'],
+'إيليزي':[],
+'برج بوعريريج':['Hub Bordj bouareridj 34 مكتب برج بوعريريج'],
+'بومرداس':['Hub Boumerdes 35 مكتب بومرداس','Hub Bordj menaiel 35 مكتب برج منايل'],
+'الطارف':['Hub El Tarf 36 مكتب الطارف'],
+'تندوف':[],
+'تيسمسيلت':['Hub Tissemsilt 38 مكتب تيسمسيلت'],
+'الوادي':['Hub El Oued 39 مكتب الوادي'],
+'خنشلة':['Hub Khenchela 40 مكتب خنشلة'],
+'سوق أهراس':['Hub Souk Ahras 41 مكتب سوق أهراس'],
+'تيبازة':['Hub Tipaza 42 مكتب تيبازة','Hub Kolea 42 مكتب القليعة'],
+'ميلة':['Hub Mila 43 مكتب ميلة'],
+'عين الدفلى':['Hub Ain Defla 44 مكتب عين الدفلة'],
+'النعامة':['Hub Naama 45 مكتب النعامة'],
+'عين تموشنت':['Hub Ain Temouchent 46 مكتب عبن تموشنت'],
+'غرداية':['Hub Ghardaia 47 مكتب غرداية'],
+'غليزان':['Hub Relizane 48 مكتب غيليزان'],
+'تيميمون':['Hub Timimoune 49 مكتب تيميمون'],
+'برج باجي مختار':[],
+'أولاد جلال':['Hub Ouled Djellal 51 مكتب أولاد جلال'],
+'بني عباس':['Hub Beni Abbes 52 مكتب بني عباس'],
+'عين صالح':['Hub In Salah 53 مكتب عين صالح'],
+'عين قزام':[],
+'تقرت':['Hub Touggourt 55 مكتب تقرت'],
+'جانت':[],
+'المغير':['Hub El Meghaier 57 مكتب المغير'],
+'المنيعة':[]
+};
+
+const SOUTHERN_WILAYAS = [
+'أدرار','بشار','تمنراست','ورقلة','البيض','إيليزي','تندوف',
+'تيميمون','برج باجي مختار','أولاد جلال','بني عباس','عين صالح',
+'عين قزام','تقرت','جانت','المغير','المنيعة'
 ];
 
-const communesByWilayaFr = [
-  [],
-  ["Adrar", "Akabli", "Aoulef", "Bouda", "Fenoughil", "In Zghmir", "Ouled Ahmed Timmi", "Reggane", "Sali", "Sebaa", "Tamantit", "Tamest", "Timekten", "Tit", "Tsabit", "Zaouiet Kounta"],
-  ["Abou El Hassane", "Ain Merane", "Benairia", "Beni Bouattab", "Beni Haoua", "Beni Rached", "Boukadir", "Bouzeghaia", "Breira", "Chettia", "Chlef", "Dahra", "El Hadjadj", "El Karimia", "El Marsa", "Harchoun", "Herenfa", "Labiod Medjadja", "Moussadek", "Oued Fodda", "Oued Goussine", "Oued Sly", "Ouled Abbes", "Ouled Ben Abdelkader", "Ouled Fares", "Oum Drou", "Sendjas", "Sidi Abderrahmane", "Sidi Akkacha", "Sobha", "Tadjena", "Talassa", "Taougrit", "Tenes", "Zeboudja"],
-  ["Aflou", "Ain Madhi", "Ain Sidi Ali", "Benacer Benchohra", "Brida", "El Assafia", "El Beidha", "El Ghicha", "El Haouaita", "Gueltat Sidi Saad", "Hadj Mechri", "Hassi Delaa", "Hassi R'mel", "Kheneg", "Ksar El Hirane", "Laghouat", "Oued M'zi", "Oued Morra", "Sebgag", "Sidi Bouzid", "Sidi Makhlouf", "Tadjemout", "Tadjrouna", "Taouiala"],
-  ["Ain Babouche", "Ain Beida", "Ain Diss", "Ain Fekroun", "Ain Kercha", "Ain M'lila", "Ain Zitoun", "Behir Chergui", "Berriche", "Bir Chouhada", "Dhalaa", "El Amiria", "El Belala", "El Djazia", "El Fedjoudj", "El Harmilia", "Fkirina", "Hanchir Toumghani", "Ksar Sbahi", "Meskiana", "Oued Nini", "Ouled Gacem", "Ouled Hamla", "Ouled Zouai", "Oum El Bouaghi", "Rahia", "Sigus", "Souk Naamane", "Zorg"],
-  ["Ain Djasser", "Ain Touta", "Ain Yagout", "Arris", "Azil Abedelkader", "Barika", "Batna", "Beni Foudhala El Hakania", "Beni Mloul", "Bitam", "Boulhilat", "Boumagueur", "Bouzina", "Chemora", "Chir", "Djerma", "Djezzar", "El Hassi", "El Madher", "Fesdis", "Foum Toub", "Ghassira", "Gosbat", "Hidoussa", "Ichemoul", "Inoughissen", "Kimmel", "Ksar Bellezma", "Larbaa", "Lazrou", "Lemsane", "M Doukal", "Maafa", "Menaa", "Merouana", "N Gaous", "Oued Chaaba", "Oued El Ma", "Oued Taga", "Ouled Ammar", "Ouled Aouf", "Ouled Aouf", "Ouled Fadel", "Ouled Sellem", "Ouled Si Slimane", "Ouyoun El Assafir", "Rahbat", "Ras El Aioun", "Sefiane", "Seggana", "Seriana", "T Kout", "Talkhamt", "Taxlent", "Tazoult", "Teniet El Abed", "Tighanimine", "Tigharghar", "Tilatou", "Timgad", "Zanet El Beida"],
-  ["Adekar", "Ait R'zine", "Ait-Smail", "Akbou", "Akfadou", "Amalou", "Amizour", "Aokas", "Barbacha", "Bejaia", "Beni Djellil", "Beni K'sila", "Beni-Mallikeche", "Benimaouche", "Boudjellil", "Bouhamza", "Boukhelifa", "Chellata", "Chemini", "Darguina", "Dra El Caid", "El Kseur", "Fenaia Il Maten", "Feraoun", "Frikat", "Idjeur", "Ifigha", "Ighil-Ali", "Ighram", "Kendira", "Kherrata", "Leflaye", "M'cisna", "Melbou", "Oued Ghir", "Ouzellaguen", "Seddouk", "Sidi Ayad", "Sidi-Aich", "Smaoun", "Souk El Tenine", "Souk Oufella", "Tala Hamza", "Tamridjet", "Taourit Ighil", "Tazmalt", "Tibane", "Tichy", "Timezrit", "Tinebdar", "Tizi-N'berber", "Toudja"],
-  ["Ain Naga", "Ain Zaatout", "Ain Zaouia", "Besbes", "Biskra", "Bordj Ben Azzouz", "Bouchakroun", "Branis", "Chetma", "Djemorah", "El Feidh", "El Ghrous", "El Hadjab", "El Hadjeb", "El Haouch", "El Haythem", "El Kantara", "El Outaya", "Foughala", "Gortta", "Khenguet Sidi Nadji", "Lichana", "Lioua", "M'chouneche", "M'lili", "Mekhadma", "Meziraa", "Oumache", "Ourlal", "Sidi Ali Ben Naceur", "Sidi Okba", "Tolga", "Zeribet El Oued"],
-  ["Abadla", "Bechar", "Bechar Djedid", "Beni-Ounif", "Boukais", "Erg-Ferradj", "Kenadsa", "Lahmar", "Machraa-Houari-Boumediene", "Meridja", "Mogheul", "Tabelbala"],
-  ["Ain Romana", "Beni Mered", "Beni-Tamou", "Benkhelil", "Blida", "Bouarfa", "Boufarik", "Bougara", "Bouinan", "Chebli", "Chiffa", "Chrea", "Djebabra", "El-Affroun", "Guerrouaou", "Hammam Elouane", "Larbaa", "Meftah", "Mouzaia", "Oued Djer", "Oued El Alleug", "Ouled Slama", "Ouled Yaich", "Souhane", "Soumaa"],
-  ["Aghbalou", "Ain Laloui", "Ain Turk", "Ain-Bessem", "Ait Laaziz", "Aomar", "Ath Mansour", "Bechloul", "Bir Ghbalou", "Bordj Okhriss", "Bouderbala", "Bouira", "Boukram", "Chorfa", "Dechmia", "Dirah", "Djebahia", "Djouab", "El Adjiba", "El Asnam", "El Asnam-Bouira", "El Hachimia", "El-Hakimia", "El-Mokrani", "Guerrouma", "Hadjera Zerga", "Haizer", "Hanif", "Kadiria", "Lakhdaria", "M Chedallah", "M'Chedallah-Ext", "Maala", "Maamora", "Mezdour", "Oued El Berdi", "Ouled Rached", "Raouraoua", "Ridane", "Saharidj", "Souk El Khemis", "Sour El Ghozlane", "Taghzout", "Taguedite", "Z'barbar"],
-  ["Abelsa", "Ain Amguel", "Amguid", "Idles", "In Mguel", "Tafassasset", "Tahifet", "Tamanrasset", "Tazrouk", "Tifelatine", "Tin Tarabine"],
-  ["Ain Zerga", "Bedjene", "Bekkaria", "Bir Dheheb", "Bir Mokkadem", "Bir-El-Ater", "Boukhadra", "Boulhaf Dyr", "Cheria", "El Kouif", "El Malabiod", "El Meridj", "El Mezeraa", "El Ogla", "El Ogla El Malha", "El-Aouinet", "El-Houidjbet", "Ferkane", "Guorriguer", "Hammamet", "Morsott", "Negrine", "Ouenza", "Oum Ali", "Saf Saf El Ouesra", "Stah Guentis", "Tebessa", "Telidjen"],
-  ["Ain Fetah", "Ain Ghoraba", "Ain Kebira", "Ain Youcef", "Amieur", "Amieur", "Azail", "Bab El Assa", "Beni Bahdel", "Beni Boussaid", "Beni Mester", "Beni Ouarsous", "Beni Rached-T", "Beni Smiel", "Beni Snous", "Bensekrane", "Bouhlou", "Bouihi", "Dar Yaghmoracen", "Djebala", "El Aricha", "El Fehoul", "El Gor", "Fellaoucene", "Ghazaouet", "Hammam Boughrara", "Hennaya", "Hennaya-T", "Honnaine", "M'sirda Fouaga", "Maghnia", "Mansourah", "Marsa Ben M'hidi", "Nedroma", "Oued Lakhdar", "Ouled Boudjemaa-T", "Ouled Mimoun", "Ouled Riyah", "Remchi", "Sabra", "Sebaine", "Sebbaa Chioukh", "Sebdou", "Sehala", "Sidi Abdelli", "Sidi Djillali", "Sidi Medjahed", "Souahlia", "Souahlia-T", "Souk Tleta", "Terny Beni Hediel", "Tlemcen", "Zenata"],
-  ["Ain Bouchekif", "Ain Deheb", "Ain Dzarit", "Ain El Hadid", "Ain Kermes", "Bel Arbi", "Ben Allal-T", "Bougara", "Chehaima", "Dahmouni", "Djebilet Rosfa", "Djillali Ben Amar", "Faidja", "Fariig", "Frenda", "Ksar Chellala", "Madna", "Mahdia", "Mechraa Safa", "Medroussa", "Meghila", "Mellakou", "Nadorah", "Naima", "Oued Lilli", "Ouled Aissa-T", "Rahouia", "Rahouia-T", "Rechaiga", "Sebt", "Serghine", "Sidi Abderrahmane", "Sidi Ali Mellal", "Sidi Bakhti", "Sidi Hosni", "Sidi Hosni-T", "Sougueur", "Tagdempt", "Tiaret", "Tidda", "Tousnina", "Zmalet El Emir Abdelkader"],
-  ["Abi-Youcef", "Aghribs", "Agouni-Gueghrane", "Ain-El-Hammam", "Ain-Zaouia", "Ait Aggouacha", "Ait Bouadda", "Ait Boumahdi", "Ait Chafaa-E", "Ait El Hassen", "Ait Khelili-N", "Ait Khellili", "Ait Ougnoun", "Ait Yahia Moussa", "Ait-Aissa-Mimoun", "Ait-Chafaa", "Ait-Mahmoud", "Ait-Oumalou", "Ait-Toudert", "Ait-Yahia", "Akbil", "Amqran", "Assi-Youcef", "Azazga", "Azeffoun", "Beni Zmenzer", "Beni-Aissi", "Beni-Douala", "Beni-Yenni", "Beni-Zikki", "Boghni", "Boudjima", "Bounouh", "Bouzeguene", "Draa-Ben-Khedda", "Draa-El-Mizan", "Freha", "Iboudrarene", "Iferhounene", "Ifigha-T", "Illilten", "Illoula Oumalou", "Irdjen", "Larbaa Nath Irathen", "M'kira", "Maatkas", "Makouda", "Mechtras", "Mekla", "Ouacif", "Ouaguenoun", "Sidi Namane", "Souama", "Tadmait", "Tala Ailane", "Tamqaddet", "Tigheghert", "Tigzirt", "Timizart", "Tirmitine", "Tizi N'tleta", "Tizi Telatha", "Tizi-Gheniff", "Tizi-Ouzou", "Tizi-Rached", "Yakourene", "Zekri"],
-  ["Ain Benian", "Ain Taya", "Bab El Oued", "Bab Ezzouar", "Baba Hassen", "Bachedjerah", "Baraki", "Ben Aknoun", "Beni Messous", "Bir Mourad Rais", "Bir Touta", "Birkhadem", "Birtouta", "Bologhine Ibnou Ziri", "Bordj El Bahri", "Bordj El Kiffan", "Bourouba", "Bouzareah", "Casbah", "Cheraga", "Dar El Beida", "Dely Ibrahim", "Djasr Kasentina", "Douira", "Draria", "El Achour", "El Biar", "El Harrach", "El Madania", "El Magharia", "El Marsa", "El Mouradia", "Hammamet", "Herraoua", "Hussein Dey", "Hydra", "Khraissia", "Kouba", "Les Eucalyptus", "Maalma", "Mohamed Belouzdad", "Mohammadia", "Oued Koriche", "Oued Smar", "Ouled Chebel", "Ouled Fayet", "Rahmania", "Rais Hamidou", "Reghaia", "Rouiba", "Sehaoula", "Sidi M'hamed", "Sidi Moussa", "Souidania", "Staoueli", "Tessala El Merdja", "Zeralda"],
-  ["Ain Chouhada", "Ain El Ibel", "Ain Fekka", "Ain Maabed", "Ain Oussera", "Amourah", "Benhar", "Birine", "Bouira Lahdab", "Charef", "Dar Chioukh", "Djelfa", "Douis", "El Abiodh", "El Guedid-D", "El Idrissia", "El Khemis", "El Khemissia", "Faidh El Botma", "Guernini", "Guettara", "Had Sahary", "Hassi Bahbah", "Hassi El Euch", "Hassi Fedoul", "M'liliha", "Messaad", "Moudjebara", "Oum Laadham", "Sed Rahal", "Selmana", "Sidi Baizid", "Sidi Laadjel", "Taadmit", "Zaafrane", "Zaccar"],
-  ["Bordj T'har", "Boudria Beniyadjis", "Bouraoui Belhadef", "Bouraoui Belhadef-J", "Chahna", "Chekfa", "Djemaa Beni Habibi", "Djimla", "El Ancer", "El Aouana", "El Kennar Nouchfi", "El Milia", "Emir Abdelkader", "Erraguene Souissi", "Ghebala", "Jijel", "Kaous", "Khiri Oued Adjoul", "Oudjana", "Ouled Rabah", "Ouled Yahia Khadrouch", "Selma Benziada", "Settara", "Sidi Abdelaziz", "Sidi Marouf", "Taher", "Texenna", "Ziama Mansouriah"],
-  ["Ain Abessa", "Ain Arnat", "Ain Azel", "Ain El Kebira", "Ain Lahdjar", "Ain Oulmene", "Ain-Legradj", "Ain-Roua", "Ain-Sebt", "Ait Naoual Mezada", "Ait-Tizi", "Amoucha", "Babor", "Bazer-Sakra", "Beidha Bordj", "Bellaa", "Bellaa-S", "Beni Chebana", "Beni Fouda", "Beni Ourtilane", "Beni Oussine", "Beni-Aziz", "Beni-Mouhli", "Bir Haddada", "Bir-El-Arch", "Bouandas", "Bougaa", "Bousselam", "Boutaleb", "Boutaleb-S", "Dehamcha", "Djemila", "Draa-Kebila", "El Eulma", "El Hammam", "El Ouricia", "Guellal", "Guelta Zerka", "Guenzet", "Guidjel", "Hamam Soukhna", "Hami", "Hammam Guergour", "Harbil", "Kasr El Abtal", "Maaouia", "Meziraa-S", "Mezloug", "N'gaous-S", "Oued El Bared", "Ouled Addouane", "Ouled Sabor", "Salah Bey", "Serdj-El-Ghoul", "Setif", "Tachouda", "Tala-Ifacene", "Taya", "Tella", "Tizi N'bechar"],
-  ["Ain El Hadjar", "Ain Sekhouna", "Ain Soltane", "Doui Thabet", "El Hassasna", "Hounet", "Maamora", "Moulay Larbi", "Ouled Brahim", "Ouled Khaled", "Saida", "Sidi Ahmed", "Sidi Amar", "Sidi Boubekeur", "Tircine", "Youb"],
-  ["Ain Bouziane", "Ain Charchar", "Ain Kechra", "Ain Zouit", "Azzaba", "Bekkouche Lakhdar", "Ben Azzouz", "Beni Bechir", "Beni Oulbane", "Beni Zid", "Bin El Ouiden", "Bouchetata", "Boukhalf", "Cheraia", "Collo", "El Arrouch", "El Ghedir", "El Hadaiek", "El Marsa", "Emjez Edchich", "Es Sebt", "Filfila", "Hammadi Krouma", "Kanoua", "Kerkara", "Khenag Maoune", "Oued Zhour", "Ouldja Boulbalout", "Ouled Attia", "Ouled Habbaba", "Oum Toub", "Ramdane Djamel", "Salah Bouchaour", "Sidi Mezghiche", "Skikda", "Tamalous", "Zerdezas", "Zitouna"],
-  ["Ain El Berd", "Ain Kada", "Ain Thrid", "Ain Tindamine", "Ain- Adden", "Amarnas", "Bedrabine El Mokrani", "Belarbi", "Ben Badis", "Benachiba Chelia", "Bir El Hammam", "Boudjebaa El Bordj", "Boukhanefis", "Chetouane Belaila", "Dhaya", "El Hacaiba", "Hassi Dahou", "Hassi Zahana", "Lamtar", "M'cid", "Makedra", "Marhoum", "Merine", "Mezaourou", "Mezaourou-S", "Mostefa Ben Brahim", "Oued Sebaa", "Oued Sefioun", "Oued Taourira", "Ras El Ma", "Ras El Ma-S", "Redjem Demouche", "Sehala Thaoura", "Sfisef", "Sidi Ali Benyoub", "Sidi Ali Boussidi", "Sidi Bel-Abbes", "Sidi Brahim", "Sidi Chaib", "Sidi Dahou Zairs", "Sidi Hamadouche", "Sidi Khaled", "Sidi Lahcene", "Sidi Yacoub", "Tabia", "Taousseret", "Teghalimet", "Telagh", "Tenira", "Tessala", "Tilmouni", "Zerouala"],
-  ["Ain El Berda", "Annaba", "Berrahal", "Chetaibi", "Cheurfa", "El Bouni", "El Eulma", "El Hadjar", "Oued El Aneb", "Seraidi", "Sidi Amar", "Treat"],
-  ["Ain Ben Beida", "Ain Larbi", "Ain Makhlouf", "Ain Regada", "Ain Sandel", "Belkheir", "Bendjarah", "Beni Mezline", "Bordj Sabath", "Bou Hachana", "Bou Hamdane", "Bouati Mahmoud", "Bouchegouf", "Boumahra Ahmed", "Dahouara", "Djeballah Khemissi", "El Fedjoudj", "Guelaat Bou Sbaa", "Guelma", "Hammam Debagh", "Hammam N'bail", "Heliopolis", "Houari Boumedienne", "Khezaras", "Medjez Amar", "Medjez Sfa", "Nechmaya", "Oued Cheham", "Oued Ferragha", "Oued Zenati", "Ras El Agba", "Roknia", "Sellaoua Announa", "Tamlouka"],
-  ["Ain Abid", "Ain Smara", "Ben Badis", "Beni Hamidane", "Constantine", "Didouche Mourad", "El Khroub", "Hamma Bouziane", "Ibn Ziad", "Messaoud Boudjeriou", "Ouled Rahmoun", "Zighoud Youcef"],
-  ["Ain Boucif", "Ain Ouksir", "Aissaouia", "Aziz", "Baata", "Ben Chicao", "Beni Slimane", "Berrouaghia", "Bir Ben Laabed", "Boghar", "Bouaiche", "Bouchrahil", "Boughzoul", "Chabounia", "Chelalet El Adhaoura", "Cheniguel", "Derrag", "Djouab-M", "Draa Esmar", "Draa Esmar-M", "El Guelbelkebir", "El Hamdania", "El Haoudane", "El Omaria", "El Ouinet", "Hannacha", "Kef Lakhdar", "Khams Djouamaa", "Ksar El Boukhari", "M'fatha", "Maghraoua", "Medea", "Medjebar", "Mezerana", "Ouamri", "Oued Harbil", "Ouled Antar", "Ouled Bouachra", "Ouled Brahim-M", "Ouled Deid", "Ouled Emaaraf", "Ouled Hellal", "Ouled Hellal-M", "Ouled Saleh", "Oum El Djellil", "Ouzera", "Rebaia", "Saneg", "Seghouane", "Si Mahdjoub", "Sidi Demed", "Sidi Demed-M", "Sidi Naamane", "Sidi Rabie", "Sidi Rabie-M", "Sidi Ziane", "Souagui", "Tablat", "Tafraout", "Tamesguida", "Tizi Mahdi", "Tizi Oughlali", "Tletat Ed Douair", "Zoubiria"],
-  ["Achaacha", "Ain Ben Khedija", "Ain-Boudinar", "Ain-Nouissy", "Ain-Sidi Cherif", "Ain-Tedles", "Benabdelmalek Ramdane", "Bouguirat", "Fornaka", "Hadjadj", "Hassi Mameche", "Hassi Mameche-M", "Hassiane", "Khadra", "Kheir-Eddine", "Mansourah", "Mazagran", "Mesra", "Mostaganem", "Nekmaria", "Oued El Kheir", "Ouled Boughalem", "Ouled-Maalah", "Safsaf", "Sayada", "Sidi Ali", "Sidi Belaattar", "Sidi-Lakhdar", "Sirat", "Sour", "Tazgait", "Touahria"],
-  ["Ain El Hadjel", "Ain El Melh", "Ain Fares", "Ain Khadra", "Ain Rich", "Belaiba", "Ben Srour", "Ben Srour-M", "Beni Ilmane", "Benzouh", "Berhoum", "Bir El Hamam", "Bir Foda", "Bou Saada", "Bouti Sayeh", "Chellal", "Dehahna", "Djebel Messaad", "El Hamel", "El Houamed", "Hammam Dalaa", "Khettouti", "Khoubana", "M'cif", "M'sila", "M'tarfa", "Maadid", "Magra", "Mahamid", "Medjedel", "Mohamed Boudiaf", "Ouanougha", "Ouled Addi Guebala", "Ouled Derradj", "Ouled Madhi", "Ouled Mansour", "Ouled Sidi Brahim", "Ouled Slimane", "Oulteme", "Sidi Aissa", "Sidi Ameur", "Sidi Hadjeres", "Sidi M'hamed", "Slimane", "Souamaa", "Tarmount", "Zarzour"],
-  ["Ain Fares", "Ain Fekan", "Ain Ferah", "Ain Frass", "Alaimia", "Aouf", "Benian", "Bou Henni", "Bouhanifia", "Chorfa", "El Borj", "El Ghomri", "El Gueitena", "El Hachem", "El Keurt", "El Mamounia", "El Mamounia-M", "El Menaouer", "Ferraguig", "Froha", "Froha-M", "Ghriss", "Guerdjoum", "Hacine", "Maoussa", "Maoussa-E", "Mascara", "Mocta-Douz", "Mohammadia", "Nesmot", "Oggaz", "Oued El Abtal", "Oued Taria", "Ouled Ali Ben Amer", "Ras El Ain Amirouche", "Sedjerara", "Sehailia", "Sidi Abdeldjebar", "Sidi Abdelmoumene", "Sidi Boussaid", "Sidi Kada", "Sig", "Tighennif", "Tizi", "Zahana", "Zelamta"],
-  ["Ain Beida", "Benaceur-O", "Blidet Amor-O", "El Borma", "El Hadjira-O", "Hassi Ben Abdellah", "Hassi Messaoud", "M'naguer-O", "Megarine-N", "Megarine-O", "N'goussa", "Nezla-O", "Ouargla", "Rouissat", "Sidi Khouiled", "Sidi Slimane-O", "Taibet-O", "Tebesbest-O", "Temacine-O", "Touggourt-O", "Zaouia El Abidia"],
-  ["Ain Biya", "Ain El Kerma-O", "Ain Kerma", "Ain Turk", "Arzew", "Ben Freha", "Bethioua", "Bir El Djir", "Boufatis", "Bousfer", "Boutlelis", "El Ancor", "El Kerma", "Es Senia", "Gdyel", "Hassi Ben Okba", "Hassi Bounif", "Hassi Mefsoukh", "Marsat El Hadjadj", "Mers El Kebir", "Messerghin", "Oran", "Oued Tlelat", "Sidi Ben Yebka", "Sidi Chami", "Tafraoui"],
-  ["Ain El Orak", "Arbaouat", "Boualem", "Bougtoub", "Boussemghoun", "Brezina", "Cheguig", "Chellala", "El Bayadh", "El Bnoud", "El Kheiter", "El Mehara", "Ghassoul", "Kef El Ahmar", "Krakda", "Labiodh Sidi Cheikh", "Rogassa", "Sidi Ameur", "Sidi Slimane", "Sidi Tiffour", "Stitten", "Tousmouline"],
-  ["Bordj Omar Driss", "Debdeb", "Illizi", "In Amenas"],
-  ["Ain Taghrout", "Ain Tesra", "B. B. Arreridj", "Belimour", "Ben Daoud", "Bir Kasdali", "Bordj Ghedir", "Bordj Zemmoura", "Colla", "Djaafra", "El Achir", "El Annasseur", "El Euch", "El M'hir", "El Main", "Elhammadia", "Ghailasa", "Haraza", "Hasnaoua", "Khelil", "Ksour", "Mansoura", "Medjana", "Ouled Brahem", "Ouled Dahmane", "Ouled Sidi-Brahim", "Rabta", "Ras El Oued", "Sidi-Embarek", "Taglait", "Tassamert", "Tefreg", "Teniet En Nasr", "Tixter"],
-  ["Afir", "Ammal", "Baghlia", "Ben Choud", "Beni Amrane", "Bordj Menaiel", "Boudouaou", "Boudouaou El Bahri", "Boumerdes", "Bouzegza Keddara", "Chabet El Ameur", "Corso", "Dellys", "Djinet", "El Kharrouba", "Hammedi", "Isser", "Khemis El Khechna", "Larbatache", "Leghata", "Naciria", "Ouled Aissa", "Ouled Hedadj", "Ouled Moussa", "Si Mustapha", "Sidi Daoud", "Souk El Had", "Taourga", "Thenia", "Tidjelabine", "Timezrit", "Zemmouri"],
-  ["Ain El Assel", "Ain Kerma", "Asfour", "Ben M Hidi", "Berrihane", "Besbes", "Bougous", "Bouhadjar", "Bouteldja", "Chebaita Mokhtar", "Chefia", "Chihani", "Drean", "Echatt", "El Aioun", "El Kala", "El Tarf", "Hammam Beni Salah", "Lac Des Oiseaux", "Oued Zitoun", "Raml Souk", "Souarekh", "Zerizer", "Zitouna"],
-  ["Oum El Assel", "Tindouf"],
-  ["Ammari", "Beni Chaib", "Beni Lahcene", "Bordj Bounaama", "Bordj El Emir Abdelkader", "Boucaid", "Khemisti", "Larbaa", "Lardjem", "Layoune", "Lazharia", "Maacem", "Melaab", "Ouled Bessam", "Sidi Abed", "Sidi Boutouchent", "Sidi Lantri", "Sidi Slimane", "Tamellahet", "Theniet El Had", "Tissemsilt", "Youssoufia"],
-  ["Bayadha", "Ben Guecha", "Debila", "Debila-E", "Douar El Maa", "El Ogla", "El-Oued", "Guemar", "Hamraia", "Hassani Abdelkrim", "Hassi Hafid", "Hassi Khalifa", "Hassi Khalifa-E", "Kouinine", "Magrane", "Magrane-E", "Mih Ouansa", "Nakhla", "Nakhla-E", "Oued El Alenda", "Ourmes", "Reguiba", "Robbah", "Sidi Aoun", "Sidi Aoun-E", "Sidi Khelil-E", "Taghzout", "Taleb Larbi", "Taleb Larbi-E", "Trifaoui"],
-  ["Ain Touila", "Babar", "Baghai", "Bouhmama", "Chechar", "Chelia", "Djellal", "El Hamma", "El Mahmal", "El Oueldja", "Ensigha", "Kais", "Khenchela", "Khirane", "M'sara", "M'toussa", "Ouled Rechache", "Remila", "Tamza", "Taouzianat", "Yabous"],
-  ["Ain Soltane", "Ain Zana", "Bir Bouhouche", "Drea", "Haddada", "Hanencha", "Khedara", "Khemissa", "M'daourouche", "Machroha", "Merahna", "Oued Kebrit", "Ouillen", "Ouled Driss", "Ouled Moumen", "Oum El Adhaim", "Ragouba", "Safel El Ouiden", "Sedrata", "Sidi Fredj", "Souk Ahras", "Taoura", "Terraguelt", "Tiffech", "Zaarouria", "Zouabi"],
-  ["Aghbal", "Ahmer El Ain", "Ain Tagourait", "Attatba", "Beni Mileuk", "Bou Haroun", "Bou Ismail", "Bourkika", "Chaiba", "Cherchell", "Damous", "Douaouda", "Fouka", "Gouraya", "Hadjout", "Hadjret Ennous", "Khemisti", "Kolea", "Larhat", "Menaceur", "Merad", "Messelmoun", "Nador", "Sidi Ghiles", "Sidi Rached", "Sidi Semiane", "Sidi-Amar", "Tipaza"],
-  ["Ahmed Rachedi", "Ain Beida Harriche", "Ain Mellouk", "Ain Tine", "Amira Arres", "Benyahia Abderrahmane", "Bouhatem", "Chelghoum Laid", "Chigara", "Derrahi Bousselah", "El Ayadi Barbes", "El Mechira", "Ferdjioua", "Grarem Gouga", "Hamala", "Mila", "Minar Zarza", "Oued Athmenia", "Oued Endja", "Oued Seguen", "Ouled Khalouf", "Rouached", "Sidi Khelifa", "Sidi Merouane", "Tadjenanet", "Tassadane Haddada", "Tassala Lematai", "Teleghma", "Terrai Bainen", "Tiberguent", "Yahia Beniguecha", "Zeghaia"],
-  ["Ain Torki-AD", "Ain-Benian", "Ain-Bouyahia", "Ain-Defla", "Ain-Lechiakh", "Ain-Soltane", "Ain-Torki", "Arib", "Bathia", "Belaas", "Ben Allal", "Bir-Ould-Khelifa", "Birbouche", "Bordj-Emir-Khaled", "Boumedfaa", "Bourached", "Djelida", "Djelida-AD", "Djemaa Ouled Cheikh", "Djendel", "El-Amra", "El-Attaf", "Hammam-Righa", "Hassania", "Hoceinia", "Khemis-Miliana", "Miliana", "Oued Chorfa", "Oued Djemaa", "Rouina", "Sidi-Lakhdar", "Tacheta Zegagha", "Tarik-Ibn-Ziad", "Theniet El Had-AD", "Tiberkanine", "Zeddine"],
-  ["Ain Ben Khelil", "Ain Sefra", "Asla", "Djenienne Bourezg", "El Biodh", "Kasdir", "Makmen Ben Amar", "Mecheria", "Moghrar", "Naama", "Sfissifa", "Tiout"],
-  ["Aghlal", "Ain El Arbaa", "Ain Kihal", "Ain Temouchent", "Ain Tolba", "Aoubellil", "Beni Saf", "Bouzedjar", "Chaabat El Ham", "Chentouf", "El Amria", "El Maleh", "El Messaid", "Emir Abdelkader", "Hammam Bou Hadjar", "Hassasna", "Hassi El Ghella", "Oued Berkeche", "Oued Sebbah", "Ouled Boudjemaa", "Ouled Kihal", "Oulhaca El Gheraba", "Sidi Ben Adda", "Sidi Boumediene", "Sidi Ouriache", "Sidi Safi", "Tamzoura", "Terga"],
-  ["Berriane", "Berriane-S", "Bounoura", "Dhayet Bendhahoua", "El Ateuf-G", "El Atteuf", "El Guerrara", "El Guerrara-G", "Ghardaia", "Mansoura", "Metlili", "Sebseb", "Zelfana"],
-  ["Ain Rahma", "Ain-Tarek", "Ammi Moussa", "Belaassel Bouzagza", "Bendaoud", "Beni Dergoun", "Beni Zentis", "Dar Ben Abdelah", "Djidiouia", "El Hassi", "El Ouldja", "El-Guettar", "El-Matmar", "Had Echkalla", "Hamri", "Kalaa", "Lahlef", "Mazouna", "Mediouna", "Mendes", "Merdja Sidi Abed", "Ouarizane", "Oued El Djemaa", "Oued Essalem", "Oued-Rhiou", "Ouled Aiche", "Ouled Sidi Mihoub", "Ouled Sidi Mihoub-R", "Ramka", "Relizane", "Sidi Khettab", "Sidi Lazreg", "Sidi M'hamed Benali", "Sidi M'hamed Benaouda", "Sidi Saada", "Souk El Had", "Yellel", "Zemmoura"],
-  ["Aougrout", "Charouine", "Deldoul", "Ksar Kaddour", "Metarfa", "Ouled Aissa-T", "Ouled Said", "Talmine", "Timimoun", "Tinerkouk"],
-  ["Bordj Badji Mokhtar", "Timiaouine"],
-  ["Besbes", "Chaiba", "Doucen", "Ouled Djellal", "Ras El Miad", "Sidi Khaled"],
-  ["Beni-Abbes", "Beni-Ikhlef", "El Ouata", "Igli", "Kerzaz", "Ksabi", "Ouled-Khodeir", "Tamtert", "Timoudi"],
-  ["Ain Salah", "Foggaret Ezzoua", "In Ikher", "Inghar"],
-  ["Ain Guezzam", "Tin Zouatine"],
-  ["Benaceur", "Blidet Amor", "El Alia", "El-Hadjira", "M'naguer", "Megarine", "Nezla", "Sidi Slimane", "Taibet", "Tebesbest", "Temacine"],
-  ["Bordj El Haouass", "Djanet"],
-  ["Djamaa", "El-M'ghaier", "M'rara", "Oum Touyour", "Sidi Amrane", "Sidi Khelil", "Still", "Tenedla"],
-  ["El Meniaa", "Hassi Fehal", "Hassi Gara"],
+const COLORS = [
+{ id: 'azraq', label: 'أزرق', hex: '#2d405a', textColor: '#fff', image: 'https://ik.imagekit.io/ATHAR/ATHAR/Qamis Color/1.JPEG' },
+{ id: 'ramadi_dark', label: 'رمادي داكن', hex: '#3e3f43', textColor: '#fff', image: 'https://ik.imagekit.io/ATHAR/ATHAR/Qamis Color/2.JPEG' },
+{ id: 'apple_green', label: 'أخضر تفاحي', hex: '#9fd4ce', textColor: '#333', image: 'https://ik.imagekit.io/ATHAR/ATHAR/Qamis Color/3.JPEG' },
+{ id: 'light_green', label: 'أخضر فاتح', hex: '#e4ede4', textColor: '#333', image: 'https://ik.imagekit.io/ATHAR/ATHAR/Qamis Color/4.JPEG' },
+{ id: 'blue_gray', label: 'أزرق رمادي', hex: '#97b5c7', textColor: '#333', image: 'https://ik.imagekit.io/ATHAR/ATHAR/Qamis Color/5.JPEG' },
+{ id: 'blue_jean', label: 'بلوجين', hex: '#7486ab', textColor: '#fff', image: 'https://ik.imagekit.io/ATHAR/ATHAR/Qamis Color/6.JPEG' },
+{ id: 'lead', label: 'رصاصي', hex: '#525253', textColor: '#fff', image: 'https://ik.imagekit.io/ATHAR/ATHAR/Qamis Color/7.JPEG' },
+{ id: 'bag_yellow', label: 'باج أصفر', hex: '#faf1d4', textColor: '#333', image: 'https://ik.imagekit.io/ATHAR/ATHAR/Qamis Color/8.JPEG' }
 ];
 
-const officesByWilaya = {1:["Hub Adrar 01 مكتب أدرار"],2:["Hub Chlef 02 مكتب الشلف","hub Ténès 02 مكتب تـنـس"],3:["Hub Laghouat 03 مكتب الأغواط"],4:["Hub Ain El Beida04مكتب عين البيضاء","Oum El Bouaghi04مكتب أم بواقي"],5:["Hub Batna 05 مكتب باتنة"],6:["Hub Bejaia 06 مكتب بجاية","Hub Akbou 06 مكتب أقبو"],7:["Hub Biskra 07 مكتب بسكرة"],8:["Hub Béchar 08 مكتب بشار"],9:["Hub Blida 09 مكتب البليدة","Hub Bougara 09 مكتب بوقرة","Hub Mouzaia 09 مكتب موزاية"],10:["Hub Bouira 10 مكتب البويرة"],11:["Hub Tamanrasset 11 مكتب تامنراست"],12:["Hub Tebessa 12 مكتب تبسة"],13:["Hub Tlemcen 13 مكتب تلمسان"],14:["Hub Tiaret 14 مكتب تيارت"],15:["Hub Tizi Ouzou 15 مكتب تيزي وزو"],16:["Hub El Jomhoria 16 مكتب الجمهورية","Hub Reghaia 16  مكتب رغاية","Hub Birtouta 16 مكتب بئرتوتة","Hub Ouled Fayet 16 مكتب أولاد فايت","Hub Birkhadem 16 مكتب بئرخادم","Hub Baraki 16 مكتب براقي","Hub Lidou 16  مكتب برج الكيفان"],17:["Hub Djelfa 17 مكتب الجلفة"],18:["Hub Jijel 18 مكتب جيجل","Hub Taher 18 مكتب الطاهير"],19:["Hub Setif 19 مكتب سطيف","Hub El Eulma 19 مكتب العلمة"],20:["Hub Saida 20 مكتب سعيدة"],21:["Hub Skikda 21 مكتب سكيكدة"],22:["Hub Sidi Belabes 22 مكتب سيدي بلعباس"],23:["Hub Annaba 23 مكتب عنابة","Hub El Bouni 23 مكتب البوني"],24:["Hub Guelma 24 مكتب قالمة"],25:["Hub Belle vue 25 مكتب المنظر الجميل","Hub Constantine 25 مكتب قسنطينة","Hub Zouaghi 25 مكتب زواغي"],26:["Hub Médéa 26 مكتب المدية"],27:["Hub Mostaganem 27 مكتب مستغانم"],28:["Hub M'sila 28 مكتب مسيلة","Hub Bou Saada 28 مكتب بوسعادة"],29:["Hub Mascara 29 مكتب معسكر"],30:["Hub Hassi Messaoud 30 مكتب حاسي مسعود","Hub Ouargla 30 مكتب ورقلة"],31:["Hub Canastel 31 مكتب كاناستال","Hub El Morchid 31 مكتب المرشد","Hub Maraval 31 مكتب مارافال"],32:["Hub El Bayadh 32 مكتب البيض"],34:["Hub Bordj bouareridj 34 مكتب برج بوعريريج"],35:["Hub Boumerdes 35 مكتب بومرداس","Hub Bordj menaiel 35 مكتب برج منايل"],36:["Hub El Tarf 36 مكتب الطارف"],38:["Hub Tissemsilt 38 مكتب تيسمسيلت"],39:["Hub El Oued 39 مكتب الوادي"],40:["Hub Khenchela 40 مكتب خنشلة"],41:["Hub Souk Ahras 41 مكتب سوق أهراس"],42:["Hub Tipaza 42 مكتب تيبازة","Hub Kolea 42 مكتب القليعة"],43:["Hub Mila 43 مكتب ميلة"],44:["Hub Ain Defla 44 مكتب عين الدفلة"],45:["Hub Naama 45 مكتب النعامة"],46:["Hub Ain Temouchent 46 مكتب عين تموشنت"],47:["Hub Ghardaia 47 مكتب غرداية"],48:["Hub Relizane 48 مكتب غيليزان"],49:["Hub Timimoune 49 مكتب تيميمون"],51:["Hub Ouled Djellal 51 مكتب أولاد جلال"],52:["Hub Beni Abbes 52 مكتب بني عباس"],53:["Hub In Salah 53 مكتب عين صالح"],55:["Hub Touggourt 55 مكتب تقرت"],57:["Hub El Meghaier 57 مكتب المغير"]};
+const PRODUCT_PRICE = 2900;
 
-const deliveryPrices = {1:{office:1070,home:1450},2:{office:570,home:850},3:{office:670,home:950},4:{office:570,home:800},5:{office:570,home:900},6:{office:570,home:900},7:{office:670,home:950},8:{office:770,home:1200},9:{office:520,home:700},10:{office:570,home:750},11:{office:1270,home:1650},12:{office:570,home:950},13:{office:570,home:900},14:{office:520,home:850},15:{office:570,home:750},16:{office:520,home:600},17:{office:670,home:950},18:{office:570,home:900},19:{office:570,home:850},20:{office:620,home:900},21:{office:570,home:900},22:{office:570,home:900},23:{office:570,home:900},24:{office:570,home:850},25:{office:570,home:850},26:{office:570,home:850},27:{office:570,home:900},28:{office:570,home:900},29:{office:570,home:900},30:{office:670,home:1000},31:{office:570,home:850},32:{office:670,home:1100},34:{office:570,home:850},35:{office:420,home:500},36:{office:570,home:900},38:{office:520,home:900},39:{office:670,home:1000},40:{office:500,home:900},41:{office:570,home:900},42:{office:570,home:800},43:{office:570,home:900},44:{office:570,home:900},45:{office:670,home:1200},46:{office:570,home:900},47:{office:670,home:950},48:{office:570,home:900},49:{office:1070,home:1450},51:{office:670,home:950},52:{office:1070,home:1450},53:{office:1270,home:1650},54:{office:null,home:1650},55:{office:670,home:950},57:{office:null,home:950},58:{office:670,home:1100}};
+const $ = s => document.querySelector(s);
+const $$ = s => document.querySelectorAll(s);
 
-const wilayaNames = ["","أدرار","الشلف","الأغواط","أم البواقي","باتنة","بجاية","بسكرة","بشار","البليدة","البويرة","تمنراست","تبسة","تلمسان","تيارت","تيزي وزو","الجزائر","الجلفة","جيجل","سطيف","سعيدة","سكيكدة","سيدي بلعباس","عنابة","قالمة","قسنطينة","المدية","مستغانم","المسيلة","معسكر","ورقلة","وهران","البيض","إليزي","برج بوعريريج","بومرداس","الطارف","تندوف","تيسمسيلت","الوادي","خنشلة","سوق أهراس","تيبازة","ميلة","عين الدفلى","النعامة","عين تموشنت","غرداية","غليزان","تيميمون","برج باجي مختار","أولاد جلال","بني عباس","عين صالح","عين قزام","تقرت","جانت","المغير","المنيعة"];
-const wilayaNamesFr = ["","Adrar","Chlef","Laghouat","Oum El Bouaghi","Batna","Béjaïia","Biskra","Béchar","Blida","Bouira","Tamanrasset","Tébessa","Tlemcen","Tiaret","Tizi Ouzou","Alger","Djelfa","Jijel","Sétif","Saïda","Skikda","Sidi Bel Abbès","Annaba","Guelma","Constantine","Médéa","Mostaganem","M'Sila","Mascara","Ouargla","Oran","El Bayadh","Illizi","Bordj Bou Arréridj","Boumerdès","El Tarf","Tindouf","Tissemsilt","El Oued","Khenchela","Souk Ahras","Tipaza","Mila","Aïn Defla","Naâma","Aïn Témouchent","Ghardaïa","Relizane","Timimoun","Bordj Badji Mokhtar","Ouled Djellal","Béni Abbès","In Salah","Aïn Guezzam","Touggourt","Djanet","El M'Ghair","El Meniaa"];
+let selectedColor = null;
+let selectedSize = null;
 
-const wilayaSelect = document.getElementById('wilaya');
-for (let i = 1; i <= 58; i++) {
-  const opt = document.createElement('option');
-  opt.value = i;
-  opt.textContent = `${i} - ${wilayaNames[i]} (${wilayaNamesFr[i]})`;
-  wilayaSelect.appendChild(opt);
+const gallery = $('#colorGallery');
+const mainImage = $('#mainProductImage');
+const fullName = $('#fullName');
+const phone1 = $('#phone1');
+const phone2 = $('#phone2');
+const sizeCircles = document.querySelectorAll('.size-circle');
+const quantityInput = $('#quantity');
+const deliveryToggle = $('#deliveryToggle');
+const wilayaSelect = $('#wilayaSelect');
+const communeSelect = $('#communeSelect');
+const officeSelect = $('#officeSelect');
+const addressInput = $('#address');
+const communeGroup = $('#communeGroup');
+const officeGroup = $('#officeGroup');
+const addressGroup = $('#addressGroup');
+const totalPriceDisplay = $('#totalPriceDisplay');
+const productSubtotal = $('#productSubtotal');
+const deliverySubtotal = $('#deliverySubtotal');
+const discountRow = $('#discountRow');
+const discountText = $('#discountText');
+const submitBtn = $('#submitBtn');
+const submitStatus = $('#submitStatus');
+const toast = $('#toast');
+const form = $('#orderForm');
+const qtyMinus = $('#qty-minus');
+const qtyPlus = $('#qty-plus');
+const selectedColorInput = $('#selectedColor');
+const selectedSizeInput = $('#selectedSize');
+const sizeError = $('#sizeError');
+
+const state = { deliveryType: 'home' };
+
+function formatPriceHTML(amount) {
+  const formatted = amount.toLocaleString('en-US');
+  return `<span class="currency-symbol">دج</span> <span class="amount-number">${formatted}</span>`;
 }
 
-const slider = document.getElementById('slider');
-const slides = slider.children;
-let currentSlide = 0;
-const thumbnailsContainer = document.getElementById('thumbnails');
-for (let i = 0; i < slides.length; i++) {
-  const img = document.createElement('img');
-  img.src = slides[i].src;
-  img.onclick = () => goToSlide(i);
-  thumbnailsContainer.appendChild(img);
+function showToast(msg, type = '') {
+  toast.textContent = msg;
+  toast.className = 'toast ' + type;
+  void toast.offsetWidth;
+  toast.classList.add('show');
+  clearTimeout(toast._hide);
+  toast._hide = setTimeout(() => toast.classList.remove('show'), 5000);
 }
 
-function updateSlider() {
-  const slideWidth = slides[0].clientWidth;
-  slider.scrollLeft = slideWidth * currentSlide;
-  document.querySelectorAll('.thumbnails img').forEach((t, i) => t.classList.toggle('active', i === currentSlide));
-}
-function slide(dir) {
-  currentSlide = Math.min(Math.max(currentSlide + dir, 0), slides.length - 1);
-  updateSlider();
-}
-function goToSlide(i) { currentSlide = i; updateSlider(); }
-window.addEventListener('resize', updateSlider);
-updateSlider();
-
-function selectSize(btn) {
-  document.querySelectorAll('.size-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
+function setError(el, msg) {
+  const err = document.getElementById(el.id + 'Error');
+  if (err) err.textContent = msg;
+  el.classList.toggle('error', !!msg);
 }
 
-function changeQuantity(delta) {
-  const qty = document.getElementById('quantity');
-  let val = parseInt(qty.value) || 1;
-  val = Math.max(1, val + delta);
-  qty.value = val;
-  updateSummary();
-}
-document.getElementById('quantity').addEventListener('input', updateSummary);
-
-function validatePhone() {
-  const phone = document.getElementById('phone');
-  const error = document.getElementById('phone-error');
-  error.style.display = (phone.value.length !== 10) ? 'block' : 'none';
+function clearErrors() {
+  $$('.form-control').forEach(el => {
+    el.classList.remove('error');
+    const err = document.getElementById(el.id + 'Error');
+    if (err) err.textContent = '';
+  });
+  sizeError.textContent = '';
+  submitStatus.textContent = '';
+  submitStatus.className = 'submit-status';
 }
 
-function handleDeliveryChange() {
-  const method = document.querySelector('input[name="deliveryMethod"]:checked').value;
-  document.getElementById('office-group').classList.toggle('hidden', method !== 'office');
-  document.getElementById('commune-group').classList.toggle('hidden', method !== 'home');
-  document.getElementById('address-group').classList.add('hidden');
-  handleWilayaChange();
+function getDeliveryFee(wilaya, type) {
+  const data = DELIVERY_FEES[wilaya];
+  if (!data) return 0;
+  return type === 'home' ? data.home : data.stopdesk;
 }
-
-function handleWilayaChange() {
-  const wilaya = parseInt(document.getElementById('wilaya').value);
-  const method = document.querySelector('input[name="deliveryMethod"]:checked').value;
-  const officeSelect = document.getElementById('office');
-  const communeSelect = document.getElementById('commune');
-  officeSelect.innerHTML = '';
-  communeSelect.innerHTML = '';
-  if (!wilaya) return;
-  if (method === 'office') {
-    const offices = officesByWilaya[wilaya] || [];
-    if (offices.length === 0) officeSelect.innerHTML = '<option value="">لا توجد مكاتب</option>';
-    else offices.forEach(o => { const opt = document.createElement('option'); opt.value = o; opt.textContent = o; officeSelect.appendChild(opt); });
+function isSouthern(wilaya) { return SOUTHERN_WILAYAS.includes(wilaya); }
+function calcDeliveryFee(wilaya, type, qty) {
+  const base = getDeliveryFee(wilaya, type);
+  if (!wilaya || !base) return 0;
+  if (type === 'stopdesk' && qty >= 2) {
+    if (!isSouthern(wilaya)) return 0;
+    else return Math.max(0, base - 500);
+  }
+  return base;
+}
+function getTotalQuantity() {
+  const val = parseInt(quantityInput.value) || 1;
+  return Math.max(1, Math.min(30, val));
+}
+function calcTotal() {
+  const qty = getTotalQuantity();
+  const wilaya = wilayaSelect.value;
+  const type = state.deliveryType;
+  const productTotal = PRODUCT_PRICE * qty;
+  let deliveryTotal = 0, freeDelivery = false;
+  if (wilaya) {
+    deliveryTotal = calcDeliveryFee(wilaya, type, qty);
+    if (type === 'stopdesk' && qty >= 2 && wilaya && !isSouthern(wilaya)) freeDelivery = true;
+  }
+  return { productTotal, deliveryTotal, total: productTotal + deliveryTotal, freeDelivery };
+}
+function updateUI() {
+  const calc = calcTotal();
+  productSubtotal.innerHTML = formatPriceHTML(calc.productTotal);
+  deliverySubtotal.innerHTML = formatPriceHTML(calc.deliveryTotal);
+  totalPriceDisplay.innerHTML = formatPriceHTML(calc.total);
+  if (calc.freeDelivery) {
+    discountRow.classList.remove('hidden');
+    discountText.textContent = '🎯 التوصيل مجاني';
   } else {
-    const communes = communesByWilaya[wilaya] || [];
-    const communesFr = communesByWilayaFr[wilaya] || [];
-    if (communes.length === 0) communeSelect.innerHTML = '<option value="">لا توجد بلديات</option>';
-    else communes.forEach((c, idx) => { const opt = document.createElement('option'); opt.value = communesFr[idx] || c; opt.textContent = `${c} - ${communesFr[idx] || c}`; communeSelect.appendChild(opt); });
+    discountRow.classList.add('hidden');
   }
-  updateSummary();
 }
 
-function handleCommuneChange() {
-  const commune = document.getElementById('commune').value;
-  document.getElementById('address-group').classList.toggle('hidden', !commune);
+function renderGallery() {
+  gallery.innerHTML = '';
+  COLORS.forEach(c => {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'color-gallery-btn';
+    btn.dataset.colorId = c.id;
+    btn.style.background = c.hex;
+    btn.style.borderColor = 'rgba(0,0,0,0.15)';
+    btn.style.color = c.textColor;
+    if (selectedColor === c.id) btn.classList.add('active-gallery');
+    const text = document.createElement('span');
+    text.className = 'gallery-text';
+    text.textContent = c.label;
+    btn.appendChild(text);
+    btn.addEventListener('click', () => {
+      mainImage.src = c.image;
+      selectedColor = c.id;
+      selectedColorInput.value = c.label;
+      document.querySelectorAll('.color-gallery-btn').forEach(b => {
+        b.classList.toggle('active-gallery', b.dataset.colorId === c.id);
+      });
+    });
+    gallery.appendChild(btn);
+  });
 }
 
-function updateSummary() {
-  const basePrice = 2600;
-  const qty = parseInt(document.getElementById('quantity').value) || 1;
-  const wilaya = parseInt(document.getElementById('wilaya').value);
-  const method = document.querySelector('input[name="deliveryMethod"]:checked').value;
-  let delivery = 0;
-  if (wilaya && deliveryPrices[wilaya]) {
-    delivery = (method === 'office') ? (deliveryPrices[wilaya].office || 0) : deliveryPrices[wilaya].home;
+function populateWilayas() {
+  wilayaSelect.innerHTML = '<option value="">اختر الولاية</option>';
+  WILAYA_LIST.forEach(w => {
+    const opt = document.createElement('option');
+    opt.value = w;
+    opt.textContent = w;
+    wilayaSelect.appendChild(opt);
+  });
+}
+function populateCommunes(wilaya) {
+  communeSelect.innerHTML = '<option value="">اختر البلدية</option>';
+  if (!wilaya) { communeSelect.disabled = true; return; }
+  const list = COMMUNES_MAP[wilaya] || ['لا توجد بلديات'];
+  list.forEach(c => {
+    const opt = document.createElement('option');
+    opt.value = c;
+    opt.textContent = c;
+    communeSelect.appendChild(opt);
+  });
+  communeSelect.disabled = false;
+}
+function populateOffices(wilaya) {
+  officeSelect.innerHTML = '<option value="">اختر المكتب</option>';
+  if (!wilaya) { officeSelect.disabled = true; return; }
+  const list = OFFICES_MAP[wilaya] || ['لا توجد مكاتب'];
+  list.forEach(o => {
+    const opt = document.createElement('option');
+    opt.value = o;
+    opt.textContent = o;
+    officeSelect.appendChild(opt);
+  });
+  officeSelect.disabled = false;
+}
+
+function setDeliveryType(type) {
+  state.deliveryType = type;
+  document.getElementById('deliveryType').value = type;
+  $$('.delivery-toggle .toggle-btn').forEach(b => b.classList.toggle('active', b.dataset.value === type));
+  if (type === 'home') {
+    communeGroup.classList.remove('hidden');
+    officeGroup.classList.add('hidden');
+    addressGroup.classList.remove('hidden');
+    communeSelect.disabled = !wilayaSelect.value;
+    officeSelect.disabled = true;
+    addressInput.required = false;
+    officeSelect.value = '';
+  } else {
+    communeGroup.classList.add('hidden');
+    officeGroup.classList.remove('hidden');
+    addressGroup.classList.add('hidden');
+    communeSelect.disabled = true;
+    officeSelect.disabled = !wilayaSelect.value;
+    addressInput.required = false;
+    communeSelect.value = '';
+    addressInput.value = '';
   }
-  const products = basePrice * qty;
-  document.getElementById('products-cost').textContent = products + ' دج';
-  document.getElementById('delivery-cost').textContent = delivery + ' دج';
-  document.getElementById('total-cost').textContent = (products + delivery) + ' دج';
+  if (wilayaSelect.value) {
+    if (type === 'home') populateCommunes(wilayaSelect.value);
+    else populateOffices(wilayaSelect.value);
+  }
+  updateUI();
 }
 
-function showMessage(text, type) {
-  const box = document.getElementById('messageBox');
-  box.textContent = text;
-  box.className = 'message-box';
-  if (type === 'success') { box.classList.add('message-success'); }
-  else { box.classList.add('message-error'); }
-  box.style.display = 'block';
+deliveryToggle.addEventListener('click', e => {
+  const btn = e.target.closest('.toggle-btn');
+  if (!btn || btn.dataset.value === state.deliveryType) return;
+  setDeliveryType(btn.dataset.value);
+});
+wilayaSelect.addEventListener('change', () => {
+  const w = wilayaSelect.value;
+  if (state.deliveryType === 'home') {
+    populateCommunes(w);
+    communeSelect.disabled = !w;
+  } else {
+    populateOffices(w);
+    officeSelect.disabled = !w;
+  }
+  communeSelect.value = '';
+  officeSelect.value = '';
+  updateUI();
+});
+
+sizeCircles.forEach(circle => {
+  circle.addEventListener('click', () => {
+    sizeCircles.forEach(c => c.classList.remove('active-size'));
+    circle.classList.add('active-size');
+    selectedSize = circle.dataset.size;
+    selectedSizeInput.value = selectedSize;
+    sizeError.textContent = '';
+  });
+});
+
+function updateQuantity(val) {
+  let current = parseInt(quantityInput.value) || 1;
+  let newVal = current + val;
+  if (newVal < 1) newVal = 1;
+  if (newVal > 30) newVal = 30;
+  quantityInput.value = newVal;
+  updateUI();
+}
+qtyMinus.addEventListener('click', () => updateQuantity(-1));
+qtyPlus.addEventListener('click', () => updateQuantity(1));
+quantityInput.addEventListener('input', function() {
+  let val = parseInt(this.value) || 1;
+  if (val < 1) val = 1;
+  if (val > 30) val = 30;
+  this.value = val;
+  updateUI();
+});
+
+fullName.addEventListener('blur', () => {
+  if (!fullName.value.trim()) setError(fullName, 'الاسم الكامل مطلوب');
+  else setError(fullName, '');
+});
+phone1.addEventListener('blur', () => {
+  if (!phone1.value.trim()) setError(phone1, 'رقم الهاتف 1 مطلوب');
+  else setError(phone1, '');
+});
+
+function formatPhoneNumber(phone) {
+  let p = phone.replace(/\s/g, '');
+  if (p.startsWith('0')) p = p.substring(1);
+  if (!p.startsWith('+213')) p = '+213' + p;
+  return p;
 }
 
-function hideMessage() {
-  document.getElementById('messageBox').style.display = 'none';
-}
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  clearErrors();
+  let valid = true;
+  if (!fullName.value.trim()) { setError(fullName, 'الاسم الكامل مطلوب'); valid = false; }
+  if (!phone1.value.trim()) { setError(phone1, 'رقم الهاتف 1 مطلوب'); valid = false; }
+  if (!selectedSize) { sizeError.textContent = 'اختر المقاس'; valid = false; }
+  const qty = getTotalQuantity();
+  if (qty < 1) { setError(quantityInput, 'الكمية يجب أن تكون 1 على الأقل'); valid = false; }
+  if (!selectedColor) { showToast('الرجاء اختيار لون من معرض الألوان', 'error'); valid = false; }
+  if (!wilayaSelect.value) { setError(wilayaSelect, 'اختر الولاية'); valid = false; }
+  if (state.deliveryType === 'home') {
+    if (!communeSelect.value) { setError(communeSelect, 'اختر البلدية'); valid = false; }
+  } else {
+    if (!officeSelect.value) { setError(officeSelect, 'اختر المكتب'); valid = false; }
+  }
+  if (!valid) { showToast('الرجاء تعبئة جميع الحقول المطلوبة', 'error'); return; }
 
-async function submitOrder() {
-  hideMessage();
-  const fullName = document.getElementById('fullName').value.trim();
-  const phone = document.getElementById('phone').value.trim();
-  const altPhone = document.getElementById('altPhone').value.trim();
-  const method = document.querySelector('input[name="deliveryMethod"]:checked').value;
-  const wilayaIndex = document.getElementById('wilaya').value;
-  const wilayaText = document.getElementById('wilaya').options[document.getElementById('wilaya').selectedIndex]?.text || '';
-  const size = document.querySelector('.size-btn.active')?.textContent.trim() || '';
-  const qty = document.getElementById('quantity').value;
-  const totalText = document.getElementById('total-cost').textContent;
-  const total = parseInt(totalText.replace(/[^\d]/g, ''), 10) || 0;
-  const adresse = document.getElementById('address').value.trim();
-  const officeName = method === 'office' ? document.getElementById('office').value : '';
-  const communeName = method === 'home' ? document.getElementById('commune').value : '';
+  const size = selectedSize;
+  const color = selectedColorInput.value || 'لم يحدد';
+  const productDescription = `${color} | ${size}`;
+  const calc = calcTotal();
+  const formattedPhone1 = formatPhoneNumber(phone1.value.trim());
+  const formattedPhone2 = phone2.value.trim() ? formatPhoneNumber(phone2.value.trim()) : '';
 
-  if (!fullName || !phone || !wilayaIndex) { showMessage('يرجى ملء كافة الحقول الضرورية.', 'error'); return; }
-  if (phone.length !== 10) { showMessage('رقم الهاتف الأساسي يجب أن يتكون من 10 أرقام.', 'error'); return; }
-  if (method === 'office' && !officeName) { showMessage('يرجى اختيار المكتب.', 'error'); return; }
-  if (method === 'home' && !communeName) { showMessage('يرجى اختيار البلدية.', 'error'); return; }
-
-  let extra = method === 'office' ? `المكتب: ${officeName}` : `البلدية: ${communeName}`;
-  if (method === 'home' && adresse) extra += `\nالعنوان: ${adresse}`;
-  const waMessage = `طلب جديد من الموقع:%0Aالاسم: ${fullName}%0Aالهاتف: ${phone}%0A${altPhone ? 'هاتف احتياطي: '+altPhone+'%0A' : ''}الولاية: ${wilayaText}%0Aطريقة التوصيل: ${method==='office'?'مكتب':'منزل'}%0A${extra}%0Aالمقاس: ${size}%0Aالكمية: ${qty}%0Aالسعر الإجمالي: ${total}`;
-  const waUrl = `https://wa.me/213661218727?text=${waMessage}`;
-
-  const formatPhone = (p) => p.startsWith('0') ? '+213' + p.slice(1) : p;
   const payload = {
-    nomComplet: fullName,
-    telephone1: formatPhone(phone),
-    telephone2: altPhone ? formatPhone(altPhone) : '',
-    produit: `Swsuit - ${size} - (${qty})`,
-    quantite: 1,
-    adresse: method === 'home' ? adresse : '',
-    wilaya: wilayaNamesFr[parseInt(wilayaIndex)] || wilayaText,
-    commune: method === 'home' ? communeName : '',
-    prixTotal: total,
-    stopdesk: method === 'office' ? 'OUI' : 'NON',
-    nomStopDesk: officeName
+    NomComplet: fullName.value.trim(),
+    Telephone1: formattedPhone1,
+    Telephone2: formattedPhone2,
+    Produit: productDescription,
+    Quantite: qty,
+    Sku: '',
+    TypeStock: '',
+    Adresse: state.deliveryType === 'home' ? addressInput.value.trim() : '',
+    Wilaya: wilayaSelect.value,
+    Commune: state.deliveryType === 'home' ? communeSelect.value : '',
+    PrixTotal: calc.total,
+    Note: 'Yes',
+    ID: '',
+    Stopdesk: state.deliveryType === 'stopdesk' ? 'OUI' : '',
+    NomStopDesk: state.deliveryType === 'stopdesk' ? officeSelect.value : '',
   };
 
-  const btn = document.getElementById('submit-button');
-  btn.disabled = true;
-  btn.textContent = 'جاري الإرسال...';
+  submitBtn.disabled = true;
+  submitBtn.innerHTML = '<span class="spinner"></span> جاري الإرسال...';
+  submitStatus.textContent = 'جاري معالجة الطلبية...';
+  submitStatus.className = 'submit-status';
 
   try {
-    await fetch(GOOGLE_SCRIPT_URL, { method: 'POST', body: JSON.stringify(payload), mode: 'no-cors' });
-    showMessage('تمّ تأكيد طلبك ... سنتصل بك إن شاء اللَّه.', 'success');
-    document.getElementById('order-form').reset();
-    document.querySelector('.size-btn.active')?.classList.remove('active');
-    document.querySelector('.size-btn:first-child')?.classList.add('active');
-    document.getElementById('quantity').value = 1;
-    handleDeliveryChange();
-    updateSummary();
-  } catch (e) {
-    window.open(waUrl, '_blank');
-    showMessage('يرجى تفقد الاتصال، وإعادة المحاولة مرة أخرى.', 'error');
+    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyvBkIrSetaiJj5QYumGTqSlb1lavcpjzfaArgFHkY-n3rUiIEUDkL9D7TkWGr6YVVR4A/exec';
+    const response = await fetch(SCRIPT_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+      body: JSON.stringify(payload),
+    });
+    const responseText = await response.text();
+    let result;
+    try { result = JSON.parse(responseText); } catch (parseErr) {
+      throw new Error('استجابة غير متوقعة من الخادم');
+    }
+    if (response.ok && result.status === 'success') {
+      // تتبع حدث شراء (Purchase) عبر ميتا بيكسل بعد نجاح الطلب
+      if (typeof fbq !== 'undefined') {
+        fbq('track', 'Purchase', {
+          value: calc.total,
+          currency: 'DZD'
+        });
+      }
+      showToast('✅ تم إرسال طلبك بنجاح! شكراً لك.', 'success');
+      submitStatus.textContent = '✅ تم إرسال الطلبية بنجاح! سنتصل بك قريباً.';
+      submitStatus.className = 'submit-status success';
+    } else {
+      const errorMsg = result.message || 'حدث خطأ غير معروف';
+      showToast('❌ ' + errorMsg, 'error');
+      submitStatus.textContent = '❌ ' + errorMsg;
+      submitStatus.className = 'submit-status error';
+    }
+  } catch (err) {
+    showToast('❌ حدث خطأ أثناء الإرسال. حاول مجدداً.', 'error');
+    submitStatus.textContent = '❌ حدث خطأ. تأكد من اتصالك بالإنترنت وحاول مجدداً.';
+    submitStatus.className = 'submit-status error';
   } finally {
-    btn.disabled = false;
-    btn.textContent = 'تأكيد الطلب';
+    submitBtn.disabled = false;
+    submitBtn.innerHTML = '<span>تأكيد الطلبية</span>';
   }
-}
+});
 
-handleDeliveryChange();
-updateSummary();
+function init() {
+  populateWilayas();
+  renderGallery();
+  setDeliveryType('home');
+  quantityInput.value = 1;
+  mainImage.src = COLORS[0].image;
+  if (sizeCircles.length) {
+    sizeCircles[0].classList.add('active-size');
+    selectedSize = sizeCircles[0].dataset.size;
+    selectedSizeInput.value = selectedSize;
+  }
+  updateUI();
+}
+init();
 </script>
 </body>
 </html>
