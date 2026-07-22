@@ -16,6 +16,15 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 fbq('init', '935552542883093');
 fbq('track', 'PageView');
+
+// مشاهدة محتوى المنتج عند فتح صفحة الهبوط
+fbq('track', 'ViewContent', {
+  content_ids: ['ATHAR_SWIMSUIT_001'],
+  content_name: 'لباس السباحة أثر',
+  content_type: 'product',
+  value: 2600,
+  currency: 'DZD'
+});
 </script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=935552542883093&ev=PageView&noscript=1"
@@ -262,6 +271,63 @@ input[type="radio"] { accent-color: #000; width: 20px; height: 20px; }
 <script>
 const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwxTuR7PG-N0eBklyULgs6PWsv50G-l-258pmPbxHEdELEabsPCudDOc74UH_voWaXB/exec';
 
+// ===== إعدادات المنتج وأحداث Meta Pixel =====
+const META_PRODUCT = {
+  id: 'ATHAR_SWIMSUIT_001',
+  name: 'لباس السباحة أثر',
+  unitPrice: 2600,
+  currency: 'DZD'
+};
+
+// تمنع تكرار أحداث المراحل في نفس محاولة الطلب
+const metaTrackingState = {
+  addToCart: false,
+  initiateCheckout: false
+};
+
+function trackMetaEvent(eventName, parameters = {}) {
+  if (typeof window.fbq !== 'function') return;
+  window.fbq('track', eventName, parameters);
+}
+
+function getMetaOrderData(includeDelivery = false) {
+  const quantity = Math.max(1, parseInt(document.getElementById('quantity')?.value, 10) || 1);
+  const selectedSize = document.querySelector('.size-btn.active')?.textContent.trim() || 'M-S';
+  const productsValue = META_PRODUCT.unitPrice * quantity;
+  const totalText = document.getElementById('total-cost')?.textContent || '';
+  const totalValue = parseInt(totalText.replace(/[^\d]/g, ''), 10) || productsValue;
+
+  return {
+    content_ids: [META_PRODUCT.id],
+    content_name: `${META_PRODUCT.name} - ${selectedSize}`,
+    content_type: 'product',
+    value: includeDelivery ? totalValue : productsValue,
+    currency: META_PRODUCT.currency,
+    num_items: quantity
+  };
+}
+
+// الصفحة تعتمد طلبًا مباشرًا دون سلة منفصلة؛ أول اختيار للمنتج يُعد إضافة إلى سلة افتراضية.
+function trackAddToCartOnce() {
+  if (metaTrackingState.addToCart) return;
+  metaTrackingState.addToCart = true;
+  trackMetaEvent('AddToCart', getMetaOrderData(false));
+}
+
+function trackInitiateCheckoutOnce() {
+  if (metaTrackingState.initiateCheckout) return;
+
+  // نضمن وجود مرحلة AddToCart حتى لو انتقل الزائر مباشرة إلى النموذج.
+  trackAddToCartOnce();
+  metaTrackingState.initiateCheckout = true;
+  trackMetaEvent('InitiateCheckout', getMetaOrderData(true));
+}
+
+function resetMetaFunnelTracking() {
+  metaTrackingState.addToCart = false;
+  metaTrackingState.initiateCheckout = false;
+}
+
 const communesData = [
   [],
   [["أدرار","Adrar"], ["أقبلي","Akabli"], ["أولف","Aoulef"], ["بودة","Bouda"], ["فنوغيل","Fenoughil"], ["إن زغمير","In Zghmir"], ["أولاد أحمد تيمي","Ouled Ahmed Timmi"], ["رقان","Reggane"], ["صالي","Sali"], ["السبعة","Sebaa"], ["تيمنطيط","Tamantit"], ["تمست","Tamest"], ["تيمقتن","Timekten"], ["تيت","Tit"], ["تسابيت","Tsabit"], ["زاوية كنتة","Zaouiet Kounta"]],
@@ -490,6 +556,7 @@ updateSlider();
 function selectSize(btn) {
   document.querySelectorAll('.size-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
+  trackAddToCartOnce();
 }
 
 function changeQuantity(delta) {
@@ -498,8 +565,13 @@ function changeQuantity(delta) {
   val = Math.max(1, val + delta);
   qty.value = val;
   updateSummary();
+  trackAddToCartOnce();
 }
-document.getElementById('quantity').addEventListener('input', updateSummary);
+
+document.getElementById('quantity').addEventListener('input', function () {
+  updateSummary();
+  trackAddToCartOnce();
+});
 
 function validatePhone() {
   const phone = document.getElementById('phone');
@@ -601,7 +673,7 @@ async function submitOrder() {
     telephone1: formatPhone(phone),
     telephone2: altPhone ? formatPhone(altPhone) : '',
     produit: `Swsuit - ${size} - (${qty})`,
-    quantite: 1,
+    quantite: parseInt(qty, 10) || 1,
     adresse: method === 'home' ? adresse : '',
     wilaya: wilayaNamesFr[parseInt(wilayaIndex)] || wilayaText,
     commune: method === 'home' ? communeName : '',
@@ -616,6 +688,22 @@ async function submitOrder() {
 
   try {
     await fetch(GOOGLE_SCRIPT_URL, { method: 'POST', body: JSON.stringify(payload), mode: 'no-cors' });
+
+    const completedOrderData = {
+      content_ids: [META_PRODUCT.id],
+      content_name: `${META_PRODUCT.name} - ${size}`,
+      content_type: 'product',
+      value: total,
+      currency: META_PRODUCT.currency,
+      num_items: parseInt(qty, 10) || 1
+    };
+
+    // العميل أرسل بياناته بنجاح.
+    trackMetaEvent('Lead', completedOrderData);
+
+    // في هذه الصفحة نعتبر الطلب المسجل عملية شراء بالدفع عند الاستلام.
+    trackMetaEvent('Purchase', completedOrderData);
+
     showMessage('تمّ تأكيد طلبك ... سنتصل بك إن شاء اللَّه.', 'success');
     document.getElementById('order-form').reset();
     document.querySelector('.size-btn.active')?.classList.remove('active');
@@ -623,6 +711,7 @@ async function submitOrder() {
     document.getElementById('quantity').value = 1;
     handleDeliveryChange();
     updateSummary();
+    resetMetaFunnelTracking();
   } catch (e) {
     window.open(waUrl, '_blank');
     showMessage('يرجى تفقد الاتصال، وإعادة المحاولة مرة أخرى.', 'error');
@@ -631,6 +720,13 @@ async function submitOrder() {
     btn.textContent = 'تأكيد الطلب';
   }
 }
+
+// بدء إتمام الطلب عند أول دخول إلى أحد حقول النموذج.
+document.getElementById('order-form').addEventListener('focusin', function (event) {
+  if (event.target.matches('input, select')) {
+    trackInitiateCheckoutOnce();
+  }
+});
 
 handleDeliveryChange();
 updateSummary();
