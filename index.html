@@ -166,8 +166,8 @@ input[type="radio"] { accent-color: #000; width: 20px; height: 20px; }
 
 <div class="section-label">يرجى اختيار المقاس المناسب</div>
 <div class="sizes">
-<button class="size-btn active" onclick="selectSize(this)"><span class="size-label">M-S</span></button>
-<button class="size-btn" onclick="selectSize(this)"><span class="size-label">L-XL</span></button>
+<button class="size-btn active" onclick="selectSize(this)"><span class="size-label">M+S</span></button>
+<button class="size-btn" onclick="selectSize(this)"><span class="size-label">L+XL</span></button>
 <button class="size-btn" onclick="selectSize(this)"><span class="size-label">XXL</span></button>
 </div>
 
@@ -672,7 +672,7 @@ async function submitOrder() {
     nomComplet: fullName,
     telephone1: formatPhone(phone),
     telephone2: altPhone ? formatPhone(altPhone) : '',
-    produit: `Swsuit - ${size} - (${qty})`,
+    produit: `Sw - ${size} - (${qty})`,
     quantite: parseInt(qty, 10) || 1,
     adresse: method === 'home' ? adresse : '',
     wilaya: wilayaNamesFr[parseInt(wilayaIndex)] || wilayaText,
